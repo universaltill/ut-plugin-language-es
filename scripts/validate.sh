@@ -24,6 +24,18 @@ for loc in locs:
     try:
         d = json.load(open(p))
         if len(d) < 20: errs.append(f"{p}: suspiciously few keys ({len(d)})")
+        # Core's internal/plugins/syncLocales unmarshals each locale file into
+        # map[string]string and, on error, logs and skips the ENTIRE file --
+        # so one non-string value (an object, number, bool, null) silently
+        # drops every translation in this pack on every till, with CI staying
+        # green unless this catches it first. An empty string is also
+        # rejected here: core's T() returns it unconditionally, so it renders
+        # blank UI rather than falling back to English.
+        for k, v in d.items():
+            if not isinstance(v, str):
+                errs.append(f"{p}: value for {k!r} is not a string ({type(v).__name__}) -- would silently drop the whole file in core's syncLocales")
+            elif not v.strip():
+                errs.append(f"{p}: value for {k!r} is empty or whitespace-only")
     except Exception as e:
         errs.append(f"{p}: invalid JSON: {e}")
 if errs:

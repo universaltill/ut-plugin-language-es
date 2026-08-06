@@ -32,6 +32,14 @@ jobs:
       - name: Validate manifest + plugin manifest
         run: scripts/validate.sh
 
+      - name: Key-drift guard self-tests
+        run: scripts/check-key-drift.test.sh
+
+      - name: Key-drift guard against core base locale (ut-docs#296)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/check-key-drift.sh
+
       - name: Verify tag matches manifest version
         if: startsWith(github.ref, 'refs/tags/v')
         run: |
