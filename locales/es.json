@@ -162,5 +162,11 @@
   "journal.detail.online": "en línea",
   "journal.detail.offline": "sin conexión",
   "journal.detail.sync": "sinc.",
-  "journal.detail.sku": "Ref."
+  "journal.detail.sku": "Ref.",
+  "pfand.action": "Devolución de depósito",
+  "pfand.modal.title": "Devolución de depósito",
+  "pfand.modal.amount": "Importe",
+  "pfand.modal.cancel": "Cancelar",
+  "pfand.modal.confirm": "Abonar",
+  "pfand.modal.manager_pin": "PIN del responsable"
 }

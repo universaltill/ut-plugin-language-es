@@ -3,6 +3,26 @@ on:
   push:
     branches: [main]
   pull_request:
+  # Weekly, independent of any push to THIS repo: catches drift introduced by
+  # a CORE change (new base-locale keys landing in universal-till) that this
+  # pack never gets updated for -- the exact failure mode behind ut-docs#292/
+  # #296, where core shipped 6 new pfand.* keys, nobody touched this repo,
+  # and a Spanish till silently rendered English with no signal anywhere. A
+  # push trigger alone can never catch that class of drift because nothing
+  # here ever changes when the gap opens.
+  #
+  # HONEST LIMITATION: GitHub disables scheduled workflows in PUBLIC repos
+  # after 60 days with no repository activity (this repo is public) -- and
+  # "this repo has gone quiet" is exactly the condition the cron exists to
+  # cover, so its coverage silently reaches zero precisely when it's needed
+  # most. This is NOT a durable guarantee (tracked: ut-docs#299).
+  # workflow_dispatch below is the manual/pipeline-triggered fallback while
+  # that's true; moving this check into core's own CI (so it runs on core's
+  # activity, not this repo's) is tracked separately and is the real fix.
+  schedule:
+    - cron: "23 3 * * 2" # Tuesday 03:23 UTC -- quiet, low-traffic slot,
+                          # staggered from ut-plugin-language-de's Monday run
+  workflow_dispatch: {}
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -12,3 +32,20 @@ jobs:
         run: scripts/validate.sh
       - name: Package (dry run)
         run: scripts/package.sh
+
+  key-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Self-tests run first so a red drift run always comes with an answer
+      # to "is the guard itself sound?". The drift check itself runs
+      # `if: always()` -- even if self-tests fail -- so a network failure or
+      # core-originated drift never gets masked by an unrelated self-test
+      # regression; both results are always visible in one job run.
+      - name: Key-drift guard self-tests
+        run: scripts/check-key-drift.test.sh
+      - name: Key-drift guard against core base locale (ut-docs#296)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/check-key-drift.sh

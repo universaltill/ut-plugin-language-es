@@ -1,0 +1,29 @@
+# i18n-baseline/es.same-as-en.txt
+#
+# Keys where locales/es.json is byte-identical to core's English value ON
+# PURPOSE -- proper nouns, brand names, and words that are genuinely the
+# same in Spanish (e.g. "GitHub"), not a forgotten translation.
+#
+# scripts/check-key-drift.sh fails on any es.json value that is
+# byte-identical to core's English value UNLESS the key is listed here --
+# that is what catches the "translated" key that is actually still the
+# verbatim, never-translated English string (a key present with an
+# untranslated value is worse than a missing key: core's T() renders it
+# unconditionally, a missing key at least falls back visibly through
+# ADR-0010's chain).
+#
+# Same staleness rule as the baseline: an entry that is no longer
+# byte-identical to core (translated since, or core changed its string) or
+# whose key no longer exists at all must FAIL so it gets pruned here --
+# this file can only grow through a deliberate, reviewed edit, same as the
+# baseline; it is not a shrink-only ratchet either.
+#
+# One key per line, sorted, unique -- enforced by check-key-drift.sh.
+# Regenerate with:
+#   scripts/check-key-drift.sh --update-allowlist
+app.name
+help.plugins
+journal.detail.subtotal
+journal.detail.total
+nav.github
+plugins.manage.title
