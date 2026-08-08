@@ -668,7 +668,6 @@ selforder.exit
 selforder.increase
 selforder.no_items
 selforder.remove
-selforder.search_ph
 selforder.tap_to_start
 selforder.title
 selforder.welcome
@@ -857,7 +856,6 @@ tills.col_enrolled
 tills.col_name
 tills.col_seen
 tills.discovery.error
-tills.discovery.find_button
 tills.discovery.help
 tills.discovery.none_found
 tills.discovery.result_name
