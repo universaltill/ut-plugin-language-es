@@ -686,6 +686,9 @@ selforder.decrease
 selforder.exit
 selforder.increase
 selforder.no_items
+selforder.order_type.dine_in
+selforder.order_type.label
+selforder.order_type.takeaway
 selforder.remove
 selforder.tap_to_start
 selforder.title
