@@ -226,6 +226,14 @@
   "shifts.manager_pin_placeholder": "obligatorio al retirar efectivo",
   "sync.banner_open_primary_unavailable": "Edite esto en la caja principal",
   "tills.discovery.find_button": "Buscar una caja principal en esta red",
+  "tills.join_error.bad_code": "pegue el código completo que aparece en la otra caja",
+  "tills.join_error.not_a_till": "se alcanzó %s, pero no es una Universal Till — compruebe la dirección en el código",
+  "tills.join_error.refused": "la caja principal rechazó el registro (¿código usado o caducado?)",
+  "tills.join_error.request_failed": "no se pudo preparar la solicitud a la caja principal: %s",
+  "tills.join_error.snapshot_failed": "no se pudo descargar la instantánea: %s",
+  "tills.join_error.stage_identity_failed": "no se pudo preparar la identidad de esta caja: %s",
+  "tills.join_error.stage_snapshot_failed": "no se pudo preparar la instantánea: %s",
+  "tills.join_error.unreachable": "no se pudo contactar con la caja principal: %s",
   "tills.the_primary": "la principal",
   "tills.this_till": "esta caja"
 }
