@@ -723,10 +723,12 @@ settings.data.catalog_preview_btn
 settings.data.catalog_title
 settings.data.confirm_ph
 settings.data.customer_search_ph
+settings.data.export.downloaded
 settings.data.export.entry_label
 settings.data.export.from_label
 settings.data.export.help
 settings.data.export.none_installed
+settings.data.export.pick_dates_required
 settings.data.export.run_btn
 settings.data.export.title
 settings.data.export.to_label
@@ -734,6 +736,9 @@ settings.data.gdpr_help
 settings.data.gdpr_title
 settings.data.help
 settings.data.reset_btn
+settings.data.reset_clearing
+settings.data.reset_confirm_dialog
+settings.data.reset_confirm_required
 settings.data.search_btn
 settings.data.title
 settings.data.warn
