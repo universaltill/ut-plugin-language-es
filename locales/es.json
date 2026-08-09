@@ -251,5 +251,21 @@
   "tills.join_error.stage_snapshot_failed": "no se pudo preparar la instantánea: %s",
   "tills.join_error.unreachable": "no se pudo contactar con la caja principal: %s",
   "tills.the_primary": "la principal",
-  "tills.this_till": "esta caja"
+  "tills.this_till": "esta caja",
+  "nav.orders": "Pedidos",
+  "orders.title": "Pedidos",
+  "orders.col.receipt": "Recibo",
+  "orders.col.time": "Hora",
+  "orders.col.status": "Estado",
+  "orders.col.actions": "Actualizar",
+  "orders.empty": "Aún no hay pedidos",
+  "orders.status.none": "No iniciado",
+  "orders.status.new": "Nuevo",
+  "orders.status.preparing": "Preparando",
+  "orders.status.ready": "Listo",
+  "orders.status.collected": "Recogido",
+  "orders.status.cancelled": "Cancelado",
+  "orders.btn.cancel": "Cancelar pedido",
+  "orders.err.bad_status": "Estado desconocido",
+  "orders.err.not_found": "Pedido no encontrado"
 }
