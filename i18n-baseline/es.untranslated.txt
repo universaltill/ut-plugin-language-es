@@ -531,7 +531,6 @@ plugins.import.version
 plugins.import.warning
 plugins.install
 plugins.install.error.forbidden
-plugins.marketplace.install_success
 plugins.none_found
 plugins.none_found_hint
 plugins.permission.granted
