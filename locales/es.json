@@ -301,5 +301,13 @@
   "kitchenstations.error.create": "No se pudo crear la estación",
   "kitchenstations.error.update": "No se pudo actualizar la estación",
   "kitchenstations.error.not_found": "Estación no encontrada",
-  "kitchenstations.error.routes": "No se pudo guardar el enrutamiento"
+  "kitchenstations.error.routes": "No se pudo guardar el enrutamiento",
+  "reports.period.day": "Día",
+  "reports.period.week": "Semana",
+  "reports.period.month": "Mes",
+  "reports.period.year": "Año",
+  "reports.period.custom": "Personalizado",
+  "reports.period.anchor": "Fecha de referencia",
+  "reports.business_day_start.label": "El día comercial comienza a las",
+  "reports.business_day_start.help": "Cuándo termina un día de operación y comienza el siguiente para los informes y el selector de período día/semana/mes/año — configúrelo después de la medianoche si opera más allá de la medianoche (por ejemplo, un bar o una cocina que cierra tarde), para que los ingresos de una noche no se dividan entre dos días de informe."
 }
