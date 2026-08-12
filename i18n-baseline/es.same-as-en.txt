@@ -25,5 +25,6 @@ app.name
 help.plugins
 journal.detail.subtotal
 journal.detail.total
+kitchenstations.col.sku
 nav.github
 plugins.manage.title
