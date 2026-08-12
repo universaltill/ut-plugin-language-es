@@ -268,6 +268,8 @@
   "orders.btn.cancel": "Cancelar pedido",
   "orders.err.bad_status": "Estado desconocido",
   "orders.err.not_found": "Pedido no encontrado",
+  "orders.print.kitchen_failed": "Error al imprimir el ticket de cocina",
+  "orders.print.receipt_failed": "Error al imprimir el recibo",
   "kitchen.print.partial": "Algunos tickets de cocina no se imprimieron",
   "kitchenstations.title": "Estaciones de cocina",
   "kitchenstations.none": "Aún no hay estaciones — los tickets de cocina van a la impresora de cocina predeterminada.",
