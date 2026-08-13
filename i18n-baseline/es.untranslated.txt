@@ -465,6 +465,8 @@ kitchen.print.done
 kitchen.print.failed
 kitchen.print.no_receipt
 kitchen.print.off
+kitchen.ticket.order_label
+kitchen.ticket.station_default
 locations.activate
 locations.active
 locations.col.name
