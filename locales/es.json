@@ -363,5 +363,16 @@
   "setup.shop_type.other": "Otro",
   "setup.shop_type.retail": "Comercio minorista",
   "setup.shop_type.service": "Servicios",
-  "setup.shop_type.title": "¿Qué tipo de negocio es este?"
+  "setup.shop_type.title": "¿Qué tipo de negocio es este?",
+  "setup.restore.title": "¿Está cambiando desde otro sistema de caja?",
+  "setup.restore.hint": "Si está cambiando desde otra caja o sistema EPOS, podemos ayudarle a transferir sus productos.",
+  "setup.restore.yes": "Sí",
+  "setup.restore.no": "No, empiezo de cero",
+  "setup.restore.later": "Preguntarme más tarde",
+  "setup.restore.csv_excel": "Exportación CSV/Excel de mi sistema anterior",
+  "setup.restore.no_plugins_yet": "Todavía no tenemos una importación específica para sistemas concretos — CSV/Excel funciona con cualquier sistema que pueda exportarlo.",
+  "settings.data.restore_title": "Importar desde otra caja",
+  "settings.data.restore_help": "Eligió \"Preguntarme más tarde\" durante la configuración. Puede transferir sus productos en cualquier momento desde la exportación CSV/Excel de su sistema anterior.",
+  "settings.data.restore_resume_btn": "Importar desde otra caja",
+  "settings.data.restore_dismiss_btn": "No, gracias"
 }
