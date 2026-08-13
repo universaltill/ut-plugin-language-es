@@ -531,6 +531,7 @@ plugins.import.version
 plugins.import.warning
 plugins.install
 plugins.install.error.forbidden
+plugins.manage.broken
 plugins.none_found
 plugins.none_found_hint
 plugins.permission.granted
@@ -542,6 +543,7 @@ plugins.settings.saved
 plugins.settings.secret_empty
 plugins.settings.secret_set
 plugins.settings.title
+plugins.status.broken_binary
 plugins.store.all
 plugins.store.browse
 plugins.store.manager_approval_notice
@@ -592,6 +594,8 @@ pos.toast.insufficient_stock
 pos.toast.item_not_found
 pos.toast.promo_applied
 pos.toast.scan_prompt
+pos.toast.tax_unavailable
+pos.toast.tax_unavailable_all
 products.empty
 products.title
 products.uncategorized
@@ -676,6 +680,7 @@ selforder.checkout.declined
 selforder.checkout.failed
 selforder.checkout.invalid_method
 selforder.checkout.no_methods
+selforder.checkout.tax_unavailable
 selforder.checkout.title
 selforder.confirm.done
 selforder.confirm.hint
