@@ -730,6 +730,15 @@ settings.data.archive_date_col
 settings.data.archive_sales_col
 settings.data.archives_empty
 settings.data.archives_help
+settings.data.archives_purge_btn
+settings.data.archives_purge_confirm_dialog
+settings.data.archives_purge_confirm_ph
+settings.data.archives_purge_confirm_required
+settings.data.archives_purge_done
+settings.data.archives_purge_manager_only
+settings.data.archives_purge_not_found
+settings.data.archives_purge_purging
+settings.data.archives_purge_retained_until
 settings.data.archives_restore_btn
 settings.data.archives_restore_confirm_dialog
 settings.data.archives_restore_confirm_ph
