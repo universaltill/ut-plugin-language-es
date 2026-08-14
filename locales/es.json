@@ -438,5 +438,10 @@
   "countrysettings.error.retention_invalid": "Introduzca el periodo de conservación como un número entero de días.",
   "countrysettings.error.below_floor": "La conservación de archivos no puede establecerse por debajo del mínimo. Solo puede aumentarse.",
   "countrysettings.error.save": "No se ha podido guardar este país.",
-  "countrysettings.error.delete": "No se ha podido eliminar este país."
+  "countrysettings.error.delete": "No se ha podido eliminar este país.",
+  "pos.toast.fiscal_never_configured": "Venta no completada: esta tienda está configurada para registrar ventas reales en Alemania, pero no hay ningún TSE (dispositivo de seguridad técnica) configurado, por lo que la caja no registrará esta venta. Configure un TSE — su propio hardware, su propia cuenta en la nube o una suscripción gestionada — o pida a un administrador que saque la tienda del modo de ventas reales hasta que esté lista.",
+  "pos.toast.fiscal_tse_failing": "Venta no completada: el TSE de la tienda se reporta actualmente como fallido, por lo que la caja no registrará esta venta. Un propietario (administrador) puede conceder una excepción temporal y limitada, o vuelva a intentarlo cuando el TSE funcione de nuevo.",
+  "selforder.checkout.fiscal_blocked": "Pedir aquí no está disponible en este momento — pida en el mostrador.",
+  "fiscal.banner.override_active": "Excepción de TSE activa — las ventas se están registrando sin firma de TSE hasta:",
+  "receipt.fiscal.unsigned_override": "Registrada durante una interrupción documentada del TSE, bajo una excepción temporal del propietario."
 }
