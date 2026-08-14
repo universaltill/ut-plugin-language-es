@@ -367,6 +367,7 @@
   "reports.business_day_start.help": "Cuándo termina un día de operación y comienza el siguiente para los informes y el selector de período día/semana/mes/año — configúrelo después de la medianoche si opera más allá de la medianoche (por ejemplo, un bar o una cocina que cierra tarde), para que los ingresos de una noche no se dividan entre dos días de informe.",
   "catalog.sample_badge": "MUESTRA",
   "settings.data.demo_confirm": "¿Eliminar los artículos de muestra? Los artículos ya vendidos o ajustados se conservan.",
+  "settings.data.demo_in_basket": "Hay datos de muestra en la cesta actual — vacíe la cesta primero.",
   "settings.data.demo_kept": "No se pudieron eliminar %d (ya vendidos o con ajuste de stock).",
   "settings.data.demo_present": "Esta caja tiene %d artículo(s) de muestra del catálogo inicial. Puede eliminarlos aquí.",
   "settings.data.demo_remove_btn": "Eliminar datos de muestra",
