@@ -445,5 +445,13 @@
   "selforder.checkout.fiscal_blocked": "Pedir aquí no está disponible en este momento — pida en el mostrador.",
   "fiscal.banner.override_active": "Excepción de TSE activa — las ventas se están registrando sin firma de TSE hasta:",
   "receipt.fiscal.unsigned_override": "Registrada durante una interrupción documentada del TSE, bajo una excepción temporal del propietario.",
-  "receipt.fiscal.unsigned_signing": "La firma del TSE no estaba disponible al registrar esta venta; la firma se reintenta automáticamente."
+  "receipt.fiscal.unsigned_signing": "La firma del TSE no estaba disponible al registrar esta venta; la firma se reintenta automáticamente.",
+  "receipt.fiscal.tse.title": "Firma TSE",
+  "receipt.fiscal.tse.serial_number": "Número de serie del TSE",
+  "receipt.fiscal.tse.transaction_number": "Número de transacción del TSE",
+  "receipt.fiscal.tse.signature_counter": "Contador de firma",
+  "receipt.fiscal.tse.start_time": "Inicio de la transacción",
+  "receipt.fiscal.tse.log_time": "Fin de la transacción",
+  "receipt.fiscal.tse.signature_algorithm": "Algoritmo de firma",
+  "receipt.fiscal.tse.signature": "Firma"
 }
