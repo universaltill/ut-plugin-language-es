@@ -995,6 +995,7 @@ translations.source_plugin
 translations.title
 users.activate
 users.active
+users.change_role
 users.col.pin
 users.col.role
 users.col.status
@@ -1007,6 +1008,7 @@ users.error.pin_taken
 users.error.promote
 users.error.required
 users.error.role
+users.error.role_change
 users.inactive
 users.new.display
 users.new.hint
