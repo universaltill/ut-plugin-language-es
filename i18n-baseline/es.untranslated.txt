@@ -1002,7 +1002,9 @@ users.col.user
 users.deactivate
 users.error.create
 users.error.last_admin
+users.error.last_super_admin
 users.error.pin_taken
+users.error.promote
 users.error.required
 users.error.role
 users.inactive
@@ -1014,6 +1016,7 @@ users.new.username
 users.new_pin
 users.pin_set
 users.pin_unset
+users.promote_super_admin
 users.role.admin
 users.role.cashier
 users.role.manager
