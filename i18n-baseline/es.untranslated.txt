@@ -641,6 +641,7 @@ pos.toast.tax_unavailable_all
 products.empty
 products.title
 products.uncategorized
+receipt.auth_code
 receipt.auto_reset
 receipt.change
 receipt.new_customer
