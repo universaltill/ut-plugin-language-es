@@ -28,3 +28,4 @@ journal.detail.total
 kitchenstations.col.sku
 nav.github
 plugins.manage.title
+tables.status.open_minutes
