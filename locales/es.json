@@ -187,6 +187,7 @@
   "reports.day": "Día",
   "reports.top_items": "Artículos más vendidos",
   "reports.by_method": "Pagos por método",
+  "reports.by_cash_adjustment_reason": "Ajustes de efectivo por motivo",
   "reports.none": "Sin datos para este período",
   "journal.detail.online": "en línea",
   "journal.detail.offline": "sin conexión",
