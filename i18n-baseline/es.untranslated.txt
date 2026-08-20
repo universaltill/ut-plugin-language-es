@@ -212,6 +212,7 @@ designer.receipt.title
 designer.search_placeholder
 designer.search_title
 designer.search_type_hint
+elevation.approved
 elevation.error_insufficient_role
 elevation.error_invalid_pin
 elevation.error_locked_out
@@ -222,9 +223,16 @@ elevation.pin_placeholder
 elevation.prompt_help
 elevation.prompt_title
 elevation.submit
+elevation.summary.archive_export
 elevation.summary.backup_now
+elevation.summary.eod_range_export
+elevation.summary.eod_reprint
+elevation.summary.eod_run
+elevation.summary.eod_settings_disabled
+elevation.summary.eod_settings_enabled
 elevation.summary.permission_grant
 elevation.summary.permission_revoke
+elevation.summary.report_retention
 elevation.summary.sync_promote
 help.feat.alerts.s1
 help.feat.alerts.s2
