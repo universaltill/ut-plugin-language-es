@@ -50,6 +50,7 @@
   "plugins.install.error.configuration": "La instalación desde el marketplace no está configurada.",
   "plugins.install.error.replica_use_primary": "Esta caja sigue a una caja principal — instale los plugins en la caja principal; llegan a todas las cajas automáticamente en medio minuto aproximadamente.",
   "plugins.install.error.not_entitled": "Este plugin necesita aprobación antes de poder instalarse — pida a su responsable que lo apruebe en el portal del marketplace.",
+  "plugins.install.error.registered_required": "Este plugin requiere una cuenta de tienda reclamada — inicie sesión y reclame su tienda para instalarlo.",
   "designer.title": "Diseñador de caja",
   "designer.add_button": "Añadir botón",
   "designer.label": "Etiqueta",
