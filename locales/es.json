@@ -503,5 +503,10 @@
   "receipt.fiscal.tse.start_time": "Inicio de la transacción",
   "receipt.fiscal.tse.log_time": "Fin de la transacción",
   "receipt.fiscal.tse.signature_algorithm": "Algoritmo de firma",
-  "receipt.fiscal.tse.signature": "Firma"
+  "receipt.fiscal.tse.signature": "Firma",
+  "basket.table.label": "Mesa",
+  "basket.table.move": "Cambiar de mesa",
+  "basket.table.no_free_tables": "No hay mesas libres",
+  "basket.table.none": "Sin mesa",
+  "basket.table.picker_title": "Asignar mesa"
 }
