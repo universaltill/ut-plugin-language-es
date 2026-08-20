@@ -234,6 +234,11 @@ elevation.summary.permission_grant
 elevation.summary.permission_revoke
 elevation.summary.report_retention
 elevation.summary.sync_promote
+elevation.summary.user_activate
+elevation.summary.user_create
+elevation.summary.user_deactivate
+elevation.summary.user_pin_set
+elevation.summary.user_role_change
 help.feat.alerts.s1
 help.feat.alerts.s2
 help.feat.alerts.s3
@@ -1046,5 +1051,6 @@ users.role.admin
 users.role.cashier
 users.role.manager
 users.role.super_admin
+users.saved
 users.set_pin
 users.title
