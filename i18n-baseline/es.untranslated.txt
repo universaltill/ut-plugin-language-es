@@ -225,11 +225,20 @@ elevation.prompt_title
 elevation.submit
 elevation.summary.archive_export
 elevation.summary.backup_now
+elevation.summary.dismiss_pending_base_plugin
+elevation.summary.dismiss_restore_prompt
+elevation.summary.display_mode
+elevation.summary.enrol_claim_code
+elevation.summary.enrol_now
 elevation.summary.eod_range_export
 elevation.summary.eod_reprint
 elevation.summary.eod_run
 elevation.summary.eod_settings_disabled
 elevation.summary.eod_settings_enabled
+elevation.summary.idle_lock
+elevation.summary.kiosk_idle_reset
+elevation.summary.launch_on_startup_off
+elevation.summary.launch_on_startup_on
 elevation.summary.payments_default
 elevation.summary.payments_fee
 elevation.summary.permission_grant
@@ -240,6 +249,8 @@ elevation.summary.setting_upsert
 elevation.summary.shop_type
 elevation.summary.store_save
 elevation.summary.sync_promote
+elevation.summary.telemetry_off
+elevation.summary.telemetry_on
 elevation.summary.till_name
 elevation.summary.till_register
 elevation.summary.user_activate
@@ -247,6 +258,7 @@ elevation.summary.user_create
 elevation.summary.user_deactivate
 elevation.summary.user_pin_set
 elevation.summary.user_role_change
+elevation.summary.window_mode
 help.feat.alerts.s1
 help.feat.alerts.s2
 help.feat.alerts.s3
