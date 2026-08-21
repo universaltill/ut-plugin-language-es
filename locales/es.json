@@ -201,6 +201,7 @@
   "journal.replica_no_cross_till": "Las ventas entre cajas solo están disponibles en la caja principal de este negocio.",
   "journal.till_last_synced": "Último contacto de %s: %s",
   "journal.till_unknown": "Caja desconocida",
+  "journal.truncated": "Se muestran las últimas 100 — filtra por caja o día para ver el resto.",
   "pfand.action": "Devolución de depósito",
   "pfand.modal.title": "Devolución de depósito",
   "pfand.modal.amount": "Importe",
