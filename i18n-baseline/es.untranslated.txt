@@ -236,6 +236,7 @@ elevation.summary.eod_run
 elevation.summary.eod_settings_disabled
 elevation.summary.eod_settings_enabled
 elevation.summary.idle_lock
+elevation.summary.invoice_seller
 elevation.summary.kiosk_idle_reset
 elevation.summary.launch_on_startup_off
 elevation.summary.launch_on_startup_on
@@ -243,6 +244,7 @@ elevation.summary.payments_default
 elevation.summary.payments_fee
 elevation.summary.permission_grant
 elevation.summary.permission_revoke
+elevation.summary.printer_settings
 elevation.summary.remove_demo_data
 elevation.summary.report_retention
 elevation.summary.setting_upsert
