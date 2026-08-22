@@ -147,6 +147,8 @@
   "journal.detail.totals": "Totales",
   "journal.detail.payments": "Pagos",
   "journal.detail.change": "Cambio",
+  "journal.detail.terminal_id": "N.º de terminal",
+  "journal.detail.trace_id": "N.º de seguimiento",
   "designer.reorder_hint": "Arrastre las teclas para fijar el orden en la pantalla de venta.",
   "shifts.title": "Turnos",
   "shifts.open_since": "Turno abierto desde",
