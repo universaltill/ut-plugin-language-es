@@ -382,6 +382,7 @@
   "tables.edit.start": "Editar plano de sala",
   "tables.edit.done": "Terminar edición",
   "tables.edit.hint": "Arrastre una mesa para moverla — su posición se guarda automáticamente.",
+  "tables.node.aria": "%s — use las teclas de flecha para mover (mantenga Mayús para un paso mayor)",
   "tables.status.open_minutes": "%d min",
   "tables.seats_n": "%d plazas",
   "tables.col.name": "Mesa",
