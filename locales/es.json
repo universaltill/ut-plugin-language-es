@@ -81,7 +81,7 @@
   "plugins.manage.search": "Buscar plugins instalados",
   "plugins.manage.search_btn": "Buscar",
   "plugins.manage.store_link": "Abrir tienda de plugins",
-  "plugins.manage.empty": "No hay plugins instalados. Consíguelos en la tienda de plugins.",
+  "plugins.manage.empty": "No hay plugins instalados. Consígalos en la tienda de plugins.",
   "plugins.manage.enabled": "Activado",
   "plugins.manage.disabled": "Desactivado",
   "plugins.manage.update_available": "Actualización:",
