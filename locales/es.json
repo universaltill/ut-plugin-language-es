@@ -510,5 +510,19 @@
   "basket.table.move": "Cambiar de mesa",
   "basket.table.no_free_tables": "No hay mesas libres",
   "basket.table.none": "Sin mesa",
-  "basket.table.picker_title": "Asignar mesa"
+  "basket.table.picker_title": "Asignar mesa",
+  "taxcodes.title": "Códigos de impuesto",
+  "taxcodes.new": "Nuevo código de impuesto",
+  "taxcodes.col.name": "Nombre",
+  "taxcodes.col.rate": "Tipo",
+  "taxcodes.col.takeaway_rate": "Tipo para llevar",
+  "taxcodes.col.active": "Activo",
+  "taxcodes.save": "Guardar",
+  "taxcodes.deactivate": "Desactivar",
+  "taxcodes.reactivate": "Reactivar",
+  "taxcodes.manage_overrides_link": "Gestionar excepciones por plugin",
+  "taxcodes.err.duplicate_name": "Ya existe un código de impuesto con este nombre",
+  "taxcodes.err.invalid_rate": "Tipo no válido — introduzca un valor entre 0 y 100",
+  "taxcodes.err.name_required": "El nombre es obligatorio",
+  "taxcodes.err.not_found": "Código de impuesto no encontrado"
 }
