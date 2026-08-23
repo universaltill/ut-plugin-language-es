@@ -132,9 +132,12 @@ catalog.description
 catalog.error.invalid_ean13
 catalog.error.item_created_invalid_ean13
 catalog.image_types
+catalog.item_form.saved
+catalog.item_form.saving
 catalog.item_image
 catalog.keypad.capture_label
 catalog.keypad.capture_placeholder
+catalog.keypad.failed_generic
 catalog.keypad.hint
 catalog.keypad.no_target
 catalog.keypad.set_primary
