@@ -577,5 +577,6 @@
   "journal.error.server": "Algo salió mal. Inténtalo de nuevo.",
   "orders.err.server": "Algo salió mal. Inténtalo de nuevo.",
   "designer.receipt.logo_required": "Elige un archivo de logotipo para subir",
-  "designer.receipt.save_failed": "Algo salió mal. Inténtalo de nuevo."
+  "designer.receipt.save_failed": "Algo salió mal. Inténtalo de nuevo.",
+  "invoice.error.issue_failed": "Algo salió mal. Inténtalo de nuevo."
 }
