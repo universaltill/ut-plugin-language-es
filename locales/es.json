@@ -564,5 +564,18 @@
   "registers.error.update": "No se pudo actualizar la caja",
   "registers.error.last_active": "No se puede desactivar la última caja activa",
   "registers.strand_warning": "Crear una segunda caja, o desactivar una caja que otro dispositivo podría estar usando, puede dejar poco clara la asignación de caja de ese dispositivo. Después, compruebe en cada dispositivo Configuración → Cajas → \"Caja de este dispositivo\".",
-  "registers.in_use_hint": "Tiene historial de turnos/ventas"
+  "registers.in_use_hint": "Tiene historial de turnos/ventas",
+  "audit.error.server": "Algo salió mal. Inténtalo de nuevo.",
+  "basket.error.server": "Algo salió mal. Inténtalo de nuevo.",
+  "ext.error.unreachable": "Esa página del plugin no está disponible en este momento.",
+  "pairings.error.server": "Algo salió mal. Inténtalo de nuevo.",
+  "sync.error.server": "Algo salió mal. Inténtalo de nuevo.",
+  "sync.error.bad_path": "Ruta no válida",
+  "sync.error.bad_batch": "Lote de sincronización no válido",
+  "sync.error.apply_failed": "Error al aplicar la sincronización",
+  "invoice.error.server": "Algo salió mal. Inténtalo de nuevo.",
+  "journal.error.server": "Algo salió mal. Inténtalo de nuevo.",
+  "orders.err.server": "Algo salió mal. Inténtalo de nuevo.",
+  "designer.receipt.logo_required": "Elige un archivo de logotipo para subir",
+  "designer.receipt.save_failed": "Algo salió mal. Inténtalo de nuevo."
 }
