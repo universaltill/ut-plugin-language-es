@@ -566,6 +566,7 @@ pos.toast.scan_prompt
 pos.toast.tax_unavailable
 pos.toast.tax_unavailable_all
 products.empty
+products.no_matches
 products.title
 products.uncategorized
 receipt.auth_code
