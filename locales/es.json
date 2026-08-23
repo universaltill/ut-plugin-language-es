@@ -555,5 +555,6 @@
   "registers.error.create": "No se pudo crear la caja (¿nombre ya utilizado?)",
   "registers.error.rename": "No se pudo cambiar el nombre de la caja (¿nombre ya utilizado?)",
   "registers.error.update": "No se pudo actualizar la caja",
-  "registers.error.last_active": "No se puede desactivar la última caja activa"
+  "registers.error.last_active": "No se puede desactivar la última caja activa",
+  "registers.strand_warning": "Crear una segunda caja, o desactivar una caja que otro dispositivo podría estar usando, puede dejar poco clara la asignación de caja de ese dispositivo. Después, compruebe en cada dispositivo Configuración → Cajas → \"Caja de este dispositivo\"."
 }
