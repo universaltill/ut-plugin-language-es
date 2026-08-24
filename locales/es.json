@@ -625,5 +625,6 @@
   "fiscalregister.address.submit": "Guardar dirección",
   "fiscalregister.address.error": "No se pudo guardar la dirección",
   "fiscalregister.no_location": "Sin local asignado",
-  "fiscalregister.empty": "Aún no hay entradas — usa «Añadir entrada» para registrar tu primera caja/TSE."
+  "fiscalregister.empty": "Aún no hay entradas — usa «Añadir entrada» para registrar tu primera caja/TSE.",
+  "permissions.action.stock_location_management": "Ubicaciones y cajas"
 }
