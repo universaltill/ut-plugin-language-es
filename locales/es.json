@@ -588,6 +588,7 @@
   "sync.error.bad_path": "Ruta no válida",
   "sync.error.bad_batch": "Lote de sincronización no válido",
   "sync.error.apply_failed": "Error al aplicar la sincronización",
+  "sync.error.no_lan_address": "Esta caja no está conectada a la red de la tienda. Conéctela a la red e inténtelo de nuevo.",
   "invoice.error.server": "Algo salió mal. Inténtalo de nuevo.",
   "journal.error.server": "Algo salió mal. Inténtalo de nuevo.",
   "orders.err.server": "Algo salió mal. Inténtalo de nuevo.",
