@@ -129,6 +129,7 @@ catalog.cost_price
 catalog.cost_price_hint
 catalog.create_item
 catalog.description
+catalog.error.barcode_no_symbology_match
 catalog.error.invalid_ean13
 catalog.error.item_created_invalid_ean13
 catalog.image_types
@@ -190,6 +191,7 @@ common.loading
 common.save
 common.submit
 designer.empty
+designer.error.server
 designer.no_matches
 designer.receipt.footer
 designer.receipt.header
@@ -560,6 +562,7 @@ plugins.type.tax
 plugins.type.theme
 plugins.type_label
 pos.error.network
+pos.error.sale_not_found
 pos.error.server
 pos.toast.customer_linked
 pos.toast.customer_not_found
@@ -588,6 +591,7 @@ receipt.title
 refund.col.refund_qty
 refund.col.remaining
 refund.col.sold
+refund.error.server
 refund.fully_refunded
 refund.help
 refund.manager_pin
@@ -684,6 +688,7 @@ settings.backup.confirm_placeholder
 settings.backup.confirm_required
 settings.backup.done
 settings.backup.download
+settings.backup.download_failed
 settings.backup.failed
 settings.backup.help
 settings.backup.none_yet
@@ -692,6 +697,7 @@ settings.backup.restore
 settings.backup.restore_note
 settings.backup.save_failed
 settings.backup.saved_to
+settings.backup.stage_failed
 settings.backup.staged
 settings.backup.title
 settings.currency.apply
