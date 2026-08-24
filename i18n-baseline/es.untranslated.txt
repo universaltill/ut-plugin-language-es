@@ -266,6 +266,11 @@ elevation.summary.user_deactivate
 elevation.summary.user_pin_set
 elevation.summary.user_role_change
 elevation.summary.window_mode
+eod.err.archive_export_failed
+eod.err.check_failed
+eod.err.list_failed
+eod.err.range_failed
+eod.err.retention_save_failed
 help.guide.intro
 help.guide.title
 hold.modal.placeholder
