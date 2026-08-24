@@ -627,5 +627,19 @@
   "fiscalregister.address.error": "No se pudo guardar la dirección",
   "fiscalregister.no_location": "Sin local asignado",
   "fiscalregister.empty": "Aún no hay entradas — usa «Añadir entrada» para registrar tu primera caja/TSE.",
-  "permissions.action.stock_location_management": "Ubicaciones y cajas"
+  "permissions.action.stock_location_management": "Ubicaciones y cajas",
+  "barcode.symbology.CODE128": "Code 128",
+  "barcode.symbology.CODE39": "Code 39",
+  "barcode.symbology.EAN13": "EAN-13",
+  "barcode.symbology.EAN13_PRICE_PREFIX02": "Etiqueta de báscula — precio incorporado (EAN-13, prefijo 02)",
+  "barcode.symbology.EAN13_WEIGHT_PREFIX2X": "Etiqueta de báscula — peso incorporado (EAN-13, prefijo 20–29)",
+  "barcode.symbology.EAN8": "EAN-8",
+  "barcode.symbology.GTIN14": "GTIN-14 (ITF-14 / GS1 DataBar)",
+  "barcode.symbology.INTERNAL_PLU": "Código interno / PLU",
+  "barcode.symbology.UPCA": "UPC-A",
+  "barcode.symbology.UPCE": "UPC-E",
+  "settings.barcode.symbologies_help": "Elige qué tipos de código de barras escanea y registra esta tienda. Los dos tipos de etiqueta de báscula están desactivados por defecto — actívalos solo cuando estés listo para usar etiquetas de báscula impresas, ya que eso cambia cómo se interpreta un código coincidente.",
+  "settings.barcode.symbologies_title": "Tipos de código de barras",
+  "elevation.summary.barcode_symbology_on": "Activar tipo de código de barras: %s.",
+  "elevation.summary.barcode_symbology_off": "Desactivar tipo de código de barras: %s."
 }
