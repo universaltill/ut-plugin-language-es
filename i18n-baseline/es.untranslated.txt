@@ -591,6 +591,7 @@ receipt.title
 refund.col.refund_qty
 refund.col.remaining
 refund.col.sold
+refund.error.provider_declined
 refund.error.server
 refund.fully_refunded
 refund.help
