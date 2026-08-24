@@ -564,10 +564,13 @@ pos.toast.customer_linked
 pos.toast.customer_not_found
 pos.toast.insufficient_stock
 pos.toast.item_not_found
+pos.toast.payment_declined
+pos.toast.payment_insufficient
 pos.toast.promo_applied
 pos.toast.scan_prompt
 pos.toast.tax_unavailable
 pos.toast.tax_unavailable_all
+pos.toast.tender_failed
 products.empty
 products.no_matches
 products.title
