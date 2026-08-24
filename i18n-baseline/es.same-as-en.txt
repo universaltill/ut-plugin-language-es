@@ -22,6 +22,13 @@
 # Regenerate with:
 #   scripts/check-key-drift.sh --update-allowlist
 app.name
+barcode.symbology.CODE128
+barcode.symbology.CODE39
+barcode.symbology.EAN13
+barcode.symbology.EAN8
+barcode.symbology.GTIN14
+barcode.symbology.UPCA
+barcode.symbology.UPCE
 help.plugins
 journal.detail.subtotal
 journal.detail.total
