@@ -456,6 +456,7 @@ permissions.action.refund
 permissions.action.reports
 permissions.action.settings
 permissions.action.sync_management
+permissions.action.tax_code_management
 permissions.action.user_management
 permissions.action.void
 permissions.col.action
