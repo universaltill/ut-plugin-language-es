@@ -225,6 +225,8 @@
   "pfand.modal.cancel": "Cancelar",
   "pfand.modal.confirm": "Abonar",
   "pfand.modal.manager_pin": "PIN del responsable",
+  "catalog.barcode.force_plain": "Código simple (ignorar peso/precio)",
+  "catalog.barcode.force_plain_hint": "Tratar este código como un código de barras de producto simple, aunque este comercio tenga activados códigos de barras con peso/precio incorporado.",
   "catalog.error.barcode_attach_failed": "no se pudo asociar el código de barras",
   "catalog.error.barcode_conflict": "El código de barras ya está en uso por %s",
   "catalog.error.barcode_conflict_unknown": "El código de barras ya está en uso en otro sitio",
