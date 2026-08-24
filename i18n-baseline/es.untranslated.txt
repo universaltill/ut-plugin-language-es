@@ -478,6 +478,7 @@ plugin.content.search_placeholder
 plugins.error.grant_failed
 plugins.error.malformed_form
 plugins.error.revoke_failed
+plugins.error.server
 plugins.error.trust_update_failed
 plugins.filter.all_tiers
 plugins.filter.all_types
