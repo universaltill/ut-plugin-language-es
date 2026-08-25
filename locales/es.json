@@ -475,6 +475,8 @@
   "settings.retention.mode_label": "Conservar informes en",
   "settings.retention.mode_till": "Solo esta caja",
   "settings.retention.title": "Conservación de informes",
+  "settings.service_charge.invalid_rate": "Introduzca el cargo por servicio como un porcentaje de 0 o más, por ejemplo 12,5.",
+  "settings.service_charge.tr_forbidden": "La legislación turca prohíbe un cargo por servicio, tarifa de mesa o cubierto en la cuenta (Fiyat Etiketi Yönetmeliği, en vigor desde el 30 de enero de 2026). Inclúyalo en el precio de los artículos del menú en su lugar.",
   "settings.shop_type.help": "El tipo de negocio al que atiende esta caja — elegido durante la configuración, modificable aquí.",
   "settings.shop_type.title": "Tipo de negocio",
   "setup.base_plugins.dismiss_btn": "Quitar",
