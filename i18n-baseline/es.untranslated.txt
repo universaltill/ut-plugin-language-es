@@ -806,6 +806,9 @@ settings.kiosk_idle_reset.help
 settings.kiosk_idle_reset.off
 settings.kiosk_idle_reset.seconds
 settings.kiosk_idle_reset.title
+settings.language.apply
+settings.language.help
+settings.language.title
 settings.payments.default
 settings.payments.default_help
 settings.payments.fees_help
