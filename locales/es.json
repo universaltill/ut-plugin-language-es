@@ -515,7 +515,7 @@
   "settings.display.window_mode_no_shell": "Los modos de pantalla completa y quiosco permanecen desactivados hasta que la aplicación de escritorio Universal Till se esté ejecutando en esta caja — esa aplicación es la que controla la ventana y la que permite volver a salir de la pantalla completa.",
   "settings.display.window_mode_normal": "Ventana normal",
   "settings.display.window_mode_pending_note": "Surtirá efecto cuando esté disponible la compatibilidad de modo de ventana para esta plataforma.",
-  "settings.display.window_mode_shell_attached": "La aplicación de escritorio Universal Till se está ejecutando y controla la ventana de esta caja — los cambios de modo de ventana se aplican de inmediato, y «Salir al sistema operativo» realmente devuelve la pantalla.",
+  "settings.display.window_mode_shell_attached": "La aplicación de escritorio Universal Till se está ejecutando y controla la ventana de esta caja — los cambios de modo de ventana se aplican de inmediato, y «Salir al sistema operativo» realmente devuelve la pantalla. Pantalla completa y quiosco ejecutan la caja encima del propio escritorio de este ordenador, que permanece justo detrás — una instalación nueva en una Raspberry Pi con escritorio arranca así automáticamente.",
   "settings.retention.capacity_advisory": "Los archivos de informes son pequeños — unos pocos KB por día cerrado — y no llenarán el disco de una caja moderna durante el período de 10 años.",
   "settings.retention.coverage_label": "Registros almacenados",
   "settings.retention.coverage_none": "Todavía no hay informes archivados.",
