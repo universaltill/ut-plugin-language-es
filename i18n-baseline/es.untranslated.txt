@@ -601,8 +601,6 @@ receipt.title
 refund.col.refund_qty
 refund.col.remaining
 refund.col.sold
-refund.error.fiscal_never_configured
-refund.error.fiscal_tse_failing
 refund.error.provider_declined
 refund.error.server
 refund.fully_refunded
