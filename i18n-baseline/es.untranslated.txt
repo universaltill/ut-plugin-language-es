@@ -820,6 +820,9 @@ settings.printer.apply
 settings.printer.auto
 settings.printer.charset
 settings.printer.device
+settings.printer.drawer_pin
+settings.printer.drawer_pin_2
+settings.printer.drawer_pin_5
 settings.printer.help
 settings.printer.kitchen_addr
 settings.printer.kitchen_help
