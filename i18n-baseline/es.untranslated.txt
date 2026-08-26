@@ -852,7 +852,6 @@ settings.update.up_to_date
 settings.value
 setup.back
 setup.country.ae
-setup.country.choose
 setup.country.de
 setup.country.es
 setup.country.fr
@@ -865,6 +864,7 @@ setup.country.nl
 setup.country.other
 setup.country.pk
 setup.country.sa
+setup.country.show_all
 setup.country.title
 setup.country.tr
 setup.country.us
