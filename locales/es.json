@@ -571,7 +571,6 @@
   "setup.restore.title": "¿Está cambiando desde otro sistema de caja?",
   "setup.restore.yes": "Sí",
   "setup.shop_type.cafe": "Café / cafetería",
-  "setup.shop_type.choose": "Elija un tipo de negocio…",
   "setup.shop_type.hint": "Opcional — ayuda a personalizar Universal Till más adelante. Puede cambiarlo en cualquier momento en Ajustes.",
   "setup.shop_type.hospitality": "Hostelería",
   "setup.shop_type.market_stall": "Puesto de mercado / pop-up",
