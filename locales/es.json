@@ -36,6 +36,8 @@
   "catalog.error.server": "Algo salió mal. Inténtalo de nuevo.",
   "catalog.error.sku_exists": "Ese SKU ya está en uso — elige otro.",
   "catalog.sample_badge": "MUESTRA",
+  "catalog.tax_code.inactive": "inactivo",
+  "catalog.tax_code.none": "— ninguno —",
   "common.error.invalid_upload": "Carga no válida",
   "common.error.manager_or_admin_required": "Se requiere gerente o administrador",
   "countrysettings.col.country": "País",
