@@ -1,7 +1,7 @@
 {
   "id": "com.universaltill.language-es",
   "name": "Spanish (Español)",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Spanish language pack for Universal Till — translates a growing subset of the till interface; untranslated strings fall back to English.",
   "author": "Universal Till",
   "website": "https://universaltill.com",
