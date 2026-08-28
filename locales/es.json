@@ -166,6 +166,7 @@
   "import.status.not_sellable": "no es un artículo vendible (interruptor de tipo de pedido)",
   "import.status.ok": "correcto",
   "import.status.sku_already_in_catalog": "la referencia ya está en el catálogo",
+  "import.status.sku_reused_in_file": "número de artículo \"%s\" repetido en este archivo — importado con un nuevo número",
   "import.status.source_deleted": "eliminado en el archivo de origen",
   "import.status.stock_location_failed": "existencias no importadas: la ubicación predeterminada no está disponible",
   "import.status.stock_movement_failed": "existencias no importadas: no se pudo registrar el movimiento de existencias",
