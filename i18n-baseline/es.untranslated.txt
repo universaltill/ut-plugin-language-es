@@ -229,6 +229,8 @@ elevation.prompt_help
 elevation.prompt_title
 elevation.submit
 elevation.summary.archive_export
+elevation.summary.auto_register_off
+elevation.summary.auto_register_on
 elevation.summary.backup_now
 elevation.summary.dismiss_pending_base_plugin
 elevation.summary.dismiss_restore_prompt
@@ -773,6 +775,8 @@ settings.display.osk
 settings.display.osk_auto
 settings.display.osk_off
 settings.display.osk_on
+settings.enrol.auto_register.help
+settings.enrol.auto_register.label
 settings.enrol.benefits
 settings.enrol.claim_btn
 settings.enrol.claim_expires
@@ -855,6 +859,8 @@ settings.update.title
 settings.update.unavailable_here
 settings.update.up_to_date
 settings.value
+setup.auto_register.hint
+setup.auto_register.label
 setup.back
 setup.country.ae
 setup.country.de
