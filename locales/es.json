@@ -754,5 +754,6 @@
   "tracking.disclosure": "Esta página solo muestra el estado de su pedido — sin nombres, artículos ni datos de pago.",
   "tracking.not_found": "Este enlace de seguimiento no está disponible — puede haber caducado tras completarse el pedido.",
   "tracking.title": "Seguimiento del pedido",
-  "tracking.updated": "Última actualización"
+  "tracking.updated": "Última actualización",
+  "common.error.server": "Algo salió mal. Inténtalo de nuevo."
 }
