@@ -820,6 +820,7 @@ settings.printer.address
 settings.printer.apply
 settings.printer.auto
 settings.printer.charset
+settings.printer.charset_cp858
 settings.printer.device
 settings.printer.drawer_pin
 settings.printer.drawer_pin_2
