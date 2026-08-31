@@ -378,6 +378,7 @@
   "pos.toast.voucher_insufficient": "El saldo del vale no cubre este pago",
   "pos.toast.voucher_invalid": "Vale no encontrado o ya no está activo",
   "pos.toast.voucher_overtender": "El pago con vale supera lo que necesita la venta — introduzca el importe restante en su lugar",
+  "products.add": "Añadir producto",
   "products.search_ph": "Buscar productos…",
   "promotions.activate": "Activar",
   "promotions.active": "activa",
