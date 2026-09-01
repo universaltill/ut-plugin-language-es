@@ -97,9 +97,6 @@ basket.discount
 basket.discount_hint
 basket.discount_short
 basket.empty
-basket.order_type.dine_in
-basket.order_type.label
-basket.order_type.takeaway
 basket.remove
 basket.subtotal
 basket.tax
