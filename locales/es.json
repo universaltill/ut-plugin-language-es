@@ -25,6 +25,7 @@
   "basket.table.move": "Cambiar de mesa",
   "basket.table.no_free_tables": "No hay mesas libres",
   "basket.table.none": "Sin mesa",
+  "basket.table.occupied": "Esta mesa ya está ocupada",
   "basket.table.picker_title": "Asignar mesa",
   "catalog.barcode.force_plain": "Código simple (ignorar peso/precio)",
   "catalog.barcode.force_plain_hint": "Tratar este código como un código de barras de producto simple, aunque los códigos con peso/precio incrustado estén habilitados para esta tienda.",
