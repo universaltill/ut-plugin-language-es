@@ -675,6 +675,8 @@
   "shifts.amount_hint": "negativo retira efectivo",
   "shifts.cashier": "Cajero",
   "shifts.close": "Cerrar turno",
+  "shifts.close_success": "Turno cerrado. Esperado: %s, Real: %s, Diferencia: %s",
+  "shifts.close_success_with_skim": "Turno cerrado. Esperado: %s, Real: %s, Diferencia: %s, Retiro: %s, Nuevo fondo: %s",
   "shifts.closed_at": "Cerrado",
   "shifts.count_protocol": "Recuento de billetes y monedas (opcional)",
   "shifts.count_protocol_hint": "Cuántas monedas y billetes de cada denominación hay en la caja. Déjelo vacío para omitir.",
