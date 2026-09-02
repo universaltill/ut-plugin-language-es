@@ -47,6 +47,8 @@
   "catalog.barcode_backfill.more_rows": "… %d más",
   "catalog.barcode_backfill.result": "%d código(s) de barras asignado(s).",
   "catalog.barcode_backfill.result_skipped": "%d omitido(s):",
+  "catalog.brand.none": "— ninguno —",
+  "catalog.category.none": "— ninguno —",
   "catalog.choose_file": "Elegir archivo",
   "catalog.error.barcode_attach_failed": "no se pudo asociar el código de barras",
   "catalog.error.barcode_conflict": "El código de barras ya está en uso por %s",

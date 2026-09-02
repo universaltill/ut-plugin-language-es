@@ -116,6 +116,7 @@ catalog.barcode.remove_confirm
 catalog.barcodes
 catalog.brand
 catalog.category
+catalog.col.category
 catalog.col.cost
 catalog.col.name
 catalog.col.price
