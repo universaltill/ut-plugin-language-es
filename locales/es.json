@@ -829,5 +829,20 @@
   "uninstall.prompt_data": "¿Eliminar también todos los datos de la tienda (base de datos, copias de seguridad, imágenes subidas)? Esto no se puede deshacer. Escriba DELETE para eliminarlo todo, o pulse Intro para conservarlos: ",
   "uninstall.removing": "Eliminando Universal Till (%s)…",
   "uninstall.stopping_service": "Deteniendo el servicio de la caja para que la base de datos se pueda copiar de forma segura…",
-  "uninstall.title": "Desinstalador de Universal Till"
+  "uninstall.title": "Desinstalador de Universal Till",
+  "recovery.title": "Modo de recuperación",
+  "recovery.migration_failed": "La caja no pudo completar una actualización de su base de datos. Sus datos están seguros — es necesario reintentar o contactar con soporte.",
+  "recovery.db_open_failed": "La caja no pudo abrir su base de datos. Sus datos están seguros — es necesario reintentar o contactar con soporte.",
+  "recovery.disk_full": "La caja se ha quedado sin espacio de almacenamiento. Libere espacio en este dispositivo y vuelva a intentarlo.",
+  "recovery.unknown_error": "La caja no pudo iniciarse. Sus datos están seguros — es necesario reintentar o contactar con soporte.",
+  "recovery.ref_code": "Código de referencia",
+  "recovery.retry_button": "Reintentar",
+  "recovery.retrying": "Reintentando…",
+  "recovery.safe_mode_banner": "Modo seguro — solo lectura. No se pueden hacer cambios hasta que esto se solucione.",
+  "recovery.safe_mode_sales_today": "Ventas de hoy",
+  "recovery.safe_mode_export": "Exportar como CSV",
+  "recovery.safe_mode_col_receipt": "Recibo",
+  "recovery.safe_mode_col_total": "Total",
+  "recovery.safe_mode_col_time": "Hora",
+  "recovery.taking_longer": "Sigue en proceso — esto puede tardar unos minutos tras una actualización de la base de datos."
 }

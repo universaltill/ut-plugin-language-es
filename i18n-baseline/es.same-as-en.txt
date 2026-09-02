@@ -35,4 +35,5 @@ journal.detail.total
 kitchenstations.col.sku
 nav.github
 plugins.manage.title
+recovery.safe_mode_col_total
 tables.status.open_minutes
