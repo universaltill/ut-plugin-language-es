@@ -846,5 +846,8 @@
   "recovery.safe_mode_col_receipt": "Recibo",
   "recovery.safe_mode_col_total": "Total",
   "recovery.safe_mode_col_time": "Hora",
-  "recovery.taking_longer": "Sigue en proceso — esto puede tardar unos minutos tras una actualización de la base de datos."
+  "recovery.taking_longer": "Sigue en proceso — esto puede tardar unos minutos tras una actualización de la base de datos.",
+  "error.page.title": "Algo salió mal",
+  "tables.error.load_failed": "No se pudieron cargar las mesas. Inténtalo de nuevo o usa el menú para seguir trabajando.",
+  "permissions.error.super_admin_required": "Se requiere súper administrador"
 }
