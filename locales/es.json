@@ -700,6 +700,8 @@
   "shifts.title": "Turnos",
   "shifts.variance": "Diferencia",
   "status.online": "En línea",
+  "status.psu_underpowered": "Fuente de alimentación insuficiente",
+  "status.psu_underpowered_hint": "La fuente de alimentación de este dispositivo no puede suministrar suficiente corriente — los periféricos USB, como la pantalla táctil, pueden funcionar mal. Sustitúyela por la fuente oficial de esta placa.",
   "sync.banner_open_primary_unavailable": "Edite esto en la caja principal",
   "sync.error.apply_failed": "Error al aplicar la sincronización",
   "sync.error.bad_batch": "Lote de sincronización no válido",
