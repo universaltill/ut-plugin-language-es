@@ -679,6 +679,7 @@
   "shifts.adjust": "Ajuste (±)",
   "shifts.adjust_type": "Tipo",
   "shifts.adjustment": "Ajuste / retirada de efectivo",
+  "shifts.adjustment_success": "Ajuste registrado: %s",
   "shifts.amount": "Importe",
   "shifts.amount_hint": "negativo retira efectivo",
   "shifts.cashier": "Cajero",
