@@ -700,6 +700,7 @@
   "shifts.open": "abierto",
   "shifts.open_new": "Abrir turno",
   "shifts.open_since": "Turno abierto desde",
+  "shifts.open_success": "Turno abierto: %s",
   "shifts.opened_at": "Abierto",
   "shifts.opening_carried": "trasladado del último cierre",
   "shifts.opening_cash": "Fondo inicial",
