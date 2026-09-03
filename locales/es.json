@@ -61,6 +61,8 @@
   "catalog.take_photo": "Tomar una foto",
   "catalog.tax_code.inactive": "inactivo",
   "catalog.tax_code.none": "— ninguno —",
+  "catalog.viewfinder.capture": "Capturar",
+  "catalog.viewfinder.not_ready": "La cámara aún no está lista — inténtalo de nuevo en un momento.",
   "common.close": "Cerrar",
   "common.error.invalid_upload": "Carga no válida",
   "common.error.manager_or_admin_required": "Se requiere gerente o administrador",
