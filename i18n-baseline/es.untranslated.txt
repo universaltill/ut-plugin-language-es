@@ -24,7 +24,10 @@
 # UT_CORE_EN_JSON=<path> to regenerate against a local core checkout
 # offline, or let it fetch from CORE_EN_URL / UT_CORE_EN_URL.)
 ai.identify.button
+ai.identify.camera_busy
 ai.identify.camera_error
+ai.identify.camera_not_found
+ai.identify.camera_permission_denied
 ai.identify.capture
 ai.identify.close
 ai.identify.error
@@ -849,6 +852,11 @@ settings.tills.help
 settings.tills.open
 settings.title
 settings.update
+settings.update.android.confirm
+settings.update.android.downloading
+settings.update.android.failed
+settings.update.android.no_bridge
+settings.update.android.pin_needed
 settings.update.apply_confirm
 settings.update.auto_enable
 settings.update.check_btn
@@ -944,6 +952,8 @@ tills.join_code
 tills.join_code_ph
 tills.join_help
 tills.join_name
+tills.join_tabs.code
+tills.join_tabs.discover
 tills.joined
 tills.none
 tills.pairing.approve_btn
@@ -951,12 +961,16 @@ tills.pairing.code_label
 tills.pairing.deny_btn
 tills.pairing.device_label
 tills.pairing.error
+tills.pairing.error.missing_request
+tills.pairing.error.name_required
+tills.pairing.error.name_required_field
 tills.pairing.help
 tills.pairing.manager_pin
 tills.pairing.no_active_request
 tills.pairing.no_response
 tills.pairing.none
 tills.pairing.pin_error
+tills.pairing.processing
 tills.pairing.request_btn
 tills.pairing.title
 tills.pairing.waiting_help
