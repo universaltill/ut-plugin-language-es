@@ -901,9 +901,6 @@ sync.banner_replica
 sync.chip_following
 sync.chip_offline
 sync.chip_quarantine_title
-sync.chip_quarantined
-sync.chip_queued
-sync.chip_tills
 sync.chip_tills_title
 sync.quarantine_col_reason
 sync.quarantine_col_receipt
