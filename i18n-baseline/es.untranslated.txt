@@ -24,7 +24,10 @@
 # UT_CORE_EN_JSON=<path> to regenerate against a local core checkout
 # offline, or let it fetch from CORE_EN_URL / UT_CORE_EN_URL.)
 ai.identify.button
+ai.identify.camera_busy
 ai.identify.camera_error
+ai.identify.camera_not_found
+ai.identify.camera_permission_denied
 ai.identify.capture
 ai.identify.close
 ai.identify.error
