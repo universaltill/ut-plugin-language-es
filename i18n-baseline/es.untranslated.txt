@@ -828,6 +828,14 @@ settings.printer.auto
 settings.printer.charset
 settings.printer.charset_cp858
 settings.printer.device
+settings.printer.discover.error
+settings.printer.discover.find_button
+settings.printer.discover.generic_name
+settings.printer.discover.help
+settings.printer.discover.none_found
+settings.printer.discover.searching
+settings.printer.discover.use_kitchen
+settings.printer.discover.use_receipt
 settings.printer.drawer_pin
 settings.printer.drawer_pin_2
 settings.printer.drawer_pin_5
