@@ -631,6 +631,7 @@ reports.eod.done
 reports.eod.exists
 reports.eod.failed
 reports.eod.net
+reports.eod.period_range
 reports.eod.range_downloaded
 reports.eod.range_from
 reports.eod.range_loading
