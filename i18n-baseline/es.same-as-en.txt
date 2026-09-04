@@ -22,6 +22,7 @@
 # Regenerate with:
 #   scripts/check-key-drift.sh --update-allowlist
 app.name
+auth.setup.pin
 barcode.symbology.CODE128
 barcode.symbology.CODE39
 barcode.symbology.EAN13
@@ -29,11 +30,25 @@ barcode.symbology.EAN8
 barcode.symbology.GTIN14
 barcode.symbology.UPCA
 barcode.symbology.UPCE
+basket.col.total
+basket.subtotal
+basket.total
+catalog.col.sku
 help.plugins
+invoice.total
+journal.col.total
 journal.detail.subtotal
 journal.detail.total
 kitchenstations.col.sku
 nav.github
 plugins.manage.title
+plugins.trust.official
+plugins.type.hardware
 recovery.safe_mode_col_total
+reports.eod.period_range
+reports.seasonal_lunar_badge
+settings.printer.drawer_pin_5
+setup.country.in
+setup.country.tr
 tables.status.open_minutes
+users.col.pin

@@ -5,14 +5,18 @@ ADR-0010). Ships `locales/es.json`; the till merges it as an overlay on
 install — base strings always win on key conflict, so packs add locales but
 cannot hijack core text. The nav language switcher picks up ES automatically.
 
-**Coverage today: a growing subset of core's `web/locales/en.json` keys are
-translated.** A key this pack doesn't yet cover falls back to English —
-that fallback chain (`es → es → en → en`) is `I18n.T()` in core's
+**Coverage today: every key in core's `web/locales/en.json` is translated**
+(1,899/1,899 as of 2026-09-04, ut-docs#1575 — until then 1,021 of them were
+parked as accepted debt in the baseline, so most of a Spanish till's UI was
+still rendering English). A key this pack doesn't cover falls back to
+English — that fallback chain (`es → es → en → en`) is `I18n.T()` in core's
 `internal/config/i18n.go`, not something ADR-0010 itself specifies — so
 untranslated strings degrade gracefully rather than breaking the till, but
 they're still a real gap. `i18n-baseline/es.untranslated.txt` is the
 tracked baseline of that gap: every core key `es.json` doesn't yet
-translate, one per line. `i18n-baseline/es.same-as-en.txt` is a second,
+translate, one per line. It is currently **empty**, and the intent is that
+it stays that way: a new core key gets translated here, not baselined,
+unless there is a real reason it cannot be. `i18n-baseline/es.same-as-en.txt` is a second,
 much shorter list: keys where `es.json`'s value is deliberately identical
 to core's English string (proper nouns, brand names, words that are
 genuinely the same in Spanish). Neither file ships to customer tills —
