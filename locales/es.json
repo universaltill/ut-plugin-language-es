@@ -200,6 +200,7 @@
   "import.status.image_save_failed": "no se pudo guardar la foto del artículo — importado sin foto",
   "import.status.image_too_large": "la foto \"%s\" era demasiado grande para importar — importado sin foto",
   "import.status.image_undecodable": "no se pudo leer la foto del artículo — importado sin foto",
+  "import.status.image_too_many_pixels": "la foto del artículo era demasiado grande para importarla — importado sin foto",
   "import.status.image_unresolved": "no se pudo encontrar la foto \"%s\" en la copia de seguridad — importado sin foto",
   "import.status.item_failed": "no se pudo crear el artículo",
   "import.status.missing_name": "falta el nombre",
