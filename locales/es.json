@@ -1886,6 +1886,7 @@
   "tills.pairing.error.name_required": "Hace falta el nombre de esta caja antes de poder solicitar el emparejamiento.",
   "tills.pairing.error.name_required_field": "El nombre de esta caja es obligatorio",
   "tills.pairing.error.refused": "La caja principal rechazó la solicitud de emparejamiento.",
+  "tills.pairing.error.request_build_failed": "No se pudo preparar la solicitud de emparejamiento. Vuelva a intentarlo.",
   "tills.pairing.error.unexpected_response": "Respuesta inesperada de la caja principal.",
   "tills.pairing.error.unexpected_response_status": "Respuesta inesperada de la caja principal (%s).",
   "tills.pairing.error.unreachable": "No se pudo contactar con esa caja principal: %s",
