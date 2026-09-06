@@ -1006,6 +1006,7 @@
   "bluetoothdevices.paired_confirm": "Emparejado. El dispositivo es de confianza y se volverá a conectar por sí solo a partir de ahora.",
   "bluetoothdevices.paired_heading": "Dispositivos emparejados",
   "bluetoothdevices.pairing": "Emparejando… mantenga el dispositivo encendido y cerca.",
+  "bluetoothdevices.platform_unsupported": "El emparejamiento por Bluetooth aún no está disponible en esta caja — este tipo de dispositivo no lo admite. No se trata de un problema con el hardware ni con la configuración de esta caja.",
   "bluetoothdevices.scan_button": "Buscar dispositivos",
   "bluetoothdevices.scan_error": "No se ha podido buscar dispositivos Bluetooth.",
   "bluetoothdevices.scan_help": "Ponga el dispositivo en modo de emparejamiento y luego escanee. Un escaneo tarda unos diez segundos y solo muestra lo que encuentra — no se empareja nada hasta que pulse Emparejar.",
