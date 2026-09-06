@@ -1186,6 +1186,7 @@
   "help.guide.title": "Cómo usar la caja",
   "hold.modal.placeholder": "p. ej. Mesa 4, Sara",
   "hold.modal.title": "Ponga un nombre a esta cuenta (opcional)",
+  "hold.modal.confirm_action": "Aparcar venta (confirmación)",
   "import.created": "Importados",
   "import.detected": "Formato reconocido",
   "import.export_btn": "Guardar el catálogo en CSV en Descargas",
