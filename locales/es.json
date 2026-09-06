@@ -255,6 +255,8 @@
   "journal.filter.day": "Día",
   "journal.filter.till": "Caja",
   "journal.replica_no_cross_till": "Las ventas entre cajas solo están disponibles en la caja principal de este negocio.",
+  "journal.tender.split": "Dividido",
+  "journal.tender.unknown": "Desconocido",
   "journal.till_last_synced": "Último contacto de %s: %s",
   "journal.till_unknown": "Caja desconocida",
   "journal.title": "Diario",
