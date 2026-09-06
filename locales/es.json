@@ -1860,6 +1860,7 @@
   "tills.discovery.error": "No se ha podido buscar cajas principales en esta red.",
   "tills.discovery.help": "Busque en esta red una caja principal que ya se esté anunciando — así no hace falta escribir a mano un código de emparejamiento.",
   "tills.discovery.none_found": "No se ha encontrado ninguna caja principal en esta red.",
+  "tills.discovery.result_address": "Dirección de red",
   "tills.discovery.result_name": "ID de la caja",
   "tills.discovery.searching": "Buscando…",
   "tills.discovery.title": "Búsqueda en la red local",
