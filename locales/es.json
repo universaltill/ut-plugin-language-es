@@ -1034,6 +1034,8 @@
   "catalog.create_item": "Crear artículo",
   "catalog.description": "Descripción",
   "catalog.error.barcode_no_symbology_match": "Este código de barras no coincide con ningún tipo de código activado actualmente para esta tienda.",
+  "catalog.error.image_invalid": "Ese archivo no es una imagen PNG o JPEG válida.",
+  "catalog.error.image_too_large": "Esa foto es demasiado grande — pruebe con una imagen más pequeña o recórtela antes de subirla.",
   "catalog.error.invalid_ean13": "Código EAN-13 no válido — compruebe los 13 dígitos.",
   "catalog.error.item_created_invalid_ean13": "Se ha creado el artículo, pero el código de barras no es un EAN-13 válido.",
   "catalog.image_types": "Imagen (PNG/JPEG)",
