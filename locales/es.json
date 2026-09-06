@@ -818,6 +818,8 @@
   "tender.cash": "Efectivo",
   "tender.new_customer": "Nuevo cliente",
   "tender.open_payment": "Pago",
+  "tender.overlay_hold_action": "Aparcar venta (Cobro)",
+  "tender.overlay_new_sale_action": "Nueva venta (Cobro)",
   "tender.scan.add": "Añadir",
   "tender.scan.barcode": "Código de barras",
   "tender.scan.qty": "Cant.",
