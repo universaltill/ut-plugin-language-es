@@ -1547,6 +1547,7 @@
   "reports.eod.by_article": "Por artículo",
   "reports.eod.by_article_group": "Por grupo de artículos",
   "reports.eod.by_operator": "Por cajero",
+  "reports.eod.by_order_type": "Por tipo de pedido",
   "reports.eod.done": "Informe generado e impreso",
   "reports.eod.exists": "El informe de hoy ya existe (véalo en la lista de abajo)",
   "reports.eod.failed": "No se ha podido generar el informe",
