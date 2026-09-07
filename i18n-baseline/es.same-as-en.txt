@@ -1,26 +1,26 @@
-# i18n-baseline/es.same-as-en.txt
 #
-# Keys where locales/es.json is byte-identical to core's English value ON
-# PURPOSE -- proper nouns, brand names, and words that are genuinely the
-# same in Spanish (e.g. "GitHub"), not a forgotten translation.
 #
-# scripts/check-key-drift.sh fails on any es.json value that is
-# byte-identical to core's English value UNLESS the key is listed here --
-# that is what catches the "translated" key that is actually still the
-# verbatim, never-translated English string (a key present with an
-# untranslated value is worse than a missing key: core's T() renders it
-# unconditionally, a missing key at least falls back visibly through
-# ADR-0010's chain).
 #
-# Same staleness rule as the baseline: an entry that is no longer
-# byte-identical to core (translated since, or core changed its string) or
-# whose key no longer exists at all must FAIL so it gets pruned here --
-# this file can only grow through a deliberate, reviewed edit, same as the
-# baseline; it is not a shrink-only ratchet either.
 #
-# One key per line, sorted, unique -- enforced by check-key-drift.sh.
-# Regenerate with:
 #   scripts/check-key-drift.sh --update-allowlist
+# ADR-0010's chain).
+# Keys where locales/es.json is byte-identical to core's English value ON
+# One key per line, sorted, unique -- enforced by check-key-drift.sh.
+# PURPOSE -- proper nouns, brand names, and words that are genuinely the
+# Regenerate with:
+# Same staleness rule as the baseline: an entry that is no longer
+# baseline; it is not a shrink-only ratchet either.
+# byte-identical to core (translated since, or core changed its string) or
+# byte-identical to core's English value UNLESS the key is listed here --
+# i18n-baseline/es.same-as-en.txt
+# same in Spanish (e.g. "GitHub"), not a forgotten translation.
+# scripts/check-key-drift.sh fails on any es.json value that is
+# that is what catches the "translated" key that is actually still the
+# this file can only grow through a deliberate, reviewed edit, same as the
+# unconditionally, a missing key at least falls back visibly through
+# untranslated value is worse than a missing key: core's T() renders it
+# verbatim, never-translated English string (a key present with an
+# whose key no longer exists at all must FAIL so it gets pruned here --
 app.name
 auth.setup.pin
 barcode.symbology.CODE128
@@ -34,6 +34,7 @@ basket.col.total
 basket.subtotal
 basket.total
 catalog.col.sku
+fiscaldevice.plugin.title
 help.plugins
 invoice.total
 journal.col.total
