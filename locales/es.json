@@ -1110,6 +1110,7 @@
   "common.save": "Guardar",
   "common.submit": "Enviar",
   "designer.empty": "Todavía no hay productos.",
+  "designer.error.replica_use_primary": "Esta caja sigue a una caja principal — administre los botones de venta rápida en la caja principal.",
   "designer.error.server": "Algo salió mal. Inténtelo de nuevo.",
   "designer.no_matches": "Sin coincidencias.",
   "designer.receipt.footer": "Mensaje de pie",
