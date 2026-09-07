@@ -786,6 +786,7 @@
   "tables.edit.start": "Editar plano de sala",
   "tables.error.create": "No se pudo crear la mesa",
   "tables.error.held_order_attached": "Marca borrada, pero esta mesa todavía tiene un pedido en espera asociado — reanúdelo o complételo para liberar la mesa por completo.",
+  "tables.error.held_order_only": "Esta mesa tiene un pedido en espera — reanúdelo o complételo para liberar la mesa.",
   "tables.error.not_found": "Mesa no encontrada",
   "tables.error.release": "No se pudo liberar la mesa",
   "tables.error.replica_use_primary": "Esta caja sigue a una caja principal — administre las mesas en la caja principal.",
