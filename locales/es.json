@@ -1539,6 +1539,7 @@
   "refund.returns_ref": "Devoluciones emitidas",
   "refund.submit": "Devolver",
   "refund.title": "Devolución",
+  "refund.total": "Total de la devolución",
   "reports.ask.button": "Preguntar",
   "reports.ask.error": "El asistente no ha podido responder ahora mismo — compruebe que el servidor de IA está en marcha e inténtelo de nuevo.",
   "reports.ask.hint": "Pregunte sobre ventas, stock o actividad de la caja con sus propias palabras — responde la IA de la propia tienda, nada sale de su equipo.",
