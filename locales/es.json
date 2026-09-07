@@ -952,6 +952,7 @@
   "auth.error.locked": "Demasiados intentos — espere 30 segundos",
   "auth.error.pin_format": "El PIN debe tener entre 4 y 8 dígitos",
   "auth.error.pin_mismatch": "Los PIN no coinciden",
+  "auth.error.unavailable": "Lo sentimos: la caja no puede acceder a sus propios datos en este momento, así que no puede iniciar tu sesión. Cierra la aplicación por completo y vuelve a abrirla. Si el problema continúa, notifícalo para que podamos revisarlo.",
   "auth.lock": "Bloquear",
   "auth.setup.hint": "Primer inicio: elija el PIN de administrador de esta caja.",
   "auth.setup.pin": "PIN",
