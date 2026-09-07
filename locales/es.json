@@ -206,6 +206,7 @@
   "import.status.image_unresolved": "no se pudo encontrar la foto \"%s\" en la copia de seguridad — importado sin foto",
   "import.status.item_failed": "no se pudo crear el artículo",
   "import.status.missing_name": "falta el nombre",
+  "import.status.missing_name_and_bad_price": "falta el nombre y precio no válido: %s",
   "import.status.not_sellable": "no es un artículo vendible (interruptor de tipo de pedido)",
   "import.status.ok": "correcto",
   "import.status.sku_already_in_catalog": "la referencia ya está en el catálogo",
