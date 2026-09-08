@@ -1588,6 +1588,7 @@
   "refund.col.sold": "Vendido",
   "refund.error.fiscal_never_configured": "Devolución no completada: esta tienda está configurada para registrar ventas reales como sistema de registro legal de su país, pero no hay ningún dispositivo de firma fiscal configurado, así que la caja no registrará esta devolución. Configure el dispositivo de firma fiscal que exige su país — su propio hardware, su propia cuenta en la nube o una suscripción gestionada, donde esté disponible — o pida a un administrador que saque la tienda del modo de ventas reales hasta que esté lista.",
   "refund.error.fiscal_tse_failing": "Devolución no completada: el dispositivo de firma fiscal de la tienda figura como averiado, así que la caja no registrará esta devolución. Un propietario (administrador) puede conceder una excepción temporal y limitada en el tiempo, o puede volver a intentarlo cuando el dispositivo funcione.",
+  "refund.error.fiscal_device_no_receipt": "El dispositivo fiscal no confirmó un recibo para esta devolución — revise el dispositivo antes de volver a intentarlo",
   "refund.error.provider_declined": "El proveedor de pago ha rechazado esta devolución — inténtelo de nuevo o elija otro método",
   "refund.error.server": "Algo salió mal. Inténtelo de nuevo.",
   "refund.fully_refunded": "devuelto por completo",
