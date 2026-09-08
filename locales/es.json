@@ -1259,7 +1259,7 @@
   "import.export_save_failed": "No se ha podido guardar el CSV.",
   "import.export_title": "Exportar",
   "import.file": "Archivo de exportación (CSV o .bkp)",
-  "import.help": "Traiga sus artículos desde otra caja: exporte allí su catálogo (los formatos de Loyverse y Square se reconocen automáticamente; sirve cualquier CSV con columnas de nombre y precio, igual que una copia .bkp de speedy kasse / pepperm cashbox, que se acepta directamente) y suba el archivo aquí. Vea primero la vista previa — no se guarda nada hasta que pulse Importar. Los artículos cuyo código de barras o SKU ya exista se omiten, así que importar dos veces es seguro.",
+  "import.help": "Traiga sus artículos desde otra caja: exporte allí su catálogo (los formatos de Loyverse, Square y SumUp se reconocen automáticamente; sirve cualquier CSV con columnas de nombre y precio, igual que una copia .bkp de speedy kasse / pepperm cashbox, que se acepta directamente) y suba el archivo aquí. Vea primero la vista previa — no se guarda nada hasta que pulse Importar. Los artículos cuyo código de barras o SKU ya exista se omiten, así que importar dos veces es seguro.",
   "import.import": "Importar",
   "import.preview": "Vista previa",
   "import.ready": "listos para importar",
