@@ -374,6 +374,71 @@ a.two
 TXT
 assert_fail_containing "unsorted/duplicated baseline" "not sorted/deduplicated"
 
+# --- case 15: placeholder token COUNT differs -> fail (ut-docs#297, ported
+#              from ut-plugin-language-de -- ut-docs#1760) -----------------
+# Core carries %s and %d; the "translation" dropped the %d. A format verb
+# that vanishes in translation renders a literal broken string (or crashes
+# the formatter) on a Spanish till, so this must fail like any other value
+# check.
+fresh_case "token-count-differs"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "greet.user": "Hello %s, you have %d items"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.one": "Uno",
+  "greet.user": "Hola %s, tienes artículos"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "token count differs" "placeholder token" "greet.user" "core=['%s', '%d']" "es=['%s']"
+
+# --- case 16: token ORDER differs (same count) -> fail --------------------
+# Both sides have one %s and one %d, but swapped -- positional formatting
+# feeds the arguments in call order, so a swapped pair prints the values in
+# the wrong slots even though every token is "present".
+fresh_case "token-order-differs"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "swap.msg": "%s of %d"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.one": "Uno",
+  "swap.msg": "%d de %s"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "token order differs" "placeholder token" "swap.msg" "core=['%s', '%d']" "es=['%d', '%s']"
+
+# --- case 17: tokens match (mixed %s / {{name}} / {0} styles) -> pass -----
+# The check must compare the ordered token list, not fail on the mere
+# presence of tokens -- a faithful translation that keeps every token in
+# order is clean, across all three token syntaxes at once.
+fresh_case "tokens-match-mixed"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "mix.msg": "Hi %s, see {{name}} at {0}"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.one": "Uno",
+  "mix.msg": "Hola %s, ve {{name}} en {0}"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
+TXT
+assert_pass "matching tokens (mixed styles) pass" run_check
+
 echo
 if [ "$FAILS" -ne 0 ]; then
     echo "check-key-drift.test.sh: ${FAILS} test(s) FAILED"

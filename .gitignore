@@ -1,1 +1,6 @@
 dist/
+
+# Agent worktrees created by Agent(isolation: "worktree") / EnterWorktree —
+# not repo content, nothing removes them automatically (see universal-till's
+# CLAUDE.md "Agent worktree hygiene", ut-docs#1567).
+.claude/worktrees/
