@@ -63,6 +63,14 @@
 #   - the allowlist has the same staleness rule as the baseline: an entry
 #     that is no longer byte-identical (translated since, or core's string
 #     changed) or whose key no longer exists must FAIL so it gets pruned.
+#   - placeholder token mismatch (ut-docs#297, ported from
+#     ut-plugin-language-de -- ut-docs#1760): for every key present on both
+#     sides, the ORDERED list of format tokens (%s / %d / %g / ..., {{name}},
+#     {0}) extracted from core's value must equal the list extracted from
+#     es.json's value. A dropped or invented token renders a broken string in
+#     production; a REORDERED pair is just as wrong -- positional formatting
+#     feeds arguments in call order, so a swapped %s/%d prints the values in
+#     the wrong slots even though both sides have the same token count.
 #
 # A missing/unreachable core source is a HARD failure, never a skip: a
 # guard that quietly exits 0 when it can't fetch its own input is the
@@ -152,9 +160,16 @@ fi
 
 python3 - "$CORE_EN_JSON" "$ES_LOCALE" "$BASELINE" "$ALLOWLIST" "$MODE" "${CORE_SHA:-unknown}" <<'PY'
 import json
+import re
 import sys
 
 core_path, es_path, baseline_path, allowlist_path, mode, core_sha = sys.argv[1:7]
+
+# Ordered format-token extraction (ut-docs#297): printf-style verbs (%s, %d,
+# %g, ...), template tokens ({{name}}), and positional tokens ({0}). The
+# {{...}} alternative must come before {N} so "{{0}}" reads as one template
+# token, not "{0}" inside braces.
+TOKEN_RE = re.compile(r"%[a-zA-Z]|\{\{[^{}]*\}\}|\{\d+\}")
 
 def load_json(path, label):
     try:
@@ -235,6 +250,13 @@ identical_to_en = {k for k in (core_keys & es_keys) if k not in empty_keys and e
 untranslated_present = sorted(identical_to_en - allowlist)
 stale_allowlist = sorted(k for k in allowlist if k not in identical_to_en)
 
+# Token parity (ut-docs#297): same tokens, same order, on every shared key.
+token_mismatches = [
+    (k, TOKEN_RE.findall(core[k]), TOKEN_RE.findall(es[k]))
+    for k in sorted(core_keys & es_keys)
+    if TOKEN_RE.findall(core[k]) != TOKEN_RE.findall(es[k])
+]
+
 fail = False
 
 if new_drift:
@@ -273,6 +295,12 @@ if stale_allowlist:
     for k in stale_allowlist:
         print(f"  - {k}")
 
+if token_mismatches:
+    fail = True
+    print(f"check-key-drift: {len(token_mismatches)} key(s) in {es_path} have a placeholder token mismatch against core (dropped, invented, or reordered %s/{{...}}/{{N}} tokens):")
+    for k, ct, dt in token_mismatches:
+        print(f"  - {k}: core={ct} es={dt}")
+
 print(f"check-key-drift: core commit: {core_sha}")
 
 if fail:
@@ -281,5 +309,5 @@ if fail:
 translated = len(core_keys) - len(missing)
 print(f"check-key-drift: ok -- {translated}/{len(core_keys)} core keys translated, "
       f"{len(missing)} known-untranslated (baseline), {len(allowlist)} known-same-as-English (allowlist), "
-      f"0 drift, 0 orphans, 0 empty values, 0 untranslated-present")
+      f"0 drift, 0 orphans, 0 empty values, 0 untranslated-present, 0 token mismatches")
 PY
