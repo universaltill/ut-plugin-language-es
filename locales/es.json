@@ -1500,6 +1500,7 @@
   "plugins.none_found_hint": "Pruebe a cambiar los filtros o actualice el catálogo.",
   "plugins.permission.granted": "Permiso concedido",
   "plugins.permission.revoked": "Permiso retirado",
+  "plugins.settings.ai.hosted_provider_notice": "Si elige el proveedor alojado (provider = claude), los datos con los que trabajan las funciones de IA salen de su local y se envían a los servidores de ese proveedor (Anthropic, Estados Unidos): para «Identificar con la cámara», la foto del producto junto con los nombres de artículo, SKU y fotos de referencia de su catálogo; y en cuanto un proveedor alojado sea compatible con «Pregunte a su caja», sus preguntas junto con las cifras de ventas y stock usadas para responderlas. Autoalojado (Ollama, la opción predeterminada) mantiene todo en su propio hardware. La clave que introduzca es su propia cuenta con ese proveedor — usted le paga directamente, y Universal Till no mantiene ninguna cuenta allí.",
   "plugins.settings.none": "Este complemento no tiene ajustes.",
   "plugins.settings.per_till": "solo esta caja",
   "plugins.settings.save": "Guardar ajustes",
