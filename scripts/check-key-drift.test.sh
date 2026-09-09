@@ -590,6 +590,33 @@ cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
 TXT
 assert_pass "percent sign directly followed by prose letters is not a verb" run_check
 
+# --- case 24: a dropped %% (differing literal-percent count) must fail
+# even though the extracted verb-token list is IDENTICAL on both sides
+# (ut-docs#1873) -------------------------------------------------------
+# "50%% off, %d left" -> "50% off, %d left" drops one of the two `%`
+# characters in the literal-percent pair. verb_tokens() discards %% as
+# "not a verb" on both sides, so both extract to the identical ['%d'] --
+# the pre-existing verb-list comparison alone passes this vacuously. Only
+# a separate count-of-%%-occurrences check catches it; left uncaught,
+# this is the exact %!d(MISSING)-class corruption case 15's check exists
+# to prevent.
+fresh_case "percent-literal-count-differs"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "promo.pct": "50%% off, %d left"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.one": "Uno",
+  "promo.pct": "50% off, %d left"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "dropped %% (literal-percent count differs)" "placeholder token" "promo.pct" "differing count of literal %% occurrences"
+
 echo
 if [ "$FAILS" -ne 0 ]; then
     echo "check-key-drift.test.sh: ${FAILS} test(s) FAILED"

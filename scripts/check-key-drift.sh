@@ -77,7 +77,13 @@
 #     without declaring it positionally is just as wrong -- positional
 #     formatting feeds arguments in call order, so a swapped %s/%d prints
 #     the values in the wrong slots even though both sides have the same
-#     token count.
+#     token count. Also covers the COUNT of literal %% occurrences
+#     (ut-docs#1873): verb_tokens() discards %% as "not a verb" (correctly
+#     -- it never consumes an argument), so a translator dropping one of a
+#     pair's `%` characters ("50%% off" -> "50% off") shifts what the
+#     following real verb parses as to Go's fmt parser without changing
+#     the extracted verb-token list at all, and shipped green before this
+#     count check existed.
 #
 # A missing/unreachable core source is a HARD failure, never a skip: a
 # guard that quietly exits 0 when it can't fetch its own input is the
@@ -229,6 +235,15 @@ def mixes_positional_and_implicit(a_pf, b_pf):
         return bool(toks) and all(idx is not None for _, idx in toks)
     return (a_pos or b_pos) and not (fully_positional(a_pf) and fully_positional(b_pf))
 
+def percent_literal_count(s):
+    # Count of literal %% occurrences (ut-docs#1873). verb_tokens() already
+    # extracts these via the same regex but discards them ("not a verb");
+    # counting them separately catches a dropped/invented %% that leaves
+    # the real verb-token list unchanged but still corrupts the string for
+    # Go's fmt parser (see the check description above for the concrete
+    # case).
+    return sum(1 for m in TOKEN_RE.finditer(s) if m.group(0) == "%%")
+
 def verbs_match(a, b):
     # ORDER MATTERS unless BOTH sides use Go's explicit positional verbs
     # (%[1]s, ...) exclusively -- see guard-i18n.sh's check 8 (ut-docs#1865)
@@ -239,6 +254,8 @@ def verbs_match(a, b):
     # them made a verb required at a template token's argument index,
     # which no translation could ever satisfy (ut-docs#1865 review).
     a_toks, b_toks = verb_tokens(a), verb_tokens(b)
+    if percent_literal_count(a) != percent_literal_count(b):
+        return False
     if template_tokens(a_toks) != template_tokens(b_toks):
         return False
     a_pf, b_pf = printf_tokens(a_toks), printf_tokens(b_toks)
@@ -341,6 +358,8 @@ token_mismatches = [
         [t for t, _, _ in verb_tokens(core[k])],
         [t for t, _, _ in verb_tokens(es[k])],
         mixes_positional_and_implicit(printf_tokens(verb_tokens(core[k])), printf_tokens(verb_tokens(es[k]))),
+        percent_literal_count(core[k]),
+        percent_literal_count(es[k]),
     )
     for k in sorted(core_keys & es_keys)
     if not verbs_match(core[k], es[k])
@@ -387,8 +406,13 @@ if stale_allowlist:
 if token_mismatches:
     fail = True
     print(f"check-key-drift: {len(token_mismatches)} key(s) in {es_path} have a placeholder token mismatch against core (dropped, invented, or reordered %s/{{...}}/{{N}} tokens):")
-    for k, ct, dt, mixed in token_mismatches:
-        note = " (mixes positional and implicit verbs; use one style consistently on both sides)" if mixed else ""
+    for k, ct, dt, mixed, core_pct, es_pct in token_mismatches:
+        if core_pct != es_pct:
+            note = f" (differing count of literal %% occurrences: {core_pct} vs {es_pct})"
+        elif mixed:
+            note = " (mixes positional and implicit verbs; use one style consistently on both sides)"
+        else:
+            note = ""
         print(f"  - {k}: core={ct} es={dt}{note}")
 
 print(f"check-key-drift: core commit: {core_sha}")
