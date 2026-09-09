@@ -64,13 +64,20 @@
 #     that is no longer byte-identical (translated since, or core's string
 #     changed) or whose key no longer exists must FAIL so it gets pruned.
 #   - placeholder token mismatch (ut-docs#297, ported from
-#     ut-plugin-language-de -- ut-docs#1760): for every key present on both
-#     sides, the ORDERED list of format tokens (%s / %d / %g / ..., {{name}},
-#     {0}) extracted from core's value must equal the list extracted from
-#     es.json's value. A dropped or invented token renders a broken string in
-#     production; a REORDERED pair is just as wrong -- positional formatting
-#     feeds arguments in call order, so a swapped %s/%d prints the values in
-#     the wrong slots even though both sides have the same token count.
+#     ut-plugin-language-de -- ut-docs#1760; hardened ut-docs#1865): for
+#     every key present on both sides, the ORDERED list of printf verbs
+#     (%s / %d / %g / ...) extracted from core's value must equal the list
+#     extracted from es.json's value, UNLESS both sides use Go's explicit
+#     positional verbs (%[1]s, ...) exclusively, in which case they are
+#     compared by explicit index instead of writing order -- see
+#     verbs_match's own comment for the full reasoning. Template tokens
+#     ({{name}}, {0}) are a separate dialect, always compared in order
+#     regardless of what the printf side is doing. A dropped or invented
+#     token renders a broken string in production; a REORDERED pair
+#     without declaring it positionally is just as wrong -- positional
+#     formatting feeds arguments in call order, so a swapped %s/%d prints
+#     the values in the wrong slots even though both sides have the same
+#     token count.
 #
 # A missing/unreachable core source is a HARD failure, never a skip: a
 # guard that quietly exits 0 when it can't fetch its own input is the
@@ -165,11 +172,85 @@ import sys
 
 core_path, es_path, baseline_path, allowlist_path, mode, core_sha = sys.argv[1:7]
 
-# Ordered format-token extraction (ut-docs#297): printf-style verbs (%s, %d,
-# %g, ...), template tokens ({{name}}), and positional tokens ({0}). The
-# {{...}} alternative must come before {N} so "{{0}}" reads as one template
-# token, not "{0}" inside braces.
-TOKEN_RE = re.compile(r"%[a-zA-Z]|\{\{[^{}]*\}\}|\{\d+\}")
+# Ordered format-token extraction (ut-docs#297, hardened ut-docs#1865):
+# printf-style verbs (%s, %d, %.2f, %02d, Go's explicit positional
+# %[n]verb, ...), template tokens ({{name}}), and positional template
+# tokens ({0}). The {{...}} alternative must come before {N} so "{{0}}"
+# reads as one template token, not "{0}" inside braces.
+#
+# Deliberately NOT supported: printf FLAG characters (`-`/`+`/` `/`#`).
+# These values are translated prose, not literal Go source, and prose can
+# contain "%" immediately followed by a flag-shaped character with no
+# fmt.Sprintf behind it at all -- a permissive `[-+ 0#]*` flag class
+# false-positived for real on core's own "a 10%-off code" (parsed as flag
+# "-" + verb "o"/octal). Every real verb actually used here is a width/
+# precision digit run plus a verb letter, never a flag, so requiring a
+# digit or verb letter immediately after `%` keeps that shape covered
+# while ordinary "N%-word" prose no longer parses as anything. A trailing
+# `(?![A-Za-z])` on both verb alternatives closes the sibling gap
+# independent review found: without it, "%20den" (Turkish ablative) or
+# "10%off" (no hyphen) still parsed as a verb with prose glued on.
+TOKEN_RE = re.compile(
+    r"%%"
+    r"|%\[(\d+)\]\d*(?:\.\d+)?[vTtbcdoOqxXUeEfFgGspw](?![A-Za-z])"
+    r"|%\d*(?:\.\d+)?[vTtbcdoOqxXUeEfFgGspw](?![A-Za-z])"
+    r"|\{\{[^{}]*\}\}"
+    r"|\{\d+\}"
+)
+
+def verb_tokens(s):
+    # (token_text, explicit_index_or_None, is_template), skipping the %%
+    # literal. is_template distinguishes {{..}}/{N} from printf verbs so
+    # the two dialects are never compared against each other.
+    out = []
+    for m in TOKEN_RE.finditer(s):
+        tok = m.group(0)
+        if tok == "%%":
+            continue
+        if tok.startswith("{"):
+            out.append((tok, None, True))
+        else:
+            out.append((tok, int(m.group(1)) if m.group(1) else None, False))
+    return out
+
+def verb_shape(tok):
+    return re.sub(r"^%\[\d+\]", "%", tok)
+
+def printf_tokens(toks):
+    return [(t, idx) for t, idx, is_tmpl in toks if not is_tmpl]
+
+def template_tokens(toks):
+    return [t for t, _, is_tmpl in toks if is_tmpl]
+
+def mixes_positional_and_implicit(a_pf, b_pf):
+    a_pos = any(idx is not None for _, idx in a_pf)
+    b_pos = any(idx is not None for _, idx in b_pf)
+    def fully_positional(toks):
+        return bool(toks) and all(idx is not None for _, idx in toks)
+    return (a_pos or b_pos) and not (fully_positional(a_pf) and fully_positional(b_pf))
+
+def verbs_match(a, b):
+    # ORDER MATTERS unless BOTH sides use Go's explicit positional verbs
+    # (%[1]s, ...) exclusively -- see guard-i18n.sh's check 8 (ut-docs#1865)
+    # for the full reasoning; kept in sync here by hand per ut-docs#312
+    # (no shared implementation between core and the packs). Template
+    # tokens ({{name}}/{N}) are a SEPARATE dialect and are always compared
+    # as their own ordered list regardless of the printf side -- pooling
+    # them made a verb required at a template token's argument index,
+    # which no translation could ever satisfy (ut-docs#1865 review).
+    a_toks, b_toks = verb_tokens(a), verb_tokens(b)
+    if template_tokens(a_toks) != template_tokens(b_toks):
+        return False
+    a_pf, b_pf = printf_tokens(a_toks), printf_tokens(b_toks)
+    a_pos = any(idx is not None for _, idx in a_pf)
+    b_pos = any(idx is not None for _, idx in b_pf)
+    if not a_pos and not b_pos:
+        return [t for t, _ in a_pf] == [t for t, _ in b_pf]
+    if mixes_positional_and_implicit(a_pf, b_pf):
+        return False
+    a_map = {idx: verb_shape(t) for t, idx in a_pf}
+    b_map = {idx: verb_shape(t) for t, idx in b_pf}
+    return a_map == b_map
 
 def load_json(path, label):
     try:
@@ -250,11 +331,19 @@ identical_to_en = {k for k in (core_keys & es_keys) if k not in empty_keys and e
 untranslated_present = sorted(identical_to_en - allowlist)
 stale_allowlist = sorted(k for k in allowlist if k not in identical_to_en)
 
-# Token parity (ut-docs#297): same tokens, same order, on every shared key.
+# Token parity (ut-docs#297, hardened ut-docs#1865): same verbs, same
+# order, on every shared key -- except a key where BOTH sides use Go's
+# explicit positional verbs exclusively, which may legitimately reorder
+# (compared by explicit index instead of writing order; see verbs_match).
 token_mismatches = [
-    (k, TOKEN_RE.findall(core[k]), TOKEN_RE.findall(es[k]))
+    (
+        k,
+        [t for t, _, _ in verb_tokens(core[k])],
+        [t for t, _, _ in verb_tokens(es[k])],
+        mixes_positional_and_implicit(printf_tokens(verb_tokens(core[k])), printf_tokens(verb_tokens(es[k]))),
+    )
     for k in sorted(core_keys & es_keys)
-    if TOKEN_RE.findall(core[k]) != TOKEN_RE.findall(es[k])
+    if not verbs_match(core[k], es[k])
 ]
 
 fail = False
@@ -298,8 +387,9 @@ if stale_allowlist:
 if token_mismatches:
     fail = True
     print(f"check-key-drift: {len(token_mismatches)} key(s) in {es_path} have a placeholder token mismatch against core (dropped, invented, or reordered %s/{{...}}/{{N}} tokens):")
-    for k, ct, dt in token_mismatches:
-        print(f"  - {k}: core={ct} es={dt}")
+    for k, ct, dt, mixed in token_mismatches:
+        note = " (mixes positional and implicit verbs; use one style consistently on both sides)" if mixed else ""
+        print(f"  - {k}: core={ct} es={dt}{note}")
 
 print(f"check-key-drift: core commit: {core_sha}")
 
