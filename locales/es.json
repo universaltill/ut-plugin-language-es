@@ -1111,6 +1111,7 @@
   "catalog.barcodes": "Códigos de barras",
   "catalog.brand": "Marca",
   "catalog.builtin_icon.coffee": "Café",
+  "catalog.builtin_icon.custom_active": "La imagen actual es una foto subida — elegir una de las siguientes la reemplazará.",
   "catalog.builtin_icon.drink": "Bebida",
   "catalog.builtin_icon.generic": "Genérico",
   "catalog.builtin_icon.hint": "O elige una imagen integrada:",
