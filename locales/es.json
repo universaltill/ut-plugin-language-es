@@ -1159,6 +1159,7 @@
   "catalog.save_variant": "Guardar variante",
   "catalog.search_placeholder": "Buscar artículos…",
   "catalog.sold_by_weight": "Se vende por peso",
+  "catalog.stock_untracked": "Sin seguimiento de existencias",
   "catalog.tax_code": "Código de impuesto",
   "catalog.upload_image": "Subir imagen",
   "catalog.variant_image": "Imagen de la variante",
