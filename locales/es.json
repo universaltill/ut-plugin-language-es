@@ -116,6 +116,8 @@
   "fiscaldevice.device.maker": "Fabricante",
   "fiscaldevice.device.port": "Puerto",
   "fiscaldevice.driver.note": "Hoy solo el controlador «bridge» está completo (se comunica con un programa puente o con el simulador de pruebas). Un controlador de fabricante sin terminar rechaza todo cobro en lugar de fingir.",
+  "fiscaldevice.error.not_found": "No encontrado",
+  "fiscaldevice.error.owner_required": "Se requiere propietario (administrador)",
   "fiscaldevice.error.server": "No se pudo cargar la página del dispositivo fiscal. Inténtelo de nuevo, o use el menú para seguir trabajando.",
   "fiscaldevice.intro": "La caja registradora certificada (YN ÖKC) cobra el dinero e imprime el recibo legal; la caja guarda el número de recibo del dispositivo en cada venta. Esta página muestra el dispositivo desde el lado de la caja: nunca se comunica con la agencia tributaria.",
   "fiscaldevice.last.issued_at": "Emitido el",
