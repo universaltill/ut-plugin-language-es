@@ -1,1 +1,10 @@
 
+elevation.summary.order_no_scheme
+orders.col.order_no
+settings.backup.confirm_placeholder
+settings.backup.confirm_required
+settings.order_no.help
+settings.order_no.scheme
+settings.order_no.scheme_lifetime_no_reset
+settings.order_no.scheme_trading_period_reset
+settings.order_no.title

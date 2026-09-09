@@ -109,9 +109,40 @@ Re-verified against the now-current core checkout (branch
 untranslated-present, 0 token mismatches.** `scripts/validate.sh` and
 `scripts/check-key-drift.test.sh` both green again.
 
+## Update: core #937 merged — resynced against the real published main
+
+`universal-till` PR #937 (the voucher UI itself) merged to `main` while
+this pack PR was in flight. Merging current `main` into this branch hit
+two real conflicts, both in keys **unrelated to vouchers** that another
+lane had, in the meantime, independently landed a *properly reviewed*
+Spanish translation for on `main` (the same `elevation.summary.{keep,
+remove}_demo_item` / `settings.data.demo_*` keys this PR's earlier
+commit had translated only as a stopgap to unblock its own CI). Deferred
+entirely to `main`'s version in both cases.
+
+Re-running the guard live against the network (this pack's own
+`check-key-drift.sh` fetches core's *actual* published `main` when no
+`UT_CORE_EN_JSON` override is given) surfaced further churn from other
+concurrent lanes' in-flight cards, unrelated to this one:
+- **9 new missing keys** (short-order-number settings, backup-restore
+  confirmation) — catalogued as known debt via
+  `check-key-drift.sh --update-baseline --allow-growth` rather than
+  guessed-translated blind.
+- **2 stale orphan keys** (`elevation.summary.backup_restore`,
+  `elevation.summary.data_customer_erase`) that core no longer has under
+  any matching name — removed (the guard fails unconditionally on any
+  orphan, no baseline escape is possible for that class of finding).
+
+Final state, verified live against the network: **2124/2133 core keys
+translated, 9 known-untranslated (baseline, added here), 32
+known-same-as-English (allowlist), 0 drift, 0 orphans, 0 empty values,
+0 untranslated-present, 0 token mismatches.** This PR's own 19 voucher
+keys are all present, all real translations, all matching core exactly.
+`scripts/validate.sh` and `scripts/check-key-drift.test.sh` both green.
+
 ## Verdict
 
-**Safe to merge.** Fully guard-verified against the exact core branch
-these keys are landing alongside, at full parity. Should land before (or
-together with) `universal-till` PR #937 merging to `main`, so
-`lang-pack-drift` doesn't go red on push.
+**Safe to merge.** Fully guard-verified against the real, live published
+`main` (not a local snapshot). universal-till PR #937 has already
+merged, so this no longer needs to land "before or together with"
+anything; it just needs to land.
