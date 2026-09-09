@@ -140,7 +140,7 @@
   "fiscaldevice.today.count": "Recibos de hoy",
   "elevation.summary.barcode_symbology_off": "Desactivar tipo de código de barras: %s.",
   "elevation.summary.data_catalog_cleanup": "Eliminar definitivamente %d productos inactivos que nunca se han vendido.",
-  "elevation.summary.data_reset_transactions": "Archivar todas las ventas, turnos y facturas, y reiniciar la numeración de recibos. Se puede restaurar desde Ajustes → Datos mientras la caja no vuelva a vender.",
+  "elevation.summary.data_reset_transactions": "Archivar todas las ventas, turnos y facturas, y reiniciar la numeración de recibos. El catálogo, los usuarios, los ajustes y los informes archivados se conservan. Se puede restaurar desde Ajustes → Datos mientras la caja no vuelva a vender.",
   "elevation.summary.data_archive_purge": "Eliminar definitivamente este lote archivado. No se puede deshacer y después ya no se podrá restaurar.",
   "elevation.summary.data_archive_restore": "Devolver las ventas, turnos y facturas de este lote archivado a la caja en uso.",
   "elevation.summary.barcode_symbology_on": "Activar tipo de código de barras: %s.",
