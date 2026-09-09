@@ -85,6 +85,14 @@
 #     the extracted verb-token list at all, and shipped green before this
 #     count check existed.
 #
+# DUPLICATE KEYS (ut-docs#1872): a key defined twice in the same locale
+# file is a HARD failure too, checked before anything else in load_json --
+# plain json.load silently keeps only the last write, so a file with five
+# duplicated keys (the real incident: two lanes each added the same five
+# keys at a different point in the file, and git merged both additions
+# with no conflict) parsed clean and every check above stayed green. See
+# load_json's own comment for the detection mechanism.
+#
 # A missing/unreachable core source is a HARD failure, never a skip: a
 # guard that quietly exits 0 when it can't fetch its own input is the
 # exact silent-gap failure mode this script exists to close.
@@ -270,11 +278,43 @@ def verbs_match(a, b):
     return a_map == b_map
 
 def load_json(path, label):
+    # Duplicate-key detection (ut-docs#1872): plain json.load silently keeps
+    # only the LAST of a duplicated top-level key, so a file with the same
+    # key written twice parses "successfully" into a dict that looks no
+    # different from a clean one -- every check below is blind to it. Real
+    # precedent: two lanes each independently added the same five keys to
+    # this pack's locale file at a different point in the file, git merged
+    # both additions with no conflict, and this check reported a clean pass
+    # against a file that actually had five keys defined twice. Reading the
+    # raw key/value PAIR list via object_pairs_hook, instead of letting the
+    # dict constructor silently collapse it, is what makes the duplicate
+    # visible before anything discards it. Treated as the same class of hard
+    # failure as invalid JSON -- a file that can't be trusted to mean what
+    # its parsed form says isn't safe input for any check that follows.
+    dupes = []
+
+    def hook(pairs):
+        seen = set()
+        for k, _ in pairs:
+            if k in seen:
+                dupes.append(k)
+            seen.add(k)
+        return dict(pairs)
+
     try:
-        return json.load(open(path))
+        with open(path) as f:
+            data = json.load(f, object_pairs_hook=hook)
     except Exception as e:
         print(f"check-key-drift: FAILED to parse {label} {path}: {e}", file=sys.stderr)
         sys.exit(1)
+    if dupes:
+        print(
+            f"check-key-drift: {path} has duplicate key(s) (last write silently wins): "
+            + ", ".join(sorted(set(dupes))),
+            file=sys.stderr,
+        )
+        sys.exit(1)
+    return data
 
 def load_keylist(path, label):
     try:
