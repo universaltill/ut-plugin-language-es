@@ -257,6 +257,46 @@ cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
 TXT
 assert_fail_containing "es.json invalid JSON" "FAILED to parse" "es locale"
 
+# --- case 8b: es.json has a key defined twice -> hard fail, names the file
+#              and the key (ut-docs#1872) -------------------------------
+# JSON syntax itself permits a repeated key (last write silently wins under
+# plain json.load), so this is NOT the same failure mode as case 8's
+# invalid-JSON case above -- it must be caught by its own dedicated check,
+# not fall out of the parser raising an exception.
+fresh_case "es-duplicate-key"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.one": "Uno",
+  "a.one": "Uno (duplicate)"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "es.json with a duplicated key" "duplicate key" "a.one" "locales/es.json"
+
+# --- case 8c: core's en.json has a key defined twice -> hard fail, names
+#              the file and the key (ut-docs#1872) -----------------------
+fresh_case "core-duplicate-key"
+cat > "$core_json" <<'JSON'
+{
+  "a.one": "One",
+  "a.one": "One (duplicate)"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.one": "Uno"
+}
+JSON
+cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
+TXT
+assert_fail_containing "core en.json with a duplicated key" "duplicate key" "a.one"
+
 # --- case 9: baseline file missing -> hard fail, never a skip -------------
 fresh_case "baseline-missing"
 cat > "$core_json" <<'JSON'
