@@ -81,9 +81,37 @@ established precedent for a translation-only PR.
 - Git identity on the commit: `Farshid Mirza
   <4035824+farshidmirza@users.noreply.github.com>`.
 
+## Update: CI red on the first push — unrelated concurrent drift, fixed here
+
+The first CI run (against the live `main`, not this local checkout)
+failed `key-drift` with 19 **different** missing keys — not these 19
+voucher keys (expected: they're not in `main` yet, this PR predates
+#937's merge) but 19 unrelated keys two other concurrent lanes' PRs had
+just landed on `main` while this PR was in flight: `elevation.summary.
+{keep,remove}_demo_item`, `orders.view.{title,refund_link}`, `pos.toast.
+receipt_{not_completed,order_cancelled,read_error}`, and 12
+`settings.data.demo_*` keys (ut-docs#1818 scan-to-collect routing,
+ut-docs#1840 remove-sample-data).
+
+Rather than leave the whole repo red (blocking every pack PR, not just
+this one) or silently baseline them as debt, translated all 19 into
+Spanish too — same terminology already established in this file
+("artículo de muestra" for sample item, "pedido"/"recibo" for
+order/receipt, "Devolución" for refund, "aparcada" for a held/parked
+sale matching `hold.*`'s existing usage, formal **usted** imperative
+matching `settings.data.demo_confirm`'s existing style) — mirroring the
+same fix landed in `ut-plugin-language-de` for the identical drift, per
+this pipeline's own precedent for exactly this situation.
+
+Re-verified against the now-current core checkout (branch
+`fix/1832-voucher-ui`, merged up to `main`'s `ed8ca82a`):
+**2120/2120 core keys translated, 0 drift, 0 orphans, 0 empty values, 0
+untranslated-present, 0 token mismatches.** `scripts/validate.sh` and
+`scripts/check-key-drift.test.sh` both green again.
+
 ## Verdict
 
-**Safe to merge.** Small, mechanical, fully guard-verified against the
-exact core branch these keys are landing alongside. Should land before (or
+**Safe to merge.** Fully guard-verified against the exact core branch
+these keys are landing alongside, at full parity. Should land before (or
 together with) `universal-till` PR #937 merging to `main`, so
 `lang-pack-drift` doesn't go red on push.
