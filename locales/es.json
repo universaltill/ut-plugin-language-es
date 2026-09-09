@@ -144,6 +144,8 @@
   "elevation.summary.data_reset_transactions": "Archivar todas las ventas, turnos y facturas, y reiniciar la numeración de recibos. El catálogo, los usuarios, los ajustes y los informes archivados se conservan. Se puede restaurar desde Ajustes → Datos mientras la caja no vuelva a vender.",
   "elevation.summary.data_archive_purge": "Eliminar definitivamente este lote archivado. No se puede deshacer y después ya no se podrá restaurar.",
   "elevation.summary.data_archive_restore": "Devolver las ventas, turnos y facturas de este lote archivado a la caja en uso.",
+  "elevation.summary.backup_restore": "Reemplazar TODOS los datos actuales con la copia de seguridad %s (los datos reemplazados se conservan en la carpeta de copias de seguridad). La caja lo aplicará en el próximo reinicio.",
+  "elevation.summary.data_customer_erase": "Eliminar definitivamente los datos personales de este cliente (nombre, teléfono, correo electrónico) — referencia %s. Sus ventas se conservan, anonimizadas.",
   "elevation.summary.barcode_symbology_on": "Activar tipo de código de barras: %s.",
   "elevation.summary.catalog_import_barcode_default_off": "Dejar de marcar por defecto \"usar el número de artículo como código de barras\" en las importaciones de catálogo.",
   "elevation.summary.catalog_import_barcode_default_on": "Marcar por defecto \"usar el número de artículo como código de barras\" en las importaciones de catálogo.",
