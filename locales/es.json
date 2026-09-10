@@ -1562,6 +1562,7 @@
   "locations.rename": "Cambiar nombre",
   "locations.title": "Ubicaciones",
   "menu.back_to_sale": "Volver a la venta",
+  "menu.group.administration": "Administración",
   "menulayout.title": "Fichas de menú ocultas",
   "menulayout.intro": "Fichas que un complemento de diseño ha quitado de la pantalla Menú. Todas siguen siendo accesibles en su propia dirección: restaure aquí una ficha para volver a mostrarla en el Menú sin desinstalar el complemento.",
   "menulayout.settings_intro": "Consulte qué fichas del Menú ha ocultado un complemento de diseño y recupere las que quiera.",
