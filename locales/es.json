@@ -1361,6 +1361,7 @@
   "reports.days": "días",
   "reports.dead_stock": "Stock inmovilizado",
   "reports.dead_stock_hint": "En stock pero sin una sola venta en este periodo — dinero parado en la estantería.",
+  "reports.discounts": "Descuentos",
   "reports.eod.article_print.help": "Afecta solo a la sección «Por artículo» del informe Z impreso — el informe en pantalla siempre muestra todos los artículos.",
   "reports.eod.article_print.label": "Lista de artículos impresa",
   "reports.eod.article_print_cap.label": "N principales",
