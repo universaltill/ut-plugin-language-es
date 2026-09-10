@@ -2120,6 +2120,7 @@
   "tender.tab.pay": "Pagar",
   "tender.tab.split": "Dividir",
   "tender.title": "Cobro",
+  "tender.voucher": "Vale",
   "tender.voucher_check": "Comprobar saldo",
   "tender.voucher_id": "Código del vale",
   "tender.voucher_id_placeholder": "Código de la tarjeta",
