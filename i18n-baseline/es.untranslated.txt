@@ -1,1 +1,1 @@
-
+settings.shop_type.service_layout_note
