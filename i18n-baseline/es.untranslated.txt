@@ -1,1 +1,5 @@
+admin.group.fiscal
+admin.group.localization
+admin.group.locations
+admin.group.other
 settings.shop_type.service_layout_note
