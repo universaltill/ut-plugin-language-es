@@ -2071,6 +2071,7 @@
   "tender.change": "Cambio",
   "tender.complete_sale": "Completar la venta",
   "tender.fill_remaining": "Completar lo que falta",
+  "tender.gift_card": "Tarjeta de regalo",
   "tender.issue_voucher.add": "Añadir vale",
   "tender.issue_voucher.amount": "Importe del vale",
   "tender.issue_voucher.auto_code": "Código generado al finalizar la venta",
