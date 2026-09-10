@@ -351,6 +351,7 @@
   "common.edit": "Editar",
   "common.error.invalid_upload": "Carga no válida",
   "common.error.manager_or_admin_required": "Se requiere gerente o administrador",
+  "common.error.network": "Problema de conexión. Verifica tu red e inténtalo de nuevo.",
   "common.error.server": "Algo salió mal. Inténtalo de nuevo.",
   "common.loading": "Cargando…",
   "common.no_results": "Sin coincidencias: pruebe otra búsqueda.",
