@@ -37,6 +37,7 @@ catalog.col.sku
 catalog.color
 fiscaldevice.plugin.title
 help.plugins
+inventory.dialog_context
 invoice.total
 journal.col.total
 journal.detail.subtotal
