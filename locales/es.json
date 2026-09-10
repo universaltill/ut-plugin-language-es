@@ -1347,6 +1347,7 @@
   "reports.ask.placeholder": "p. ej. ¿Qué se ha vendido mejor esta semana?",
   "reports.ask.thinking": "Pensando…",
   "reports.ask.title": "Pregunte a su caja",
+  "reports.avg_sale": "Venta media",
   "reports.business_day_start.help": "Cuándo termina un día de operación y comienza el siguiente para los informes y el selector de período día/semana/mes/año — configúrelo después de la medianoche si opera más allá de la medianoche (por ejemplo, un bar o una cocina que cierra tarde), para que los ingresos de una noche no se dividan entre dos días de informe.",
   "reports.business_day_start.label": "El día comercial comienza a las",
   "reports.busy_days": "Días de más actividad",
