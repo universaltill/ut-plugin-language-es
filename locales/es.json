@@ -251,6 +251,7 @@
   "catalog.labels.no_code": "Este artículo no tiene código de barras ni SKU que imprimir",
   "catalog.labels.no_item": "Elija primero un artículo (haga clic en una fila)",
   "catalog.labels.print": "Imprimir etiquetas",
+  "catalog.labels.system_unsupported": "Las etiquetas de estante/precio necesitan una impresora de tickets de Red o USB — una conexión como Impresora normal (sistema) no puede imprimir el código de barras. Cambie la conexión en Ajustes → Impresora.",
   "catalog.labels.variant": "Variante",
   "catalog.labels.whole_item": "Artículo completo",
   "catalog.lead_time_days": "Plazo de entrega (días)",
