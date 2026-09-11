@@ -45,6 +45,8 @@ journal.detail.subtotal
 journal.detail.total
 kitchenstations.col.sku
 nav.github
+open_orders.age_minutes
+open_orders.col.total
 plugins.manage.title
 plugins.trust.official
 plugins.type.hardware
