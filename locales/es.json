@@ -1004,6 +1004,7 @@
   "orders.err.not_found": "Pedido no encontrado",
   "orders.err.server": "Algo salió mal. Inténtalo de nuevo.",
   "orders.print.kitchen_failed": "Error al imprimir el ticket de cocina",
+  "orders.print.kitchen_resend": "Reenviar ticket de cocina",
   "orders.print.receipt_failed": "Error al imprimir el recibo",
   "orders.status.cancelled": "Cancelado",
   "orders.status.collected": "Recogido",
