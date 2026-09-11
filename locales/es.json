@@ -282,7 +282,6 @@
   "catalog.new_item": "Nuevo artículo",
   "catalog.option_sets.add": "Añadir conjunto de opciones",
   "catalog.option_sets.add_value": "Añadir valor",
-  "catalog.option_sets.button": "Conjuntos de opciones",
   "catalog.option_sets.exists": "Ese nombre ya está en uso — elige otro.",
   "catalog.option_sets.name": "Nombre del conjunto de opciones",
   "catalog.option_sets.name_example": "p. ej. Talla",
