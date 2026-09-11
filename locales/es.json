@@ -876,6 +876,7 @@
   "kitchen.print.no_receipt": "No hay ningún pedido seleccionado",
   "kitchen.print.off": "No hay ninguna impresora de cocina configurada",
   "kitchen.print.partial": "Algunos tickets de cocina no se imprimieron",
+  "kitchen.print.station_nothing_to_send": "No hay nada que imprimir para esta estación",
   "kitchen.ticket.order_label": "PEDIDO",
   "kitchen.ticket.station_default": "COCINA",
   "kitchendisplay.empty": "No hay pedidos para esta estación",
