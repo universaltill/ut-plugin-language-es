@@ -21,6 +21,7 @@
 # untranslated value is worse than a missing key: core's T() renders it
 # verbatim, never-translated English string (a key present with an
 # whose key no longer exists at all must FAIL so it gets pruned here --
+admin.group.fiscal
 app.name
 auth.setup.pin
 barcode.symbology.CODE128
