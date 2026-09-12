@@ -1778,6 +1778,7 @@
   "settings.printer.drawer_pin_5": "Pin 5",
   "settings.printer.help": "Imprime tickets en silencio en una impresora térmica. El modo de red funciona con cualquier impresora ESC/POS por WiFi o Ethernet; el modo dispositivo escribe en una impresora USB conectada (p. ej. /dev/usb/lp0 en Linux/Pi).",
   "settings.printer.kitchen_addr": "Impresora de cocina",
+  "settings.printer.kitchen_group.title": "Impresora de cocina",
   "settings.printer.kitchen_help": "Una impresora aparte para las comandas de cocina — host:puerto de red (p. ej. 192.168.1.60:9100) o una ruta de dispositivo. Déjelo vacío para desactivar la impresión en cocina.",
   "settings.printer.mode": "Conexión",
   "settings.printer.mode_device": "Dispositivo USB",
