@@ -1012,6 +1012,7 @@
   "open_orders.empty": "Ahora mismo no hay cuentas abiertas. Cuando aparque una venta en la pantalla de venta, aparecerá aquí hasta que se reanude y se cobre.",
   "open_orders.error.load_failed": "No se pudieron cargar las cuentas abiertas. Inténtelo de nuevo o utilice el menú para seguir trabajando.",
   "open_orders.hint": "Para retomar una cuenta, tóquela en la franja «En espera» de la pantalla de venta.",
+  "open_orders.resume_row": "Reanudar cuenta",
   "open_orders.title": "Cuentas abiertas",
   "orders.btn.cancel": "Cancelar pedido",
   "orders.col.actions": "Actualizar",
