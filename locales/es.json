@@ -1066,6 +1066,8 @@
   "plugins.buttons.title": "Acciones de plugins",
   "plugins.current_version": "Versión actual:",
   "plugins.error.grant_failed": "No se ha podido conceder el permiso.",
+  "plugins.error.import_failed": "No se pudo importar. Compruebe que el archivo sea un paquete de plugin válido e inténtelo de nuevo.",
+  "plugins.error.import_unsigned": "Este paquete de plugin no está firmado y no se puede instalar. Instálelo desde la tienda de plugins, o utilice «Exportar» en otra caja para crear un paquete que esta caja pueda importar.",
   "plugins.error.malformed_form": "No se ha podido leer la solicitud. Inténtelo de nuevo.",
   "plugins.error.revoke_failed": "No se ha podido retirar el permiso.",
   "plugins.error.server": "Algo salió mal. Inténtelo de nuevo.",
