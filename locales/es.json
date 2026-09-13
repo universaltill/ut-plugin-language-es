@@ -311,6 +311,8 @@
   "catalog.tax_code.inactive": "inactivo",
   "catalog.tax_code.none": "— ninguno —",
   "catalog.upload_image": "Subir imagen",
+  "catalog.variant_codeless": "No se venderá — necesita un código",
+  "catalog.variant_codeless_hint": "Esta variante no tiene código de barras ni SKU, por lo que no se puede escanear ni seleccionar en la caja. Añada un código de barras o un SKU para solucionarlo.",
   "catalog.variant_image": "Imagen de la variante",
   "catalog.variants": "Variantes",
   "catalog.variants.add": "Añadir variante",
