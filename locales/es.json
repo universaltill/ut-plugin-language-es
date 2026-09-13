@@ -1281,6 +1281,7 @@
   "pos.toast.voucher_scan_not_found": "No se encontró ningún vale para %s",
   "pos.toast.voucher_scan_unusable": "El vale %s no se puede canjear — sin saldo o ya no está activo",
   "products.add": "Añadir producto",
+  "products.all": "Todos",
   "products.edit": "Editar botones rápidos",
   "products.empty": "Todavía no hay productos. Añada algunos en Botones rápidos.",
   "products.no_matches": "No hay productos que coincidan.",
