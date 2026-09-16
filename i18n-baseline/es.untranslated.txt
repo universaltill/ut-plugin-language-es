@@ -1,3 +1,0 @@
-plugins.manage.update_unknown
-plugins.manage.update_unknown_hint
-settings.shop_type.service_layout_note
