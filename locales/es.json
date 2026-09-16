@@ -1174,7 +1174,7 @@
   "plugins.manage.title": "Plugins",
   "plugins.manage.update_available": "Actualización:",
   "plugins.manage.update_unknown": "Estado de actualización desconocido",
-  "plugins.manage.update_unknown_hint": "No podemos determinar si este plugin está actualizado — el catálogo del mercado no está disponible o no tiene datos sobre él en este momento.",
+  "plugins.manage.update_unknown_hint": "No podemos determinar si este plugin está actualizado — el catálogo del marketplace no está disponible o no tiene datos sobre él en este momento.",
   "plugins.none_found": "No se ha encontrado ningún complemento",
   "plugins.none_found_hint": "Pruebe a cambiar los filtros o actualice el catálogo.",
   "plugins.permission.granted": "Permiso concedido",
