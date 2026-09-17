@@ -2099,6 +2099,7 @@
   "shifts.variance": "Diferencia",
   "status.offline": "Sin conexión",
   "status.online": "En línea",
+  "status.language_pack_update_available": "Actualización del paquete de idioma disponible",
   "status.plugin_updates_available": "Actualizaciones de plugins disponibles",
   "status.psu_underpowered": "Fuente de alimentación insuficiente",
   "status.psu_underpowered_hint": "La fuente de alimentación de este dispositivo no puede suministrar suficiente corriente — los periféricos USB, como la pantalla táctil, pueden funcionar mal. Sustitúyela por la fuente oficial de esta placa.",
