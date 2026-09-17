@@ -160,6 +160,7 @@
   "bluetoothdevices.scan_help": "Ponga el dispositivo en modo de emparejamiento y luego escanee. Un escaneo tarda unos diez segundos y solo muestra lo que encuentra — no se empareja nada hasta que pulse Emparejar.",
   "bluetoothdevices.scanning": "Escaneando… esto tarda unos diez segundos.",
   "bluetoothdevices.title": "Dispositivos Bluetooth",
+  "buttons.edit_mode.title": "Editando botones rápidos — arrastre una ficha para reordenar",
   "catalog.active": "Activo",
   "catalog.add_item_btn": "Añadir artículo",
   "catalog.attach_barcode": "Asociar código de barras",
