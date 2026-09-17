@@ -637,6 +637,7 @@
   "hold.error.empty": "Nada que aparcar: la cesta está vacía",
   "hold.error.failed": "No se pudo aparcar la venta",
   "hold.error.not_found": "Venta aparcada no encontrada",
+  "hold.label.auto_parked": "Aparcado automáticamente %s",
   "hold.modal.confirm_action": "Aparcar venta (confirmación)",
   "hold.modal.placeholder": "p. ej. Mesa 4, Sara",
   "hold.modal.title": "Ponga un nombre a esta cuenta (opcional)",
