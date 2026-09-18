@@ -36,6 +36,7 @@ basket.subtotal
 basket.total
 catalog.col.sku
 catalog.color
+catalog.image_upload_error_prefix
 fiscaldevice.plugin.title
 help.plugins
 inventory.dialog_context
