@@ -110,6 +110,8 @@
   "basket.order_type.mixed": "Mixto",
   "basket.order_type.prompt_title": "¿Comer aquí o para llevar?",
   "basket.order_type.takeaway": "Para llevar",
+  "basket.qty.decrease": "Reducir la cantidad",
+  "basket.qty.increase": "Aumentar la cantidad",
   "basket.remove": "Quitar",
   "basket.subtotal": "Subtotal",
   "basket.table.label": "Mesa",
