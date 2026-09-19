@@ -54,6 +54,7 @@ plugins.type.hardware
 recovery.safe_mode_col_total
 reports.eod.period_range
 reports.seasonal_lunar_badge
+reports.shrinkage_total
 settings.printer.drawer_pin_5
 setup.country.in
 setup.country.tr
