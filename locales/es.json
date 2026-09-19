@@ -1739,6 +1739,7 @@
   "selforder.table_busy.hint": "Otra persona en esta mesa está pidiendo ahora mismo desde su propio móvil. Espere unos minutos e inténtelo de nuevo, o avise a un miembro del personal.",
   "selforder.table_busy.retry": "Reintentar",
   "selforder.table_busy.title": "Esta mesa ya tiene un pedido en curso",
+  "selforder.table_joined": "Pedido para esta mesa — %d artículo(s) ya añadido(s)",
   "selforder.tap_to_start": "Pulse para empezar",
   "selforder.title": "Pida aquí",
   "selforder.welcome": "¡Bienvenido!",
