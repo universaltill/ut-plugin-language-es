@@ -438,7 +438,7 @@
   "designer.error.replica_use_primary": "Esta caja sigue a una caja principal — administre los botones de venta rápida en la caja principal.",
   "designer.error.server": "Algo salió mal. Inténtelo de nuevo.",
   "designer.label": "Etiqueta",
-  "designer.long_press_hint": "Consejo: mantenga pulsada una ficha (o haga clic derecho) para reordenarla — arrástrela, o use las flechas del teclado — y luego toque Listo. La insignia de papelera la quita de los botones rápidos.",
+  "designer.long_press_hint": "Consejo: mantenga pulsada una ficha (o haga clic derecho) para reordenarla — arrástrela, o use las flechas del teclado — y luego toque Listo. La insignia del ojo oculta una ficha de la pantalla de venta; la insignia de papelera elimina el artículo del catálogo.",
   "designer.move_down": "Mover hacia atrás",
   "designer.move_up": "Mover hacia adelante",
   "designer.no_matches": "Sin coincidencias.",
@@ -2654,5 +2654,14 @@
   "vouchers_import.status.missing_code": "falta el código",
   "vouchers_import.status.non_positive_balance": "el saldo debe ser mayor que cero",
   "vouchers_import.status.unknown_issue": "no se pudo importar",
-  "vouchers_import.title": "Importar saldos de vales"
+  "vouchers_import.title": "Importar saldos de vales",
+  "designer.hidden.empty": "No hay artículos ocultos en la pantalla de venta.",
+  "designer.hidden.title": "Ocultos en la pantalla de venta (%d)",
+  "designer.hidden.unhide": "Mostrar",
+  "tile_sheet.delete_item": "Eliminar artículo",
+  "tile_sheet.delete_item_confirm": "¿Eliminar «%s» del catálogo? Se elimina en todas partes, no solo de la pantalla de venta.",
+  "tile_sheet.hide": "Ocultar de la pantalla de venta",
+  "elevation.summary.buttons_delete_item": "Eliminar «%s» del catálogo. Se elimina en todas partes, no solo de la pantalla de venta.",
+  "elevation.summary.buttons_hide": "Ocultar «%s» de la pantalla de venta.",
+  "elevation.summary.buttons_unhide": "Volver a mostrar «%s» en la pantalla de venta."
 }
