@@ -1434,6 +1434,7 @@
   "products.categories": "Categorías",
   "products.categories_modal_title": "Artículos de la categoría",
   "products.category_button_count": "%d botón(es)",
+  "products.category_no_buttons": "Todavía no hay botones rápidos configurados para esta categoría.",
   "products.edit": "Editar botones rápidos",
   "products.empty": "Todavía no hay productos. Añada algunos en Botones rápidos.",
   "products.load_more": "Cargar más",
