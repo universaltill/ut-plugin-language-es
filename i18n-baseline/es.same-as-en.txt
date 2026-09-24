@@ -35,7 +35,6 @@ basket.col.total
 basket.subtotal
 basket.total
 catalog.builtin_icon.chocolate
-catalog.builtin_icon.group.bar
 catalog.builtin_icon.group.general
 catalog.builtin_icon.pizza
 catalog.col.sku
