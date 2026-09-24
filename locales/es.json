@@ -2661,5 +2661,8 @@
   "designer.hidden.unhide": "Mostrar",
   "tile_sheet.delete_item": "Eliminar artículo",
   "tile_sheet.delete_item_confirm": "¿Eliminar «%s» del catálogo? Se elimina en todas partes, no solo de la pantalla de venta.",
-  "tile_sheet.hide": "Ocultar de la pantalla de venta"
+  "tile_sheet.hide": "Ocultar de la pantalla de venta",
+  "elevation.summary.buttons_delete_item": "Eliminar «%s» del catálogo. Se elimina en todas partes, no solo de la pantalla de venta.",
+  "elevation.summary.buttons_hide": "Ocultar «%s» de la pantalla de venta.",
+  "elevation.summary.buttons_unhide": "Volver a mostrar «%s» en la pantalla de venta."
 }
