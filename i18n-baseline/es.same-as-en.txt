@@ -34,6 +34,10 @@ barcode.symbology.UPCE
 basket.col.total
 basket.subtotal
 basket.total
+catalog.builtin_icon.chocolate
+catalog.builtin_icon.group.bar
+catalog.builtin_icon.group.general
+catalog.builtin_icon.pizza
 catalog.col.sku
 catalog.color
 catalog.image_upload_error_prefix
