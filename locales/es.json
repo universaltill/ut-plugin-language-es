@@ -1501,6 +1501,7 @@
   "pos.toast.tax_unavailable": "No se puede completar la venta: el tipo impositivo de «%s» no está disponible mientras se repara su complemento de impuestos. Quite el artículo o inténtelo de nuevo en un momento.",
   "pos.toast.tax_unavailable_all": "No se puede cobrar — se está reparando el complemento de impuestos. Inténtelo de nuevo en breve.",
   "pos.toast.tender_failed": "No se ha podido completar la venta — inténtelo de nuevo o pida ayuda a un administrador",
+  "pos.toast.tile_stale_refreshed": "Ese botón rápido estaba desactualizado: los botones se han actualizado.",
   "pos.toast.voucher_code_exists": "Ese código de vale ya está en uso — compruebe el código de la tarjeta e inténtelo de nuevo",
   "pos.toast.voucher_insufficient": "El saldo del vale no cubre este pago",
   "pos.toast.voucher_invalid": "Vale no encontrado o ya no está activo",
