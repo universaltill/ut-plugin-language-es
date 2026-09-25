@@ -513,7 +513,7 @@
   "designer.add": "Añadir",
   "designer.add_button": "Añadir botón",
   "designer.buttons": "Botones",
-  "designer.categories.help": "Cree, cambie el nombre, recoloree, reordene o desactive las categorías con las que se construye la barra de arriba. Una categoría solo aparece en la pantalla de venta cuando uno de sus artículos tiene un botón rápido.",
+  "designer.categories.help": "Cree, cambie el nombre, recoloree o desactive las categorías con las que se construye la barra de arriba; toque una categoría para editarla. Para cambiar el orden, mantenga pulsada una categoría y arrástrela, o selecciónela y pulse Alt+↑ / Alt+↓. Una categoría solo aparece en la pantalla de venta cuando uno de sus artículos tiene un botón rápido.",
   "designer.category.deactivate_blocked_hint": "%d artículo(s) activo(s) todavía usan esta categoría — muévalos o desactívelos en el catálogo antes de desactivar la categoría.",
   "designer.category.deactivate_confirm": "¿Desactivar «%s»? Desaparece de la pantalla de venta hasta que la reactive aquí; sus artículos permanecen en el catálogo.",
   "designer.code": "Código",
@@ -2760,5 +2760,11 @@
   "products.add_to_quick_buttons_named": "Añadir a los botones rápidos: %s",
   "tile_sheet.hidden_state": "Oculto en la pantalla de venta",
   "tile_sheet.unhide_named": "Mostrar en la pantalla de venta: %s",
-  "tile_sheet.remove_from_grid_confirm": "¿Quitar «%s» de los botones rápidos? El artículo permanece en el catálogo y se sigue vendiendo por escaneo o búsqueda; puede volver a añadirlo desde la búsqueda cuando quiera."
+  "tile_sheet.remove_from_grid_confirm": "¿Quitar «%s» de los botones rápidos? El artículo permanece en el catálogo y se sigue vendiendo por escaneo o búsqueda; puede volver a añadirlo desde la búsqueda cuando quiera.",
+  "categories.reorder_hint": "Toque una categoría para editarla. Para cambiar el orden, mantenga pulsada una categoría y arrástrela hacia arriba o hacia abajo, o selecciónela y pulse Alt+↑ / Alt+↓.",
+  "list_reorder.moved": "Se movió %s a la posición %d de %d.",
+  "list_reorder.cancelled": "Reordenación cancelada: la lista no ha cambiado.",
+  "list_reorder.failed": "No se pudo guardar el nuevo orden, así que la lista se ha restablecido. Inténtelo de nuevo.",
+  "list_reorder.position": "Posición %d de %d",
+  "list_reorder.position_label": "Posición en la lista"
 }
