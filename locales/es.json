@@ -2175,7 +2175,7 @@
   "settings.sell_screen.browsing_mode_category_tabs_hint": "Muestra una ficha por categoría; toque una para abrir una ventana emergente con todos sus artículos y un cuadro de búsqueda.",
   "settings.sell_screen.browsing_mode_label": "Cómo se muestran los artículos",
   "settings.sell_screen.browsing_mode_strip_overflow": "Barra de categorías con botones rápidos",
-  "settings.sell_screen.browsing_mode_strip_overflow_hint": "Muestra sus botones rápidos bajo una fila de pestañas de categoría — primero una pestaña Todos, y un botón «…» al final cuando hay más categorías de las que caben.",
+  "settings.sell_screen.browsing_mode_strip_overflow_hint": "Muestra sus botones rápidos bajo una fila de pestañas de categoría, con un botón «…» al final cuando hay más categorías de las que caben.",
   "settings.sell_screen.title": "Pantalla de venta",
   "settings.service_charge.invalid_rate": "Introduzca el cargo por servicio como un porcentaje de 0 o más, por ejemplo 12,5.",
   "settings.service_charge.tr_forbidden": "La legislación turca prohíbe un cargo por servicio, tarifa de mesa o cubierto en la cuenta (Fiyat Etiketi Yönetmeliği, en vigor desde el 30 de enero de 2026). Inclúyalo en el precio de los artículos del menú en su lugar.",
