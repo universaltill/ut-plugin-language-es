@@ -2766,5 +2766,9 @@
   "list_reorder.cancelled": "Reordenación cancelada: la lista no ha cambiado.",
   "list_reorder.failed": "No se pudo guardar el nuevo orden, así que la lista se ha restablecido. Inténtelo de nuevo.",
   "list_reorder.position": "Posición %d de %d",
-  "list_reorder.position_label": "Posición en la lista"
+  "list_reorder.position_label": "Posición en la lista",
+  "kiosk_counter_orders.confirm_collect_unpaid": "Este pedido no se ha cobrado en esta caja. ¿Marcarlo como recogido de todos modos?",
+  "kiosk_counter_orders.moved_hint": "Los nuevos pedidos del quiosco para pagar en el mostrador quedan aparcados como ventas en espera. Ábralos desde «Cuentas abiertas» para cobrarlos.",
+  "kiosk_counter_orders.ring_up_manually": "No cobrado en la caja: regístrelo a mano",
+  "selforder.confirm.counter_pay_first_hint": "¡Gracias! Por favor, pague en el mostrador — su pedido pasará a la cocina en cuanto haya pagado."
 }
