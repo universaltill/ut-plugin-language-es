@@ -3,7 +3,7 @@
 - **Change:** adds the new core key `pos.toast.tile_stale_refreshed`. Core
   universal-till (branch `fix/2525-stale-tile-refresh`) shows it when a tapped
   sale-screen tile no longer resolves because the catalog changed elsewhere;
-  the grid then refreshes itself. `manifest.json` gets a patch bump so the
+  the grid then refreshes itself. `manifest.json` gets a patch bump (1.1.117) so the
   change ships (ut-docs#1940).
 - **Review:** covered by the core independent review, which also checked the
   translations: universal-till
