@@ -521,7 +521,7 @@
   "designer.error.replica_use_primary": "Esta caja sigue a una caja principal — administre los botones de venta rápida en la caja principal.",
   "designer.error.server": "Algo salió mal. Inténtelo de nuevo.",
   "designer.label": "Etiqueta",
-  "designer.long_press_hint": "Consejo: mantenga pulsada una ficha (o haga clic derecho) para reordenarla — arrástrela, o use las flechas del teclado — y luego toque Listo. La insignia del ojo oculta una ficha de la pantalla de venta; la insignia de papelera elimina el artículo del catálogo.",
+  "designer.long_press_hint": "Consejo: mantenga pulsada una ficha (o haga clic derecho) para reordenarla — arrástrela, o use las flechas del teclado — y luego toque Hecho. La insignia del ojo oculta una ficha de la pantalla de venta (aquí sigue visible en gris, con una insignia para volver a mostrarla); la insignia de papelera la quita de los botones rápidos — el artículo permanece en el catálogo y la búsqueda lo vuelve a añadir.",
   "designer.move_down": "Mover hacia atrás",
   "designer.move_up": "Mover hacia adelante",
   "designer.no_matches": "Sin coincidencias.",
@@ -2755,5 +2755,10 @@
   "elevation.summary.buttons_delete_item": "Eliminar «%s» del catálogo. Se elimina en todas partes, no solo de la pantalla de venta.",
   "elevation.summary.buttons_hide": "Ocultar «%s» de la pantalla de venta.",
   "elevation.summary.buttons_unhide": "Volver a mostrar «%s» en la pantalla de venta.",
-  "elevation.summary.buttons_unhide_all": "Volver a mostrar todos los artículos ocultos en la pantalla de venta."
+  "elevation.summary.buttons_unhide_all": "Volver a mostrar todos los artículos ocultos en la pantalla de venta.",
+  "products.add_to_quick_buttons": "Añadir a los botones rápidos",
+  "products.add_to_quick_buttons_named": "Añadir a los botones rápidos: %s",
+  "tile_sheet.hidden_state": "Oculto en la pantalla de venta",
+  "tile_sheet.unhide_named": "Mostrar en la pantalla de venta: %s",
+  "tile_sheet.remove_from_grid_confirm": "¿Quitar «%s» de los botones rápidos? El artículo permanece en el catálogo y se sigue vendiendo por escaneo o búsqueda; puede volver a añadirlo desde la búsqueda cuando quiera."
 }
