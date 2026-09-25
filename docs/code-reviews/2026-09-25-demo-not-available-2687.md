@@ -5,7 +5,7 @@ the message a public demo till answers for routes that are not available in the 
 (ADR-0113 §1.4). This pack adds the translation:
 
 - "demo.not_available": "No disponible en la demo.",
-- `manifest.json` "version": "1.1.116" (bumped; shipped file changed).
+- `manifest.json` "version": "1.1.119" (bumped; shipped file changed).
 
 Verified: `scripts/validate.sh` ok; `UT_CORE_EN_JSON=<core branch en.json> scripts/check-key-drift.sh`
 → 0 drift, 0 orphans. Short, neutral wording matching the ar/fa/tr core translations.
