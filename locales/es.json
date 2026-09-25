@@ -1714,8 +1714,14 @@
   "reports.period.custom": "Personalizado",
   "reports.period.day": "Día",
   "reports.period.month": "Mes",
+  "reports.period.rolling": "Últimos días",
   "reports.period.week": "Semana",
   "reports.period.year": "Año",
+  "reports.preset.label": "Periodo del informe",
+  "reports.preset.this_month": "Este mes",
+  "reports.preset.this_week": "Esta semana",
+  "reports.preset.today": "Hoy",
+  "reports.preset.yesterday": "Ayer",
   "reports.refunds": "Devoluciones",
   "reports.revenue": "Ingresos",
   "reports.sales": "Ventas",
@@ -2741,10 +2747,12 @@
   "designer.hidden.empty": "No hay artículos ocultos en la pantalla de venta.",
   "designer.hidden.title": "Ocultos en la pantalla de venta (%d)",
   "designer.hidden.unhide": "Mostrar",
+  "designer.hidden.unhide_all": "Mostrar los %d en la pantalla de venta",
   "tile_sheet.delete_item": "Eliminar artículo",
   "tile_sheet.delete_item_confirm": "¿Eliminar «%s» del catálogo? Se elimina en todas partes, no solo de la pantalla de venta.",
   "tile_sheet.hide": "Ocultar de la pantalla de venta",
   "elevation.summary.buttons_delete_item": "Eliminar «%s» del catálogo. Se elimina en todas partes, no solo de la pantalla de venta.",
   "elevation.summary.buttons_hide": "Ocultar «%s» de la pantalla de venta.",
-  "elevation.summary.buttons_unhide": "Volver a mostrar «%s» en la pantalla de venta."
+  "elevation.summary.buttons_unhide": "Volver a mostrar «%s» en la pantalla de venta.",
+  "elevation.summary.buttons_unhide_all": "Volver a mostrar todos los artículos ocultos en la pantalla de venta."
 }
