@@ -4,6 +4,6 @@
 - de: formal Sie, Hauptkasse / Einstellung — OK.
 - es: usted, caja principal / ajuste — OK.
 
-`scripts/validate.sh` + `scripts/check-key-drift.sh` against the PR's en.json: 2857/2857 core keys, 0 drift. Version bumped ("version": "1.1.123").
+`scripts/validate.sh` + `scripts/check-key-drift.sh` against the PR's en.json: 2857/2857 core keys, 0 drift. Version bumped ("version": "1.1.126").
 
 **Verdict:** safe to merge once universal-till#1427 is on main.
