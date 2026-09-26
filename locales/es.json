@@ -475,6 +475,8 @@
   "common.error.network": "Problema de conexión. Verifica tu red e inténtalo de nuevo.",
   "common.error.server": "Algo salió mal. Inténtalo de nuevo.",
   "common.loading": "Cargando…",
+  "common.money.invalid": "Introduce el importe en cifras, con punto o coma antes de los decimales (por ejemplo, 3,50 o 3.50).",
+  "common.money.invalid_whole": "Introduce el importe como número entero, solo cifras.",
   "common.no_results": "Sin coincidencias: pruebe otra búsqueda.",
   "common.save": "Guardar",
   "common.submit": "Enviar",
