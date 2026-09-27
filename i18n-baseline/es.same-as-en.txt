@@ -60,6 +60,7 @@ reports.seasonal_lunar_badge
 reports.shrinkage_total
 settings.display.effects_reason_pi
 settings.display.effects_reason_sep
+settings.display.effects_reason_webkitgtk
 settings.printer.drawer_pin_5
 setup.country.in
 setup.country.tr
