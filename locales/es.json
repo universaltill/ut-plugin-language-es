@@ -2872,5 +2872,13 @@
   "open_orders.counter.empty": "No hay pedidos esperando el pago en el mostrador. Cuando un cliente pide en el quiosco de autoservicio y elige pagar en el mostrador, el pedido aparece aquí: tóquelo para cobrarlo.",
   "open_orders.counter.priced_on_open": "Precio al abrir",
   "open_orders.counter.add_by_hand": "No se encontró en sus artículos, así que no se añadió; añádalo a mano: %s",
-  "setup.error.store_name_required": "Introduzca el nombre de su tienda. Se imprime en cada ticket."
+  "settings.about.english_only": "Aún sin traducir: se muestra en inglés.",
+  "settings.about.first_run": "Iniciada por primera vez en esta caja:",
+  "settings.about.installed_version": "Versión instalada:",
+  "settings.about.no_notes": "No hay notas de la versión disponibles para esta versión.",
+  "settings.about.title": "Acerca de",
+  "settings.about.whats_new": "Novedades",
+  "setup.error.store_name_required": "Introduzca el nombre de su tienda. Se imprime en cada ticket.",
+  "status.release_notes_dismiss": "Descartar",
+  "status.release_notes_updated": "Actualizado a %s: ver las novedades"
 }
