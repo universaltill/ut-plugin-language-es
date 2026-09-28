@@ -2867,5 +2867,12 @@
   "vouchers_import.status.missing_code": "falta el código",
   "vouchers_import.status.non_positive_balance": "el saldo debe ser mayor que cero",
   "vouchers_import.status.unknown_issue": "no se pudo importar",
-  "vouchers_import.title": "Importar saldos de vales"
+  "vouchers_import.title": "Importar saldos de vales",
+  "settings.staff_languages.title": "Idiomas disponibles para el personal",
+  "settings.staff_languages.help": "Los idiomas a los que el personal puede cambiar desde el ☰ Menú. El idioma predeterminado de la tienda siempre está incluido. Si solo se selecciona un idioma, el Menú no muestra botones de idioma.",
+  "settings.staff_languages.default": "idioma predeterminado",
+  "settings.staff_languages.error_unknown": "Ese idioma no está instalado en esta caja.",
+  "settings.staff_languages.error_empty": "Seleccione al menos un idioma.",
+  "settings.staff_languages.error_default": "El idioma predeterminado de la tienda no se puede quitar de la lista.",
+  "elevation.summary.staff_languages": "Establecer los idiomas disponibles para el personal en: %s"
 }
