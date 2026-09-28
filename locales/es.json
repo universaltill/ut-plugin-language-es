@@ -2871,5 +2871,6 @@
   "open_orders.tab.counter": "Pagar en el mostrador",
   "open_orders.counter.empty": "No hay pedidos esperando el pago en el mostrador. Cuando un cliente pide en el quiosco de autoservicio y elige pagar en el mostrador, el pedido aparece aquí: tóquelo para cobrarlo.",
   "open_orders.counter.priced_on_open": "Precio al abrir",
-  "open_orders.counter.add_by_hand": "No se encontró en sus artículos, así que no se añadió; añádalo a mano: %s"
+  "open_orders.counter.add_by_hand": "No se encontró en sus artículos, así que no se añadió; añádalo a mano: %s",
+  "setup.error.store_name_required": "Introduzca el nombre de su tienda. Se imprime en cada ticket."
 }
