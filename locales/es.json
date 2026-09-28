@@ -855,6 +855,7 @@
   "inventory.low_stock": "Stock bajo",
   "inventory.manager_pin": "PIN del responsable",
   "inventory.manager_pin_placeholder": "si ha iniciado sesión como cajero",
+  "inventory.not_stocked_here": "Sin existencias aquí",
   "inventory.order_hint": "pedir ~",
   "inventory.order_hint_title": "Pedido sugerido para mantener dos semanas de stock al ritmo de venta actual",
   "inventory.original_receipt": "N.º del ticket original",
