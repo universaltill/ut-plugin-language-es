@@ -2328,6 +2328,7 @@
   "setup.done.hint": "Puede añadir productos, cajas e impresoras cuando quiera desde el menú. Pulse abajo para abrir la caja.",
   "setup.done.title": "¡Todo listo!",
   "setup.error.save_failed": "No se han podido guardar sus ajustes — inténtelo de nuevo.",
+  "setup.error.store_name_required": "Introduzca el nombre de su tienda. Se imprime en cada recibo.",
   "setup.error.tse_identity_incomplete": "Rellene los cuatro campos comerciales (o déjelos todos vacíos para omitir la configuración de TSE por ahora).",
   "setup.error.tse_identity_too_long": "Los datos comerciales pueden tener como máximo 200 caracteres por campo.",
   "setup.error.tse_tax_number": "Eso no parece un número fiscal alemán — pruebe el formato 12/345/67890 (Steuernummer) o DE123456789 (USt-IdNr.).",
