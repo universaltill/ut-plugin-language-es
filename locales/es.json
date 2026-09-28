@@ -163,6 +163,7 @@
   "bluetoothdevices.scanning": "Escaneando… esto tarda unos diez segundos.",
   "bluetoothdevices.title": "Dispositivos Bluetooth",
   "buttons.edit_mode.title": "Editando botones rápidos — arrastre una ficha para reordenar",
+  "buttons.edit_mode.title_all_grid": "Editando artículos — elija una categoría para ordenar sus artículos arrastrándolos; el lápiz edita un artículo",
   "catalog.active": "Activo",
   "catalog.add_item_btn": "Añadir artículo",
   "catalog.attach_barcode": "Asociar código de barras",
