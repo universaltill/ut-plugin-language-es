@@ -53,6 +53,7 @@ open_orders.age_days
 open_orders.age_hours
 open_orders.age_minutes
 open_orders.col.total
+permissions.unlocks_separator
 plugins.manage.title
 plugins.trust.official
 plugins.type.hardware
