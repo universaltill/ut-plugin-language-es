@@ -6,7 +6,7 @@ Date: 2026-09-28 · Lane: cloud-24
 The 8 keys core adds in universal-till#1509 (Settings → About and the
 after-update chip): `settings.about.{title,installed_version,first_run,
 whats_new,english_only,no_notes}`, `status.release_notes_{updated,dismiss}`.
-Inserted without reordering the file; manifest version bumped to 1.1.134.
+Inserted without reordering the file; manifest version bumped to 1.1.135.
 
 ## Checks
 - `scripts/validate.sh` ok.
