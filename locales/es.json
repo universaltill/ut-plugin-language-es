@@ -2944,5 +2944,11 @@
   "settings.about.whats_new": "Novedades",
   "setup.error.store_name_required": "Introduzca el nombre de su tienda. Se imprime en cada ticket.",
   "status.release_notes_dismiss": "Descartar",
-  "status.release_notes_updated": "Actualizado a %s: ver las novedades"
+  "status.release_notes_updated": "Actualizado a %s: ver las novedades",
+  "settings.store_name.title": "Nombre del negocio",
+  "settings.store_name.help": "Aparece en cada recibo y en los informes.",
+  "settings.store_name.error_required": "Introduce el nombre de tu negocio. Se imprime en cada recibo.",
+  "settings.store_name.error_too_long": "El nombre del negocio puede tener como máximo 80 caracteres.",
+  "settings.store_name.error_invalid_chars": "El nombre del negocio no puede contener saltos de línea, tabulaciones ni caracteres ocultos.",
+  "elevation.summary.store_name": "Cambiar el nombre del negocio a «%s»."
 }
