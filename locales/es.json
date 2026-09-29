@@ -2035,6 +2035,7 @@
   "settings.data.export.title": "Exportación / informe",
   "settings.data.export.to_label": "Hasta",
   "settings.data.gdpr_help": "Elimina los datos personales de un cliente cuando lo solicite. Sus ventas se conservan para sus registros, pero ya no muestran a quién pertenecían.",
+  "settings.data.gdpr_invoices_kept": "Las facturas ya emitidas conservan el nombre, la dirección y el NIF/número de IVA del comprador tal como se emitieron, porque la normativa fiscal le obliga a guardarlas.",
   "settings.data.gdpr_title": "Borrar un cliente (RGPD)",
   "settings.data.help": "Borra las ventas de prueba hechas mientras probaba la caja para empezar a vender de verdad desde cero. Sus productos, usuarios y ajustes se conservan.",
   "settings.data.reset_btn": "Borrar el historial de transacciones",
