@@ -1294,6 +1294,7 @@
   "permissions.action.void_comp_waste": "Anulación/cortesía/merma (eliminar línea de venta)",
   "permissions.action.worker_allocation": "Pagos de propinas/cargos por servicio a trabajadores",
   "permissions.col.action": "Acción",
+  "permissions.error.cloud_role": "Este rol se gestiona en my.universaltill.com. Cámbielo allí.",
   "permissions.error.super_admin_required": "Se requiere súper administrador",
   "permissions.intro": "Solo un superadministrador puede conceder o retirar lo que puede hacer cada rol. Todos los cambios quedan registrados en el registro de auditoría.",
   "permissions.lockout_error": "No se puede retirar — dejaría a todos los superadministradores fuera de esta página.",
