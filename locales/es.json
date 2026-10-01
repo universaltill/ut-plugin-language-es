@@ -2159,6 +2159,7 @@
   "settings.enrol.forbidden": "Solo un responsable o un administrador puede registrar esta caja.",
   "settings.enrol.not_registered": "Esta caja todavía no está registrada.",
   "settings.enrol.registered": "Esta caja está registrada en el marketplace de Universal Till.",
+  "settings.enrol.registered_via_main": "Esta caja está registrada a través de la caja principal.",
   "settings.enrol.retry": "Registrar ahora",
   "settings.enrol.store": "ID de la tienda",
   "settings.enrol.title": "Registro de la caja",
