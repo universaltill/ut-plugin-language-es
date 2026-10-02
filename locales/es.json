@@ -2990,5 +2990,7 @@
   "age_check.outcome.refused": "Rechazar",
   "age_check.refused_hint": "Venta de este artículo rechazada. Quítelo de la cesta para continuar con el resto de la venta.",
   "age_check.tender_blocked": "Registre una verificación de identificación para \"%s\" antes de aceptar el pago.",
-  "age_check.kiosk_blocked": "Este pedido incluye un artículo con restricción de edad. Pague en el mostrador — el personal deberá verificar la identificación de este pedido."
+  "age_check.kiosk_blocked": "Este pedido incluye un artículo con restricción de edad. Pague en el mostrador — el personal deberá verificar la identificación de este pedido.",
+  "bluetoothdevices.ios_system_pairing": "En iPhone y iPad, empareje un escáner de códigos de barras o un teclado en la app Ajustes → Bluetooth. Una vez emparejado, escribe en la caja como un teclado — no hay nada más que configurar aquí.",
+  "bluetoothdevices.ios_no_printers": "Las impresoras de tickets Bluetooth y las básculas Bluetooth no se pueden usar desde un iPhone o iPad. Use en su lugar una impresora de tickets de red (Wi-Fi o Ethernet)."
 }
