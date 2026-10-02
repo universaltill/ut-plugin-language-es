@@ -1360,7 +1360,7 @@
   "permissions.action_desc.user_management": "Añadir cuentas de personal, establecer PIN, cambiar roles y activar o desactivar cuentas.",
   "permissions.action_desc.void_comp_waste": "Quitar un artículo con precio de la cesta como anulación, cortesía o merma sin el PIN del responsable, y ver las cifras de mermas en Informes.",
   "permissions.action_desc.worker_allocation": "Registrar en Informes los pagos de propinas y cargos por servicio al personal.",
-  "permissions.action_desc.personal_display": "Elegir un tema y un diseño de pantalla de venta propios. Se aplican en todas las cajas de la tienda y sustituyen la elección de la tienda mientras se tenga la sesión iniciada.",
+  "permissions.action_desc.personal_display": "Elegir un tema y un diseño de pantalla de venta propios. Se aplican en todas las cajas de la tienda y sustituyen la elección de la tienda mientras la sesión esté iniciada.",
   "permissions.group.catalog": "Catálogo",
   "permissions.group.other": "Otros",
   "permissions.group.plugins": "Complementos",
