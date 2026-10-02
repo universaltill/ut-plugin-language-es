@@ -2971,5 +2971,16 @@
   "settings.store_name.error_required": "Introduce el nombre de tu negocio. Se imprime en cada recibo.",
   "settings.store_name.error_too_long": "El nombre del negocio puede tener como máximo 80 caracteres.",
   "settings.store_name.error_invalid_chars": "El nombre del negocio no puede contener saltos de línea, tabulaciones ni caracteres ocultos.",
-  "elevation.summary.store_name": "Cambiar el nombre del negocio a «%s»."
+  "elevation.summary.store_name": "Cambiar el nombre del negocio a «%s».",
+  "catalog.age_restricted": "Restringido por edad (verificación de identificación en la caja)",
+  "age_check.badge": "Requiere verificación de edad",
+  "age_check.badge_accepted": "Identificación verificada",
+  "age_check.badge_refused": "Identificación rechazada — quitar artículo",
+  "age_check.open": "Registrar la verificación de identificación de este artículo",
+  "age_check.prompt": "Artículo con restricción de edad. Verifique la identificación del cliente y registre su decisión.",
+  "age_check.outcome.accepted": "Aceptar",
+  "age_check.outcome.refused": "Rechazar",
+  "age_check.refused_hint": "Venta de este artículo rechazada. Quítelo de la cesta para continuar con el resto de la venta.",
+  "age_check.tender_blocked": "Registre una verificación de identificación para \"%s\" antes de aceptar el pago.",
+  "age_check.kiosk_blocked": "Este pedido incluye un artículo con restricción de edad. Pague en el mostrador — el personal deberá verificar la identificación de este pedido."
 }
