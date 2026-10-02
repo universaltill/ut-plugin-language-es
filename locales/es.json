@@ -1565,6 +1565,7 @@
   "pos.divider.label": "Arrastre para cambiar el tamaño de los paneles de cesta y productos. Toque dos veces para restablecer.",
   "pos.error.network": "Problema de conexión — la caja sigue funcionando sin conexión.",
   "pos.error.sale_not_found": "Venta no encontrada",
+  "pos.error.sale_status_transition": "No se puede cambiar esta venta a ese estado — una venta completada solo se puede anular.",
   "pos.error.server": "Algo salió mal. Inténtelo de nuevo.",
   "pos.error.void_voucher_redeemed": "Esta venta emitió un vale que ya ha sido utilizado — no se puede anular",
   "pos.toast.customer_linked": "Cliente %s vinculado",
