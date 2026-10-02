@@ -490,6 +490,8 @@
   "common.money.invalid_whole": "Introduce el importe como número entero, solo cifras.",
   "common.no_results": "Sin coincidencias: pruebe otra búsqueda.",
   "common.save": "Guardar",
+  "common.show_more": "Más",
+  "common.show_less": "Menos",
   "common.submit": "Enviar",
   "common.view": "Ver",
   "countrysettings.col.country": "País",
