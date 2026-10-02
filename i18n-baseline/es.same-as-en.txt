@@ -40,6 +40,9 @@ catalog.builtin_icon.pizza
 catalog.col.sku
 catalog.color
 catalog.image_upload_error_prefix
+catalog.labels.unit.kg
+catalog.net_quantity.unit.g
+catalog.net_quantity.unit.ml
 fiscaldevice.plugin.title
 help.plugins
 inventory.dialog_context
