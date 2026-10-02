@@ -794,6 +794,7 @@
   "import.error.stage_expired": "Esta vista previa ha caducado — pulse Vista previa de nuevo y, después, Importar.",
   "import.error.xlsx_legacy_unsupported": "Este es un archivo de Excel con formato antiguo (.xls). Guárdelo como .xlsx o CSV e inténtelo de nuevo.",
   "import.error.xlsx_merged_cells": "Este libro contiene celdas combinadas, que no se pueden leer de forma fiable. Quite las celdas combinadas (o expórtelo como CSV) e inténtelo de nuevo.",
+  "import.error.xlsx_shopify_unsupported": "Las exportaciones del catálogo de Shopify en formato Excel aún no son compatibles — suba la exportación CSV en su lugar.",
   "import.export_btn": "Guardar el catálogo en CSV en Descargas",
   "import.export_download_started": "Descarga iniciada — consulte sus notificaciones o la aplicación Archivos.",
   "import.export_help": "Sus datos son suyos: descargue todo el catálogo — nombres, SKU, códigos de barras, precios, categorías y stock — en un archivo CSV. El archivo se puede volver a importar en cualquier Universal Till (y en otros sistemas que lean CSV).",
