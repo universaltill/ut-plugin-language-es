@@ -2741,7 +2741,7 @@
   "tills.col_name": "Nombre",
   "tills.col_seen": "Vista por última vez",
   "tills.col_version": "Versión",
-  "tills.discovery.denied": "Universal Till no puede usar la red local en este dispositivo. Si se te acaba de preguntar, permítelo y vuelve a buscar; si no, activa «Red local» para Universal Till en los Ajustes del dispositivo, o introduce un código de emparejamiento.",
+  "tills.discovery.denied": "Universal Till no puede usar la red local en este dispositivo. Si se le acaba de preguntar, permítalo y vuelva a buscar; si no, active «Red local» para Universal Till en los Ajustes del dispositivo, o introduzca un código de emparejamiento en su lugar.",
   "tills.discovery.error": "No se ha podido buscar cajas principales en esta red.",
   "tills.discovery.find_button": "Buscar una caja principal en esta red",
   "tills.discovery.help": "Busque en esta red una caja principal que ya se esté anunciando — así no hace falta escribir a mano un código de emparejamiento.",
