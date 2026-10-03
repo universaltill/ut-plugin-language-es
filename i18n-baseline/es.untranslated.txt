@@ -1,1 +1,0 @@
-pos.error.sale_status_transition
