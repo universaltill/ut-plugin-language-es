@@ -3084,5 +3084,14 @@
   "settings.retention.upload_refused": "Subida a la nube rechazada: la suscripción no está activa. Los informes se quedan en esta caja y se subirán cuando vuelva a estar activa.",
   "status.report_archive.hint": "La nube rechazó la subida de los informes porque la suscripción no está activa. Los informes se quedan en esta caja y se subirán cuando vuelva a estar activa.",
   "status.report_archive.refused": "Subida de informes rechazada",
-  "settings.retention.err_use_retention_card": "Cambie dónde se guardan los informes en la tarjeta «Conservación de informes»."
+  "settings.retention.err_use_retention_card": "Cambie dónde se guardan los informes en la tarjeta «Conservación de informes».",
+  "elevation.summary.cancel_order": "Cancelar la cuenta %s. Se quita de las cuentas abiertas y no se puede deshacer.",
+  "hold.toast.reparked": "Cuenta %s aparcada de nuevo — puede atender al siguiente cliente",
+  "open_orders.cancel.action": "Cancelar cuenta",
+  "open_orders.cancel.action_named": "Cancelar cuenta — %s",
+  "open_orders.cancel.confirm_named": "¿Cancelar la cuenta %s? Se quita de las cuentas abiertas y no se puede deshacer.",
+  "open_orders.cancel.done": "Cuenta cancelada",
+  "open_orders.cancel.error.live": "Esa cuenta está abierta ahora mismo en la pantalla de venta. Termínela allí o toque «Nueva venta» para volver a aparcarla primero.",
+  "open_orders.cancel.error.main_till_unreachable": "No se puede contactar con la caja principal — esta cuenta sigue abierta allí. Cancélela cuando vuelva la caja principal, o cancélela en la caja principal.",
+  "open_orders.col.actions": "Acciones"
 }
