@@ -3077,5 +3077,6 @@
   "settings.retention.pending_uploads": "Informes pendientes de subir a la nube: %d",
   "settings.retention.upload_refused": "Subida a la nube rechazada: la suscripción no está activa. Los informes se quedan en esta caja y se subirán cuando vuelva a estar activa.",
   "status.report_archive.hint": "La nube rechazó la subida de los informes porque la suscripción no está activa. Los informes se quedan en esta caja y se subirán cuando vuelva a estar activa.",
-  "status.report_archive.refused": "Subida de informes rechazada"
+  "status.report_archive.refused": "Subida de informes rechazada",
+  "settings.retention.err_use_retention_card": "Cambie dónde se guardan los informes en la tarjeta «Conservación de informes»."
 }
