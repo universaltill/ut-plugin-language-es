@@ -2360,7 +2360,6 @@
   "settings.retention.help": "Elija dónde se conserva el archivo de informes de cierre de día y por cuánto tiempo. Los informes siempre se conservan durante al menos 10 años.",
   "settings.retention.mode_both": "Caja + nube",
   "settings.retention.mode_cloud": "Solo nube",
-  "settings.retention.mode_coming_soon": "próximamente",
   "settings.retention.mode_label": "Conservar informes en",
   "settings.retention.mode_till": "Solo esta caja",
   "settings.retention.title": "Conservación de informes",
@@ -3071,5 +3070,12 @@
   "age_check.tender_blocked": "Registre una verificación de identificación para \"%s\" antes de aceptar el pago.",
   "age_check.kiosk_blocked": "Este pedido incluye un artículo con restricción de edad. Pague en el mostrador — el personal deberá verificar la identificación de este pedido.",
   "bluetoothdevices.ios_system_pairing": "En iPhone y iPad, empareje un escáner de códigos de barras o un teclado en la app Ajustes → Bluetooth. Una vez emparejado, escribe en la caja como un teclado — no hay nada más que configurar aquí.",
-  "bluetoothdevices.ios_no_printers": "Las impresoras de tickets Bluetooth y las básculas Bluetooth no se pueden usar desde un iPhone o iPad. Use en su lugar una impresora de tickets de red (Wi-Fi o Ethernet)."
+  "bluetoothdevices.ios_no_printers": "Las impresoras de tickets Bluetooth y las básculas Bluetooth no se pueden usar desde un iPhone o iPad. Use en su lugar una impresora de tickets de red (Wi-Fi o Ethernet).",
+  "settings.retention.err_invalid_mode": "Elija dónde guardar los informes: solo en esta caja, solo en la nube o caja + nube.",
+  "settings.retention.err_needs_subscription": "Guardar los informes en la nube requiere una suscripción activa que incluya la copia de seguridad en la nube. Los informes se quedan en esta caja.",
+  "settings.retention.mode_needs_subscription": "requiere una suscripción activa",
+  "settings.retention.pending_uploads": "Informes pendientes de subir a la nube: %d",
+  "settings.retention.upload_refused": "Subida a la nube rechazada: la suscripción no está activa. Los informes se quedan en esta caja y se subirán cuando vuelva a estar activa.",
+  "status.report_archive.hint": "La nube rechazó la subida de los informes porque la suscripción no está activa. Los informes se quedan en esta caja y se subirán cuando vuelva a estar activa.",
+  "status.report_archive.refused": "Subida de informes rechazada"
 }
