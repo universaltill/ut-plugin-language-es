@@ -3093,5 +3093,9 @@
   "open_orders.cancel.done": "Cuenta cancelada",
   "open_orders.cancel.error.live": "Esa cuenta está abierta ahora mismo en la pantalla de venta. Termínela allí o toque «Nueva venta» para volver a aparcarla primero.",
   "open_orders.cancel.error.main_till_unreachable": "No se puede contactar con la caja principal — esta cuenta sigue abierta allí. Cancélela cuando vuelva la caja principal, o cancélela en la caja principal.",
-  "open_orders.col.actions": "Acciones"
+  "open_orders.col.actions": "Acciones",
+  "settings.enrol.check_plan_btn": "Comprobar si hay un plan de pago",
+  "settings.enrol.check_plan_sent": "Consultando con la nube. Si esta tienda tiene un plan de pago, la sincronización con la nube empezará en menos de un minuto.",
+  "settings.enrol.cloud_sync_off": "La sincronización con la nube está desactivada. Forma parte de los planes de pago — en cuanto esta tienda tenga uno, la caja se sincronizará automáticamente con su cuenta en línea.",
+  "elevation.summary.enrol_check_plan": "Preguntar ahora a la nube si esta tienda tiene un plan de pago."
 }
