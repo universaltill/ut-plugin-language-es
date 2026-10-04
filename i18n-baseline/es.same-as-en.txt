@@ -71,5 +71,9 @@ settings.printer.drawer_pin_5
 setup.country.in
 setup.country.pt
 setup.country.tr
+subscription.plan.chain
+subscription.plan.pro
+subscription.plan.shop
+subscription.plan_label
 tables.status.open_minutes
 users.col.pin
