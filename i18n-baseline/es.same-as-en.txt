@@ -76,4 +76,5 @@ subscription.plan.pro
 subscription.plan.shop
 subscription.plan_label
 tables.status.open_minutes
+tour.counter
 users.col.pin
