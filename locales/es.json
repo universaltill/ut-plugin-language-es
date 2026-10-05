@@ -3110,7 +3110,7 @@
   "subscription.status.active": "Activa",
   "subscription.status.lapsed": "Finalizada",
   "subscription.status.none": "Sin suscripción",
-  "subscription.renews": "Se renueva el %s",
+  "subscription.renews": "Pagada hasta el %s",
   "subscription.last_confirmed": "Última confirmación: %s",
   "subscription.free_note": "Está en el plan gratuito Local. Vender, emitir tickets y ver informes en esta caja es gratis en todos los planes.",
   "subscription.chip.stale": "Suscripción sin confirmar",
