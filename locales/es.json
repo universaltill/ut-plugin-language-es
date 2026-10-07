@@ -2551,6 +2551,8 @@
   "shifts.skim_manager_pin_hint": "El retiro de efectivo a la caja fuerte requiere la aprobación de un responsable, igual que cualquier otra salida de efectivo.",
   "shifts.title": "Turnos",
   "shifts.variance": "Diferencia",
+  "shop_name_notice.cta": "Ir a Ajustes",
+  "shop_name_notice.title": "Ponga un nombre a su negocio: en los tickets todavía aparece un nombre provisional.",
   "shrinkage.error.invalid_reason": "Elija un motivo: anulación, cortesía o merma.",
   "shrinkage.prompt": "¿Por qué se elimina esta línea?",
   "shrinkage.reason.comp": "Cortesía",
