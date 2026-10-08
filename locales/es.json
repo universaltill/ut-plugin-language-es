@@ -1493,6 +1493,7 @@
   "plugins.permissions.desc.blob_own": "Almacenar sus propios archivos de forma privada (p. ej., imágenes o documentos que genera).",
   "plugins.permissions.desc.cloud_directive": "Recibir instrucciones que le envíe su cuenta de Universal Till Cloud.",
   "plugins.permissions.desc.db_own": "Almacenar sus propios datos de forma privada — nunca sus datos de ventas ni de clientes.",
+  "plugins.permissions.desc.device_info": "Leer el ID de dispositivo, las direcciones de red local y la zona horaria de esta caja (p. ej., para las cabeceras antifraude de una autoridad tributaria).",
   "plugins.permissions.desc.http_lan": "Conectarse a dispositivos en la red local de su tienda (p. ej., una impresora de recibos o un lector de tarjetas).",
   "plugins.permissions.desc.http_stream": "Enviar y recibir grandes cantidades de datos por internet en un flujo continuo.",
   "plugins.permissions.desc.schedule": "Ejecutarse en segundo plano según una programación recurrente.",
