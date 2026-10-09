@@ -2187,6 +2187,7 @@
   "settings.display.large": "pantallas grandes",
   "settings.display.launch_on_startup_label": "Iniciar automáticamente",
   "settings.display.launch_on_startup_pending_note": "Surtirá efecto cuando esté disponible la compatibilidad de inicio automático para esta plataforma.",
+  "settings.display.err_invalid_mode": "Elija un perfil del dispositivo: Caja registradora, Trastienda o Quiosco de autopedido.",
   "settings.display.mode": "Perfil del dispositivo",
   "settings.display.mode_backoffice": "Trastienda (puesto del responsable)",
   "settings.display.mode_register": "Caja registradora (pantalla de venta)",
