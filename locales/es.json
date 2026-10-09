@@ -2007,6 +2007,7 @@
   "settings.backup.col_file": "Archivo",
   "settings.backup.col_size": "Tamaño",
   "settings.backup.done": "Copia de seguridad creada",
+  "settings.backup.done_no_photos": "Copia de seguridad creada, pero no se han podido añadir las fotos — inténtelo de nuevo",
   "settings.backup.download": "Guardar en Descargas",
   "settings.backup.download_failed": "No se ha podido descargar la copia de seguridad.",
   "settings.backup.failed": "No se ha podido crear la copia de seguridad",
