@@ -9,3 +9,5 @@
 - `scripts/check-key-drift.sh` against the core branch's `en.json` passes (3186/3186 keys, 0 drift).
 
 **Merge order:** after the universal-till PR for ut-docs#3861; until then the key isn't in core's `main`.
+
+**Re-cut (2026-10-09, lane:cloud-41 sweep):** merged `main` after the ut-docs#3978 pack release took this branch's version; bumped to 1.1.193. `check-key-drift.sh` against core `main` (now carrying the key, universal-till#1795): 3190/3190, 0 drift. `validate.sh` ok.
