@@ -2238,6 +2238,7 @@
   "settings.enrol.registered": "Esta caja está registrada en el marketplace de Universal Till.",
   "settings.enrol.registered_via_main": "Esta caja está registrada a través de la caja principal.",
   "settings.enrol.retry": "Registrar ahora",
+  "settings.enrol.service_unavailable": "La nube de Universal Till no está disponible para esta tienda. La caja sigue funcionando sin conexión.",
   "settings.enrol.store": "ID de la tienda",
   "settings.enrol.title": "Registro de la caja",
   "settings.error.change_on_main_till": "Cambie este ajuste en la caja principal.",
