@@ -1502,6 +1502,7 @@
   "plugins.permissions.desc.ui_page": "Añadir su propia página o pantalla a la caja.",
   "plugins.permissions.desc.ui_slot": "Añadir contenido en un lugar específico de las pantallas de la caja.",
   "plugins.permissions.desc.view": "Leer informes concretos de la caja que usted haya aprobado (p. ej., ventas por día).",
+  "plugins.permissions.desc.view_users": "Leer su lista de personal — nombres y si cada persona está activa. Nunca PIN, nombres de usuario ni roles.",
   "plugins.permissions.setting_bound": "Se conecta solo a la dirección guardada en:",
   "plugins.permissions.setting_bound_hint": "Solo llega a la dirección guardada en este momento en estos ajustes, incluida una de la red de la tienda. Si cambia el ajuste, el permiso lo sigue.",
   "plugins.permissions.setting_bound_not_set": "sin configurar: el permiso no llega a ninguna parte",
