@@ -2424,6 +2424,8 @@
   "settings.update.apply_confirm": "¿Descargar e instalar la actualización ahora? La caja se reinicia al terminar.",
   "settings.update.auto_blocked": "Las actualizaciones automáticas están activadas, pero esta caja no puede instalarlas por sí misma: su carpeta de instalación no tiene permiso de escritura para la caja. Si se instaló desde el paquete .deb, vuelva a instalar el más reciente — eso repara la carpeta; si no, dé al usuario de la caja permiso de escritura en esa carpeta. Después compruebe de nuevo.",
   "settings.update.auto_enable": "Actualizar automáticamente",
+  "settings.update.follows_main": "Esta caja sigue la versión de la caja principal (%s). Cambie las actualizaciones automáticas en la caja principal.",
+  "settings.update.follows_main_unknown": "Esta caja sigue la versión de la caja principal. Cambie las actualizaciones automáticas en la caja principal.",
   "settings.update.check_btn": "Buscar actualizaciones",
   "settings.update.check_failed": "No se ha podido contactar con el servidor de actualizaciones — inténtelo más tarde",
   "settings.update.download": "Descargar",
