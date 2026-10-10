@@ -3192,5 +3192,8 @@
   "import.welcome.skip.body": "Añada productos uno a uno en el catálogo, o empiece a vender y añádalos después.",
   "import.welcome.skip.items": "Añadir artículos a mano",
   "import.welcome.skip.title": "Omitir por ahora",
-  "import.welcome.title": "Su caja está lista: ahora añada sus productos"
+  "import.welcome.title": "Su caja está lista: ahora añada sus productos",
+  "settings.enrol.claim_failed": "No se ha podido obtener un código para reclamar la tienda — compruebe la conexión a internet e inténtelo de nuevo.",
+  "settings.enrol.not_configured": "Esta caja no tiene configurada ninguna dirección de la nube, así que no puede registrarse. La caja sigue funcionando sin conexión; pida a quien la instaló que configure una.",
+  "settings.enrol.busy": "Todavía hay otro intento de registro en curso — espere un momento e inténtelo de nuevo."
 }
