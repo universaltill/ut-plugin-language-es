@@ -6,6 +6,6 @@
 
 **Verified:**
 - `scripts/validate.sh` and `scripts/check-key-drift.test.sh` pass.
-- `scripts/check-key-drift.sh` against core `main`'s `en.json` no longer lists this key. The only remaining drift is `plugins.permissions.desc.view_users`, which this pack's open ut-docs#3976 PR adds. Against `en.json` without that key the guard passes: 3191/3191 keys, 0 drift.
+- `scripts/check-key-drift.sh` against core `main`'s `en.json` passes: 3192/3192 keys, 0 drift.
 
-**Merge order:** independent of the #3976 pack PR; whichever merges second needs a version re-bump.
+**Ported line:** this PR also carries `plugins.permissions.desc.view_users`, copied verbatim from this pack's #408 (ut-docs#3976, reviewed in that lane). Core `main` already has that key, but #408 is waiting on a human merge. Without the port, this PR's `key-drift` stays red on that key, and #408's stays red on this one, so neither could go green on its own. Once this PR merges, #408's locale line is already on `main`.
