@@ -27,7 +27,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate manifest + plugin manifest
         run: scripts/validate.sh
       - name: Package (dry run)
@@ -36,7 +36,7 @@ jobs:
   key-drift:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # Self-tests run first so a red drift run always comes with an answer
       # to "is the guard itself sound?". The drift check itself runs
       # `if: always()` -- even if self-tests fail -- so a network failure or
@@ -56,7 +56,7 @@ jobs:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # Need history back to the PR base, not just a shallow tip.
           fetch-depth: 0
