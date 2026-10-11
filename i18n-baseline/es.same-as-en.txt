@@ -39,6 +39,7 @@ catalog.builtin_icon.group.general
 catalog.builtin_icon.pizza
 catalog.col.sku
 catalog.color
+catalog.image.original
 catalog.image_upload_error_prefix
 catalog.labels.unit.kg
 catalog.net_quantity.unit.g
