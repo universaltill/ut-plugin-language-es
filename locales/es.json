@@ -471,6 +471,7 @@
   "catalog.variants.generate": "Generar variantes",
   "catalog.variants.generate_hint": "Crea una variante por combinación al precio del artículo. Volver a ejecutarlo nunca duplica ni elimina variantes existentes — solo añade las que faltan.",
   "catalog.variants.generate_none_applied": "Aplica al menos un conjunto de opciones antes de generar.",
+  "catalog.variants.generate_too_many": "Generar daría a este artículo %d variantes — un artículo puede tener como máximo %d. No se ha creado nada; elimina un valor o usa un solo conjunto de opciones.",
   "catalog.variants.generated_count": "%d variante(s) creada(s).",
   "catalog.variants.no_option_sets": "Aún no hay conjuntos de opciones — crea uno primero en",
   "catalog.variants.none": "Todavía no hay variantes — añada una abajo.",
