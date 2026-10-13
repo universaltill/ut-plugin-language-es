@@ -3251,5 +3251,6 @@
   "pos.gift_voucher.use": "Se puede usar en",
   "pos.gift_voucher.use_any": "Cualquier compra",
   "pos.gift_voucher.use_specific": "Artículo específico (con impuesto ahora)",
-  "pos.gift_voucher.value": "Valor"
+  "pos.gift_voucher.value": "Valor",
+  "tracking.awaiting_payment": "Esperando el pago en el mostrador"
 }
