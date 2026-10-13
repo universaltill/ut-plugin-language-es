@@ -3252,5 +3252,7 @@
   "pos.gift_voucher.use_any": "Cualquier compra",
   "pos.gift_voucher.use_specific": "Artículo específico (con impuesto ahora)",
   "pos.gift_voucher.value": "Valor",
-  "tracking.awaiting_payment": "Esperando el pago en el mostrador"
+  "tracking.awaiting_payment": "Esperando el pago en el mostrador",
+  "receipt.tracking.caption": "Escanee para seguir su pedido",
+  "designer.receipt.show_tracking_qr": "QR de seguimiento del pedido (planes de pago)"
 }
