@@ -1765,6 +1765,7 @@
   "receipt.tip": "Propina",
   "receipt.title": "Ticket",
   "receipt.vouchers.issued": "Vales emitidos",
+  "receipt.vouchers.void": "ANULADO - no válido",
   "recovery.db_open_failed": "La caja no pudo abrir su base de datos. Sus datos están seguros — es necesario reintentar o contactar con soporte.",
   "recovery.disk_full": "La caja se ha quedado sin espacio de almacenamiento. Libere espacio en este dispositivo y vuelva a intentarlo.",
   "recovery.migration_failed": "La caja no pudo completar una actualización de su base de datos. Sus datos están seguros — es necesario reintentar o contactar con soporte.",
