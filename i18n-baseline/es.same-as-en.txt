@@ -61,6 +61,7 @@ permissions.unlocks_separator
 plugins.manage.title
 plugins.trust.official
 plugins.type.hardware
+receipt.paper.total
 recovery.safe_mode_col_total
 reports.eod.period_range
 reports.seasonal_lunar_badge
