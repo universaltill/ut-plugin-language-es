@@ -3317,6 +3317,7 @@
   "settings.enrol.claim_failed": "No se ha podido obtener un código para reclamar la tienda — compruebe la conexión a internet e inténtelo de nuevo.",
   "settings.enrol.not_configured": "Esta caja no tiene configurada ninguna dirección de la nube, así que no puede registrarse. La caja sigue funcionando sin conexión; pida a quien la instaló que configure una.",
   "settings.enrol.busy": "Todavía hay otro intento de registro en curso — espere un momento e inténtelo de nuevo.",
+  "settings.enrol.name_required": "Primero ponga nombre a su negocio: la caja solo se registra en la nube cuando el negocio tiene un nombre real.",
   "basket.gift_voucher.for": "Para %s",
   "catalog.item_type": "Tipo",
   "catalog.item_type.gift_voucher": "Vale regalo",
