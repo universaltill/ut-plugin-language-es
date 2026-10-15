@@ -909,6 +909,7 @@
   "import.status.name_already_in_catalog": "el nombre ya está en el catálogo",
   "import.status.not_sellable": "no es un artículo vendible (interruptor de tipo de pedido)",
   "import.status.ok": "correcto",
+  "import.status.seeded_gift_voucher_removed": "Se ha eliminado el artículo de vale regalo «%s» creado en la configuración, porque esta importación trae el suyo.",
   "import.status.sku_already_in_catalog": "la referencia ya está en el catálogo",
   "import.status.sku_reused_in_file": "número de artículo \"%s\" repetido en este archivo — importado con un nuevo número",
   "import.status.source_deleted": "eliminado en el archivo de origen",
