@@ -3359,5 +3359,6 @@
   "vouchers.adjust.error.reload": "Este formulario está desactualizado. Recargue la página e inténtelo de nuevo.",
   "vouchers.adjust.error.primary_unreachable": "No se puede conectar con la caja principal: las correcciones se hacen en el registro de la caja principal. Inténtelo de nuevo cuando esté disponible.",
   "vouchers.history.type.adjustment": "Corrección",
-  "vouchers.history.by": "por %s"
+  "vouchers.history.by": "por %s",
+  "vouchers.adjust.error.primary_unknown": "La caja principal no confirmó la corrección: puede que se haya guardado o no. Recargue la página y revise el historial antes de volver a intentarlo."
 }

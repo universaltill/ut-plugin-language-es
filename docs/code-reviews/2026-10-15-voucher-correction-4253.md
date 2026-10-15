@@ -1,6 +1,6 @@
 # Review — gift voucher balance correction keys (es, ut-docs#4253)
 
-**What:** the 18 keys core adds for the manager balance correction on the voucher
+**What:** the 19 keys core adds for the manager balance correction on the voucher
 detail page (`vouchers.adjust.*`, `vouchers.history.type.adjustment`,
 `vouchers.history.by`) translated, plus the manifest version bump so the change ships.
 
