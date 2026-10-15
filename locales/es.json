@@ -553,6 +553,7 @@
   "common.loading": "Cargando…",
   "common.money.invalid": "Introduce el importe en cifras, con punto o coma antes de los decimales (por ejemplo, 3,50 o 3.50).",
   "common.money.invalid_whole": "Introduce el importe como número entero, solo cifras.",
+  "common.percent.invalid": "Introduce el porcentaje en cifras, con punto o coma antes de dos decimales como máximo (por ejemplo, 7,5 o 7.25).",
   "common.no_results": "Sin coincidencias: pruebe otra búsqueda.",
   "common.save": "Guardar",
   "common.show_less": "Menos",
