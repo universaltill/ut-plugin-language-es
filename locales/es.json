@@ -3372,5 +3372,22 @@
   "vouchers.adjust.error.primary_unreachable": "No se puede conectar con la caja principal: las correcciones se hacen en el registro de la caja principal. Inténtelo de nuevo cuando esté disponible.",
   "vouchers.history.type.adjustment": "Corrección",
   "vouchers.history.by": "por %s",
-  "vouchers.adjust.error.primary_unknown": "La caja principal no confirmó la corrección: puede que se haya guardado o no. Recargue la página y revise el historial antes de volver a intentarlo."
+  "vouchers.adjust.error.primary_unknown": "La caja principal no confirmó la corrección: puede que se haya guardado o no. Recargue la página y revise el historial antes de volver a intentarlo.",
+  "basket.gift_voucher.top_up": "Recarga",
+  "receipt.vouchers.top_up": "Recarga de vale regalo",
+  "receipt.vouchers.new_balance": "Nuevo saldo %s",
+  "receipt.vouchers.top_up_void": "ANULADO - recarga retirada",
+  "vouchers.history.type.top_up": "Recarga",
+  "vouchers.history.type.top_up_void": "Recarga anulada",
+  "vouchers.top_up.title": "Recargar",
+  "vouchers.top_up.intro": "Añada saldo a este vale como una venta: el importe pasa a la venta actual en la pantalla de venta y el vale se abona cuando el cliente paga.",
+  "vouchers.top_up.amount": "Importe a añadir",
+  "vouchers.top_up.add": "Añadir a la venta",
+  "vouchers.top_up.not_void": "Un vale anulado no se puede recargar.",
+  "vouchers.top_up.not_single": "Un vale para un artículo concreto no se puede recargar: su valor ya tributó cuando se vendió.",
+  "vouchers.top_up.replica_note": "Las recargas se hacen en la caja principal. Abra este vale allí para añadirle saldo.",
+  "vouchers.top_up.error.amount": "Introduzca un importe mayor que cero. El saldo de un vale no puede superar %s.",
+  "vouchers.top_up.error.in_sale": "Este vale ya está en la venta actual.",
+  "vouchers.top_up.error.no_item": "No hay ningún artículo de vale regalo activo. Cree uno en el catálogo (tipo de artículo: Vale regalo) e inténtelo de nuevo.",
+  "pos.toast.voucher_top_up_failed": "Esta venta recarga un vale regalo que ya no admite recargas (anulado, para un artículo concreto o por encima de su límite). Quite la línea de recarga y revise el vale."
 }
