@@ -2925,6 +2925,8 @@
   "tills.col_version": "Versión",
   "tills.col_role": "Rol",
   "tills.discovery.ambient.banner": "Se ha encontrado una caja principal en esta red: %s. ¿Conectar esta caja a ella?",
+  "tills.discovery.ambient.has_sales_confirm": "Sustituir las ventas y los datos de esta caja",
+  "tills.discovery.ambient.has_sales_warning": "Esta caja ya tiene ventas. Conectarla sustituye todo lo que contiene — ventas, productos y ajustes — por la copia de la caja principal. Las ventas propias de esta caja no se envían a la caja principal; solo quedan en una copia en la carpeta de copias de esta caja.",
   "tills.discovery.ambient.dismiss": "No volver a preguntar en esta caja",
   "tills.discovery.ambient.link": "Conectar esta caja",
   "tills.discovery.denied": "Universal Till no puede usar la red local en este dispositivo. Si se le acaba de preguntar, permítalo y vuelva a buscar; si no, active «Red local» para Universal Till en los Ajustes del dispositivo, o introduzca un código de emparejamiento en su lugar.",
