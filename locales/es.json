@@ -2509,7 +2509,7 @@
   "settings.tills.name_label": "Nombre de la caja",
   "settings.tills.open": "Gestionar cajas / emparejar una nueva",
   "settings.tills.register_help": "Los pagos en efectivo (por ejemplo, una devolución de depósito) se registran en el turno abierto de esta caja. Si su negocio tiene más de una caja, configure esto antes de registrar pagos.",
-  "settings.tills.register_label": "Caja de este dispositivo",
+  "settings.tills.register_label": "Caja para pagos en efectivo",
   "settings.tills.register_unset": "Sin configurar — elija una caja",
   "settings.title": "Ajustes del sistema",
   "settings.tse.awaiting_ready": "La configuración de TSE está en curso — su servicio de firma se está preparando. Esta caja recogerá el resultado automáticamente.",
@@ -3499,5 +3499,8 @@
   "pos.scan_choice.voucher": "Vale regalo",
   "pos.scan_choice.customer": "Cliente",
   "pos.scan_choice.promo": "Promoción",
-  "pos.scan_choice.receipt": "Recibo"
+  "pos.scan_choice.receipt": "Recibo",
+  "settings.tills.role_label": "Esta caja",
+  "settings.tills.role_main": "Caja principal",
+  "settings.tills.main_till_addr": "Caja principal: %s"
 }
