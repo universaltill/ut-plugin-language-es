@@ -3396,5 +3396,11 @@
   "vouchers.top_up.error.amount": "Introduzca un importe mayor que cero. El saldo de un vale no puede superar %s.",
   "vouchers.top_up.error.in_sale": "Este vale ya está en la venta actual.",
   "vouchers.top_up.error.no_item": "No hay ningún artículo de vale regalo activo. Cree uno en el catálogo (tipo de artículo: Vale regalo) e inténtelo de nuevo.",
-  "pos.toast.voucher_top_up_failed": "Esta venta recarga un vale regalo que ya no admite recargas (anulado, para un artículo concreto o por encima de su límite). Quite la línea de recarga y revise el vale."
+  "pos.toast.voucher_top_up_failed": "Esta venta recarga un vale regalo que ya no admite recargas (anulado, para un artículo concreto o por encima de su límite). Quite la línea de recarga y revise el vale.",
+  "pos.scan_choice.title": "Este código coincide con más de un elemento. ¿Cuál es?",
+  "pos.scan_choice.item": "Artículo",
+  "pos.scan_choice.voucher": "Vale regalo",
+  "pos.scan_choice.customer": "Cliente",
+  "pos.scan_choice.promo": "Promoción",
+  "pos.scan_choice.receipt": "Recibo"
 }
