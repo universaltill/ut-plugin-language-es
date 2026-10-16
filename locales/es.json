@@ -1877,7 +1877,7 @@
   "registers.new.location_label": "Ubicación (opcional)",
   "registers.new.location_none": "Ninguna",
   "registers.search_placeholder": "Buscar cajas",
-  "registers.strand_warning": "Crear una segunda caja, o desactivar una caja que otro dispositivo podría estar usando, puede dejar poco clara la asignación de caja de ese dispositivo. Después, compruebe en cada dispositivo Configuración → Cajas → \"Caja de este dispositivo\".",
+  "registers.strand_warning": "Crear una segunda caja, o desactivar una caja que otro dispositivo podría estar usando, puede dejar poco clara la asignación de caja de ese dispositivo. Después, compruebe en cada dispositivo Configuración → Cajas → \"Caja para salidas de efectivo\".",
   "registers.title": "Cajas",
   "reports.avg_sale": "Venta media",
   "reports.business_day_start.help": "Cuándo termina un día de operación y comienza el siguiente para los informes y el selector de período día/semana/mes/año — configúrelo después de la medianoche si opera más allá de la medianoche (por ejemplo, un bar o una cocina que cierra tarde), para que los ingresos de una noche no se dividan entre dos días de informe.",
@@ -2509,7 +2509,7 @@
   "settings.tills.name_label": "Nombre de la caja",
   "settings.tills.open": "Gestionar cajas / emparejar una nueva",
   "settings.tills.register_help": "Los pagos en efectivo (por ejemplo, una devolución de depósito) se registran en el turno abierto de esta caja. Si su negocio tiene más de una caja, configure esto antes de registrar pagos.",
-  "settings.tills.register_label": "Caja de este dispositivo",
+  "settings.tills.register_label": "Caja para salidas de efectivo",
   "settings.tills.register_unset": "Sin configurar — elija una caja",
   "settings.title": "Ajustes del sistema",
   "settings.tse.awaiting_ready": "La configuración de TSE está en curso — su servicio de firma se está preparando. Esta caja recogerá el resultado automáticamente.",
@@ -3031,7 +3031,7 @@
   "tills.role.change_btn": "Cambiar rol",
   "tills.role.change_confirm": "¿Cambiar %s a %s? Esto afecta a una caja que está funcionando en este momento.",
   "tills.show_qr": "Mostrar el código de emparejamiento",
-  "tills.the_primary": "la principal",
+  "tills.the_primary": "la caja principal",
   "tills.this_till": "esta caja",
   "tills.title": "Cajas",
   "tills.tls.not_pinned": "TLS sin fijar",
@@ -3469,5 +3469,8 @@
   "pos.scan_choice.voucher": "Vale regalo",
   "pos.scan_choice.customer": "Cliente",
   "pos.scan_choice.promo": "Promoción",
-  "pos.scan_choice.receipt": "Recibo"
+  "pos.scan_choice.receipt": "Recibo",
+  "settings.tills.role_label": "Esta caja",
+  "settings.tills.role_main": "Caja principal",
+  "settings.tills.main_till_addr": "Caja principal: %s"
 }
