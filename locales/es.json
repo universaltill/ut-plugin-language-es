@@ -2514,6 +2514,7 @@
   "settings.update.android.pin_needed": "Introduzca el PIN del responsable para instalar esta actualización",
   "settings.update.android.progress": "Descargando la actualización… %d%%",
   "settings.update.android.retry": "La actualización ha fallado — pulse para reintentar",
+  "settings.update.android.install_again": "¿No ve el instalador de Android? Pulse para abrirlo de nuevo",
   "settings.update.apply_confirm": "¿Descargar e instalar la actualización ahora? La caja se reinicia al terminar.",
   "settings.update.auto_blocked": "Las actualizaciones automáticas están activadas, pero esta caja no puede instalarlas por sí misma: su carpeta de instalación no tiene permiso de escritura para la caja. Si se instaló desde el paquete .deb, vuelva a instalar el más reciente — eso repara la carpeta; si no, dé al usuario de la caja permiso de escritura en esa carpeta. Después compruebe de nuevo.",
   "settings.update.auto_enable": "Actualizar automáticamente",
