@@ -934,7 +934,7 @@
   "import.status.ok": "correcto",
   "import.status.seeded_gift_voucher_removed": "Se ha eliminado el artículo de vale regalo «%s» creado en la configuración, porque esta importación trae el suyo.",
   "import.status.sku_already_in_catalog": "la referencia ya está en el catálogo",
-  "import.status.sku_reused_in_file": "número de artículo \"%s\" repetido en este archivo — importado con un nuevo número",
+  "import.status.sku_reused_renumbered": "número de artículo \"%s\" repetido en este archivo — nuevo número \"%s\"",
   "import.status.source_deleted": "eliminado en el archivo de origen",
   "import.status.stock_location_failed": "existencias no importadas: la ubicación predeterminada no está disponible",
   "import.status.stock_movement_failed": "existencias no importadas: no se pudo registrar el movimiento de existencias",
