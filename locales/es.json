@@ -3502,5 +3502,11 @@
   "pos.scan_choice.receipt": "Recibo",
   "settings.tills.role_label": "Esta caja",
   "settings.tills.role_main": "Caja principal",
-  "settings.tills.main_till_addr": "Caja principal: %s"
+  "settings.tills.main_till_addr": "Caja principal: %s",
+  "status.shop_currency_mismatch.label": "La moneda difiere de la tienda",
+  "status.shop_currency_mismatch.hint": "Esta caja vende en %[1]s; su tienda en my. usa %[2]s. Cambie la moneda de la caja en Ajustes cuando sea seguro para sus registros. Se puede seguir vendiendo.",
+  "import.file_plugin.detected": "%s reconoció este archivo. Revise la vista previa de abajo: no se guarda nada hasta que pulse «Importar».",
+  "import.file_plugin.too_large": "Este archivo supera los 32 MB, el máximo que puede leer un plugin de importación. Divídalo en archivos más pequeños e impórtelos de uno en uno.",
+  "import.file_plugin.upload_again": "Para volver a intentarlo, elija el archivo y pulse de nuevo «Vista previa».",
+  "import.file_plugin.use_standard": "Usar el importador estándar en su lugar"
 }
