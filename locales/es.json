@@ -3552,5 +3552,14 @@
   "import.file_plugin.detected": "%s reconoció este archivo. Revise la vista previa de abajo: no se guarda nada hasta que pulse «Importar».",
   "import.file_plugin.too_large": "Este archivo supera los 32 MB, el máximo que puede leer un plugin de importación. Divídalo en archivos más pequeños e impórtelos de uno en uno.",
   "import.file_plugin.upload_again": "Para volver a intentarlo, elija el archivo y pulse de nuevo «Vista previa».",
-  "import.file_plugin.use_standard": "Usar el importador estándar en su lugar"
+  "import.file_plugin.use_standard": "Usar el importador estándar en su lugar",
+  "plugins.settings.error.choice": "Elija una de las opciones de la lista.",
+  "plugins.settings.error.max": "Introduzca %s o menos.",
+  "plugins.settings.error.min": "Introduzca %s o más.",
+  "plugins.settings.error.number": "Introduzca un número válido, sin letras, espacios ni separadores de miles.",
+  "plugins.settings.error.required": "Rellene este campo.",
+  "plugins.settings.error.stored_invalid": "El valor guardado no es válido para este campo, por lo que es posible que el plugin no lo use. Se mantiene tal cual hasta que lo cambie.",
+  "plugins.settings.error.summary": "No se ha guardado nada. Corrija los campos marcados y vuelva a guardar.",
+  "plugins.settings.error.too_long": "Use como máximo %s caracteres.",
+  "plugins.settings.error.url": "Introduzca una dirección web que empiece por http:// o https:// (por ejemplo, https://192.168.1.20:8080/api)."
 }
