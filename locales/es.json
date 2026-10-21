@@ -2096,6 +2096,8 @@
   "reports.zpaper.vouchers_adjusted": "Ajustados (%d)",
   "reports.zpaper.stornos_note": "tiques anulados, sin ingresos",
   "reports.zpaper.voided": "Anulados (%d)",
+  "reports.zpaper.cleared_title": "CESTAS VACIADAS SIN COBRAR",
+  "reports.zpaper.cleared_baskets": "Vaciadas (%d)",
   "reports.zpaper.cash.title": "CUADRE DE CAJA",
   "reports.zpaper.cash.opening_float": "Fondo inicial",
   "reports.zpaper.cash.cash_sales": "Ventas en efectivo",
