@@ -3585,5 +3585,9 @@
   "plugins.settings.error.stored_invalid": "El valor guardado no es válido para este campo, por lo que es posible que el plugin no lo use. Se mantiene tal cual hasta que lo cambie.",
   "plugins.settings.error.summary": "No se ha guardado nada. Corrija los campos marcados y vuelva a guardar.",
   "plugins.settings.error.too_long": "Use como máximo %s caracteres.",
-  "plugins.settings.error.url": "Introduzca una dirección web que empiece por http:// o https:// (por ejemplo, https://192.168.1.20:8080/api)."
+  "plugins.settings.error.url": "Introduzca una dirección web que empiece por http:// o https:// (por ejemplo, https://192.168.1.20:8080/api).",
+  "settings.enrol.terms.label": "Acepto las condiciones del servicio en la nube de Universal Till (versión %s).",
+  "settings.enrol.terms.link": "Leer las condiciones",
+  "settings.enrol.terms.accepted": "Condiciones aceptadas: versión %s, %s",
+  "settings.enrol.terms_required": "Acepte las condiciones del servicio en la nube de Universal Till para registrar esta caja."
 }
