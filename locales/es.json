@@ -2644,6 +2644,7 @@
   "setup.cloud.title": "Su tienda",
   "setup.cloud.hint": "Estos datos proceden de su tienda en my.universaltill.com. A continuación hay algunas preguntas que solo esta caja puede responder.",
   "setup.cloud.shop_name": "Nombre de la tienda",
+  "setup.cloud.shop_type": "Tipo de negocio",
   "setup.cloud.shop_country": "País",
   "setup.cloud.shop_currency": "Moneda",
   "setup.cloud.continue": "Continuar",
