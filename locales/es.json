@@ -697,6 +697,7 @@
   "elevation.summary.display_mode": "Establecer el perfil de dispositivo de esta caja en %s.",
   "elevation.summary.enrol_claim_code": "Generar un nuevo código de reclamación de la tienda y su enlace QR.",
   "elevation.summary.enrol_now": "Intentar registrar ahora esta caja en el marketplace.",
+  "elevation.summary.enrol_terms": "Aceptar las condiciones del servicio en la nube de Universal Till para esta tienda.",
   "elevation.summary.enrol_pair": "Vincular esta caja con una tienda en la nube, reemplazando su conexión en la nube actual.",
   "elevation.summary.eod_range_export": "Exportar un informe Z del %s al %s.",
   "elevation.summary.eod_reprint": "Reimprimir el informe de cierre del %s.",
@@ -3589,5 +3590,10 @@
   "settings.enrol.terms.label": "Acepto las condiciones del servicio en la nube de Universal Till (versión %s).",
   "settings.enrol.terms.link": "Leer las condiciones",
   "settings.enrol.terms.accepted": "Condiciones aceptadas: versión %s, %s",
-  "settings.enrol.terms_required": "Acepte las condiciones del servicio en la nube de Universal Till para registrar esta caja."
+  "settings.enrol.terms_required": "Acepte las condiciones del servicio en la nube de Universal Till para registrar esta caja.",
+  "settings.enrol.terms.accept_btn": "Aceptar las condiciones",
+  "settings.enrol.terms.send_btn": "Enviar a la nube",
+  "settings.enrol.terms.unsent": "Su aceptación está guardada en esta caja, pero aún no ha llegado a la nube.",
+  "settings.enrol.terms.send_failed": "No se pudo conectar con la nube. Su aceptación está guardada en esta caja; inténtelo de nuevo.",
+  "settings.enrol.terms.accept_required": "Marque la casilla para aceptar las condiciones del servicio en la nube de Universal Till."
 }
