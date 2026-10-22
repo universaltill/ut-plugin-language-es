@@ -2381,6 +2381,7 @@
   "settings.enrol.pair_busy": "Vinculando…",
   "settings.enrol.pair_failed": "Error al vincular — compruebe el código y la conexión a internet, y vuelva a intentarlo",
   "settings.enrol.pair_help": "¿Tiene un código de vinculación de la cuenta en la nube de su tienda («Añadir o volver a vincular una caja»)? Introdúzcalo aquí para añadir esta caja a esa tienda, o para reconectar una caja que se eliminó o necesita vincularse de nuevo. Esto solo reemplaza la conexión en la nube de esta caja; sus ventas, productos y ajustes se conservan.",
+  "settings.enrol.pair_identity_pinned": "La conexión a la nube de esta caja la fijó quien la instaló, por lo que no se puede vincular aquí. Pídale que quite ese ajuste y vuelva a intentarlo.",
   "settings.enrol.pair_placeholder": "Código de vinculación",
   "settings.enrol.pair_replica_no_store": "Esta caja todavía no ha recibido su tienda desde la caja principal, así que el código no se usó. Espere a que la caja principal se sincronice (o compruebe que esté accesible) y vuelva a intentarlo.",
   "settings.enrol.pair_store_mismatch": "Este código pertenece a una tienda distinta a la de la caja principal de esta caja. Solicite un código de vinculación para esta tienda y vuelva a intentarlo.",
