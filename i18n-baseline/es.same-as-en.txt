@@ -45,6 +45,8 @@ catalog.image_upload_error_prefix
 catalog.labels.unit.kg
 catalog.net_quantity.unit.g
 catalog.net_quantity.unit.ml
+channel_orders.col.total
+channel_orders.detail.col.sku
 fiscaldevice.plugin.title
 help.plugins
 inventory.dialog_context
