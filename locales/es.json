@@ -3673,5 +3673,8 @@
   "channel_orders.detail.refunded_total": "Reembolsado hasta ahora",
   "channel_orders.detail.actions_note": "Aceptar, embalar y enviar un pedido se hace por ahora en my.universaltill.com. Esta página muestra lo registrado en esta caja.",
   "channel_orders.error.load_failed": "No se han podido cargar los pedidos online.",
-  "channel_orders.error.not_found": "No se ha encontrado ese pedido online."
+  "channel_orders.error.not_found": "No se ha encontrado ese pedido online.",
+  "plugins.settings.tab.errors": "%d error(es) en esta sección",
+  "plugins.settings.tab.general": "Generales",
+  "plugins.settings.tab.list": "Secciones de ajustes"
 }
