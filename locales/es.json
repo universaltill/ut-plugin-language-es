@@ -2147,6 +2147,8 @@
   "reports.zpaper.cash.calculated": "Calculado",
   "reports.zpaper.cash.new_float": "Nuevo fondo",
   "reports.zpaper.receipts_range": "Tiques %s - %s",
+  "reports.zpaper.restored_receipts": "Restaurado desde una copia de seguridad: los tiques continúan en %s (último en la copia: %s)",
+  "reports.zpaper.restored_z": "Los números Z continúan en %d (último en la copia: %d)",
   "scan.camera.button": "Escanear con cámara",
   "scan.camera.camera_busy": "La cámara está siendo utilizada por otra aplicación. Cierra la otra aplicación e inténtalo de nuevo.",
   "scan.camera.camera_error": "Cámara no disponible",
