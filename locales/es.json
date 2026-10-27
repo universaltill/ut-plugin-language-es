@@ -3619,7 +3619,7 @@
   "tracking.awaiting_payment": "Esperando el pago en el mostrador",
   "receipt.total_incl_vat": "Total con IVA",
   "receipt.tracking.caption": "Escanee para seguir su pedido",
-  "designer.receipt.show_tracking_qr": "QR de seguimiento del pedido (planes de pago)",
+  "designer.receipt.show_tracking_qr": "QR de seguimiento del pedido (plan Shop o superior)",
   "designer.receipt.tracking_qr_needs_cloud": "Disponible cuando el seguimiento de pedidos pase a nuestra nube.",
   "vouchers.adjust.title": "Corregir saldo",
   "vouchers.adjust.intro": "Indique el saldo que debe tener este vale. No se mueve dinero: el cambio, su nombre y el motivo quedan registrados en el historial del vale y en el informe de cierre del día.",
