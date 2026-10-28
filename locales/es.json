@@ -2668,7 +2668,7 @@
   "setup.auto_register.label": "Registrar esta caja ahora en la nube de Universal Till",
   "setup.back": "Atrás",
   "setup.base_plugins.dismiss_btn": "Quitar",
-  "setup.base_plugins.pending": "Instalando su paquete de idioma %s gratuito en segundo plano — esto puede tardar unos minutos si está sin conexión.",
+  "setup.base_plugins.pending": "Buscando un paquete de idioma %s gratuito — si el catálogo de plugins tiene uno, la caja lo instala en segundo plano.",
   "setup.base_plugins.pending_tax": "Instalando su plugin de impuestos de %s en segundo plano — esto puede tardar unos minutos si está sin conexión.",
   "setup.base_plugins.not_published_tax": "Su plugin de impuestos de %s aún no está en el catálogo de plugins — la caja sigue comprobándolo y lo instalará en cuanto se publique.",
   "setup.base_plugins.title": "Plugins gratuitos para su país",
