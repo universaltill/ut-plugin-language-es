@@ -2714,6 +2714,8 @@
   "setup.cloud.not_mine": "Esta no es mi tienda",
   "setup.cloud.pair_incomplete": "El emparejamiento con su tienda en línea no se completó, así que esta caja aún no se sincroniza. El código se ha usado. Cree uno nuevo en my.universaltill.com y vuelva a emparejar en Ajustes, Cajas.",
   "setup.cloud.syncing": "Sincronizando su tienda",
+  "setup.cloud.syncing_title": "Los productos de su tienda están en camino",
+  "setup.cloud.syncing_body": "Esta caja se ha unido a su tienda y está recibiendo sus productos. Tarda un momento; la pantalla de venta se abre sola cuando hayan llegado. También puede empezar a vender ahora.",
   "setup.cloud.error.invalid_code": "Ese código no es correcto o ha caducado. Cree un código nuevo en my.universaltill.com (Cajas, Añadir una caja) e inténtelo de nuevo.",
   "setup.cloud.error.too_many": "Demasiados intentos. Espere unos minutos e inténtelo de nuevo.",
   "setup.cloud.error.no_network": "No se puede conectar con la nube. Compruebe la conexión a internet de esta caja o configure una tienda nueva.",
