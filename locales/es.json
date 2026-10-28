@@ -2910,6 +2910,7 @@
   "sync.quarantine_none": "No hay entradas en cuarentena — todas las ventas de todas las cajas se han aplicado correctamente.",
   "sync.quarantine_open": "Ver las entradas en cuarentena",
   "sync.quarantine_reason.duplicate_voucher_redemption": "El mismo vale canjeado dos veces en una venta al reproducirla",
+  "sync.quarantine_reason.single_purpose_voucher_top_up": "Recarga de un vale para un artículo concreto rechazada al reproducirla",
   "sync.quarantine_reason.unknown_line_reference": "Producto o variante desconocidos en una línea de venta al reproducirla",
   "sync.quarantine_reason.unknown_sale_reference": "Cajero, cliente, caja o mesa desconocidos al reproducir la venta",
   "sync.quarantine_reason.unknown_voucher_redemption": "Vale desconocido al reproducir su canje",
