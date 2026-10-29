@@ -3743,5 +3743,8 @@
   "channel_orders.detail.refunded_total": "Reembolsado hasta ahora",
   "channel_orders.detail.actions_note": "Aceptar, embalar y enviar un pedido se hace por ahora en my.universaltill.com. Esta página muestra lo registrado en esta caja.",
   "channel_orders.error.load_failed": "No se han podido cargar los pedidos online.",
-  "channel_orders.error.not_found": "No se ha encontrado ese pedido online."
+  "channel_orders.error.not_found": "No se ha encontrado ese pedido online.",
+  "sync.link.rejoin": "Unirse de nuevo a la caja principal",
+  "sync.link.rejoin_hint": "Esta caja ya no usa su antigua conexión con la caja principal, por ejemplo porque sus datos se restauraron en un dispositivo nuevo. Sigue vendiendo; únala de nuevo a la caja principal en la página Cajas.",
+  "tills.rejoin_needed_help": "En la caja principal, cree un código de unión; después use «Unirse a una tienda existente» abajo y dé a esta caja un nombre nuevo. Primero se envían sus ventas que aún no han llegado a la caja principal. No revoque la caja desde la que se restauró si todavía está en uso."
 }
