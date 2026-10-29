@@ -1001,7 +1001,7 @@
   "inventory.days_left": "Días restantes",
   "inventory.days_left_hint": "Días previstos hasta que se agote este artículo, según las ventas de los últimos 28 días",
   "inventory.dialog_context": "{item} — {location}",
-  "inventory.empty": "Todavía no hay stock registrado",
+  "inventory.empty": "Todavía no hay artículos con seguimiento de existencias. Añada artículos en el Catálogo o desmarque allí la casilla «Sin seguimiento de existencias» de un artículo.",
   "inventory.item_placeholder": "Escriba el nombre del artículo o su SKU",
   "inventory.location": "Ubicación",
   "inventory.low_stock": "Stock bajo",
