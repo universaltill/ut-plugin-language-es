@@ -3746,5 +3746,8 @@
   "channel_orders.error.not_found": "No se ha encontrado ese pedido online.",
   "sync.link.rejoin": "Unirse de nuevo a la caja principal",
   "sync.link.rejoin_hint": "Esta caja ya no usa su antigua conexión con la caja principal, por ejemplo porque sus datos se restauraron en un dispositivo nuevo. Sigue vendiendo; únala de nuevo a la caja principal en la página Cajas.",
-  "tills.rejoin_needed_help": "En la caja principal, cree un código de unión; después use «Unirse a una tienda existente» abajo y dé a esta caja un nombre nuevo. Primero se envían sus ventas que aún no han llegado a la caja principal. No revoque la caja desde la que se restauró si todavía está en uso."
+  "tills.rejoin_needed_help": "En la caja principal, cree un código de unión; después use «Unirse a una tienda existente» abajo y dé a esta caja un nombre nuevo. Primero se envían sus ventas que aún no han llegado a la caja principal. No revoque la caja desde la que se restauró si todavía está en uso.",
+  "plugins.install.error.pair_again": "La conexión de esta caja con su tienda ya no es válida. Vuelva a vincularla con su tienda (Ajustes → Registro de la caja → Vincular con una tienda) e inténtelo de nuevo.",
+  "plugins.install.error.pair_required": "Este plugin solo se puede instalar en una caja vinculada con su tienda. Vincule primero esta caja (Ajustes → Registro de la caja → Vincular con una tienda) e inténtelo de nuevo.",
+  "plugins.install.error.till_removed": "Esta caja se eliminó de su tienda, por lo que no puede descargar plugins. Vuelva a vincularla con su tienda (Ajustes → Registro de la caja → Vincular con una tienda) para instalar plugins."
 }
