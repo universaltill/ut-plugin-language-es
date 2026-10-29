@@ -61,7 +61,7 @@
   "auth.clear": "Borrar",
   "auth.enter_pin": "Introduzca su PIN",
   "auth.error.invalid": "PIN no reconocido",
-  "auth.error.locked": "Demasiados intentos — espere 30 segundos",
+  "auth.error.locked": "Demasiados intentos — inténtelo de nuevo en unos momentos",
   "auth.error.pin_format": "El PIN debe tener entre 4 y 8 dígitos",
   "auth.error.pin_mismatch": "Los PIN no coinciden",
   "auth.error.unavailable": "Lo sentimos: la caja no puede acceder a sus propios datos en este momento, así que no puede iniciar tu sesión. Cierra la aplicación por completo y vuelve a abrirla. Si el problema continúa, notifícalo para que podamos revisarlo.",
