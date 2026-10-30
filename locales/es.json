@@ -3749,5 +3749,9 @@
   "tills.rejoin_needed_help": "En la caja principal, cree un código de unión; después use «Unirse a una tienda existente» abajo y dé a esta caja un nombre nuevo. Primero se envían sus ventas que aún no han llegado a la caja principal. No revoque la caja desde la que se restauró si todavía está en uso.",
   "plugins.install.error.pair_again": "La conexión de esta caja con su tienda ya no es válida. Vuelva a vincularla con su tienda (Ajustes → Registro de la caja → Vincular con una tienda) e inténtelo de nuevo.",
   "plugins.install.error.pair_required": "Este plugin solo se puede instalar en una caja vinculada con su tienda. Vincule primero esta caja (Ajustes → Registro de la caja → Vincular con una tienda) e inténtelo de nuevo.",
-  "plugins.install.error.till_removed": "Esta caja se eliminó de su tienda, por lo que no puede descargar plugins. Vuelva a vincularla con su tienda (Ajustes → Registro de la caja → Vincular con una tienda) para instalar plugins."
+  "plugins.install.error.till_removed": "Esta caja se eliminó de su tienda, por lo que no puede descargar plugins. Vuelva a vincularla con su tienda (Ajustes → Registro de la caja → Vincular con una tienda) para instalar plugins.",
+  "plugins.install.error.register_new": "La conexión de esta caja con la nube ya no es válida y su tienda aún no tiene propietario. Regístrela como una tienda nueva (Ajustes → Registro de la caja) e inténtelo de nuevo.",
+  "plugins.install.error.service_unavailable": "Las descargas de plugins no están disponibles para esta tienda.",
+  "plugins.install.error.till_moved": "Esta caja se trasladó a otra tienda, por lo que su antigua conexión con la tienda no puede descargar plugins. Conéctela con su nueva tienda (Ajustes → Registro de la caja) e inténtelo de nuevo.",
+  "plugins.install.error.till_replaced": "Otra caja de su tienda sustituyó a esta, por lo que no puede descargar plugins. Instale los plugins en la caja que la sustituyó."
 }
