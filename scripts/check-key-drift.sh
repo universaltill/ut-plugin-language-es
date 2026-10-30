@@ -277,6 +277,185 @@ def verbs_match(a, b):
     b_map = {idx: verb_shape(t) for t, idx in b_pf}
     return a_map == b_map
 
+# ICU MessageFormat values (ut-docs#5160): ported verbatim from core
+# guard-i18n.sh check 8 (icu_args / icu_mismatch, ut-docs#4480) -- kept in
+# sync by hand per ut-docs#312. A key whose core value is an ICU message
+# is compared by argument name + type and must parse (CLDR categories or
+# =N, no duplicate branch, `other` present); the verb regex below would
+# false-fail a branch body that is only "{2}" or "{{count}}".
+icu_complex_re = re.compile(r'\{\s*[^\s,{}]+\s*,\s*(?:plural|select|selectordinal|number)\b')
+
+PLURAL_CATEGORIES = {"zero", "one", "two", "few", "many", "other"}
+
+def is_icu(s):
+    return icu_complex_re.search(s) is not None
+
+class IcuError(ValueError):
+    pass
+
+def icu_args(text):
+    # name -> frozenset of types (plain/plural/select/selectordinal/number/...)
+    # for every argument in an ICU message; raises IcuError on a malformed
+    # one. A plain {n} use of a name that is ALSO a complex argument (a branch
+    # body of "{n}") is dropped: it is the same argument, not a second one.
+    found = {}
+    pos = [0]
+    n = len(text)
+
+    def skip_ws():
+        while pos[0] < n and text[pos[0]] in " \t\r\n":
+            pos[0] += 1
+
+    def message(depth):
+        # Parses until a closing "}" of an enclosing argument (depth > 0,
+        # consumed by the caller) or end of text (depth == 0).
+        while pos[0] < n:
+            c = text[pos[0]]
+            if c == "'":
+                nxt = text[pos[0] + 1] if pos[0] + 1 < n else ""
+                if nxt == "'":
+                    pos[0] += 2
+                elif nxt in ("{", "}", "#"):
+                    pos[0] += 1
+                    while True:
+                        if pos[0] >= n:
+                            raise IcuError("unterminated apostrophe quote")
+                        if text[pos[0]] == "'":
+                            if pos[0] + 1 < n and text[pos[0] + 1] == "'":
+                                pos[0] += 2
+                                continue
+                            pos[0] += 1
+                            break
+                        pos[0] += 1
+                else:
+                    pos[0] += 1
+            elif c == "{":
+                pos[0] += 1
+                argument(depth + 1)
+            elif c == "}":
+                if depth == 0:
+                    raise IcuError("unbalanced '}'")
+                return
+            else:
+                pos[0] += 1
+        if depth > 0:
+            raise IcuError("unbalanced '{'")
+
+    def word():
+        start = pos[0]
+        while pos[0] < n and text[pos[0]] not in " \t\r\n,{}":
+            pos[0] += 1
+        return text[start:pos[0]]
+
+    def record(name, typ):
+        found.setdefault(name, set()).add(typ)
+
+    def argument(depth):
+        skip_ws()
+        name = word()
+        if not name:
+            raise IcuError("argument without a name")
+        skip_ws()
+        if pos[0] >= n:
+            raise IcuError("unbalanced '{'")
+        if text[pos[0]] == "}":
+            pos[0] += 1
+            record(name, "simple")
+            return
+        if text[pos[0]] != ",":
+            raise IcuError(f"expected ',' or '}}' after argument {name!r}")
+        pos[0] += 1
+        skip_ws()
+        typ = word()
+        skip_ws()
+        if typ in ("plural", "select", "selectordinal"):
+            if pos[0] >= n or text[pos[0]] != ",":
+                raise IcuError(f"{name!r}: {typ} needs options")
+            pos[0] += 1
+            skip_ws()
+            if typ != "select" and text.startswith("offset:", pos[0]):
+                pos[0] += len("offset:")
+                skip_ws()
+                start = pos[0]
+                while pos[0] < n and text[pos[0]].isdigit():
+                    pos[0] += 1
+                if start == pos[0]:
+                    raise IcuError(f"{name!r}: offset needs a number")
+                skip_ws()
+            options = 0
+            seen = set()
+            while pos[0] < n and text[pos[0]] != "}":
+                sel = word()
+                if not sel:
+                    raise IcuError(f"{name!r}: expected a selector")
+                # Mirror internal/msgfmt: CLDR categories or =N only, no
+                # repeats, `other` required -- a value it refuses renders
+                # English (ut-docs#4480 review).
+                if typ != "select" and sel not in PLURAL_CATEGORIES and not re.fullmatch(r"=\d+", sel):
+                    raise IcuError(f"{name!r}: unknown plural category {sel!r}")
+                if sel in seen:
+                    raise IcuError(f"{name!r}: duplicate branch {sel!r}")
+                seen.add(sel)
+                skip_ws()
+                if pos[0] >= n or text[pos[0]] != "{":
+                    raise IcuError(f"{name!r}: selector {sel!r} needs a {{message}}")
+                pos[0] += 1
+                message(depth)
+                pos[0] += 1  # the branch's "}"
+                skip_ws()
+                options += 1
+            if pos[0] >= n:
+                raise IcuError("unbalanced '{'")
+            if options == 0:
+                raise IcuError(f"{name!r}: {typ} has no options")
+            if "other" not in seen:
+                raise IcuError(f"{name!r}: {typ} needs an `other` branch")
+            pos[0] += 1
+            record(name, typ)
+            return
+        if not typ:
+            raise IcuError(f"{name!r}: missing argument type")
+        if pos[0] < n and text[pos[0]] == ",":
+            pos[0] += 1
+            level = 0  # optional style, up to the argument's closing "}"
+            while pos[0] < n and not (text[pos[0]] == "}" and level == 0):
+                if text[pos[0]] == "{":
+                    level += 1
+                elif text[pos[0]] == "}":
+                    level -= 1
+                pos[0] += 1
+        if pos[0] >= n:
+            raise IcuError("unbalanced '{'")
+        pos[0] += 1
+        record(name, typ)
+
+    message(0)
+    out = {}
+    for name, types in found.items():
+        if len(types) > 1:
+            types = types - {"simple"}
+        out[name] = frozenset(types)
+    return out
+
+def icu_describe(m):
+    return {k: "/".join(sorted(v)) for k, v in sorted(m.items())}
+
+def icu_mismatch(base_val, loc_val):
+    # None when loc_val is a valid ICU message with en's argument names and
+    # types; else a short reason.
+    try:
+        want = icu_args(base_val)
+    except IcuError as e:
+        return f"en value is not valid ICU ({e})", None, None
+    try:
+        got = icu_args(loc_val)
+    except IcuError as e:
+        return f"locale value is not valid ICU ({e})", icu_describe(want), None
+    if want != got:
+        return "ICU argument names/types differ", icu_describe(want), icu_describe(got)
+    return None
+
+
 def load_json(path, label):
     # Duplicate-key detection (ut-docs#1872): plain json.load silently keeps
     # only the LAST of a duplicated top-level key, so a file with the same
@@ -392,6 +571,8 @@ stale_allowlist = sorted(k for k in allowlist if k not in identical_to_en)
 # order, on every shared key -- except a key where BOTH sides use Go's
 # explicit positional verbs exclusively, which may legitimately reorder
 # (compared by explicit index instead of writing order; see verbs_match).
+# A key whose core value is an ICU message is checked by icu_mismatch
+# instead (ut-docs#5160).
 token_mismatches = [
     (
         k,
@@ -402,8 +583,15 @@ token_mismatches = [
         percent_literal_count(es[k]),
     )
     for k in sorted(core_keys & es_keys)
-    if not verbs_match(core[k], es[k])
+    if not is_icu(core[k]) and not verbs_match(core[k], es[k])
 ]
+
+icu_mismatches = []
+for k in sorted(core_keys & es_keys):
+    if is_icu(core[k]):
+        why = icu_mismatch(core[k], es[k])
+        if why:
+            icu_mismatches.append((k,) + why)
 
 fail = False
 
@@ -455,6 +643,12 @@ if token_mismatches:
             note = ""
         print(f"  - {k}: core={ct} es={dt}{note}")
 
+if icu_mismatches:
+    fail = True
+    print(f"check-key-drift: {len(icu_mismatches)} key(s) in {es_path} have an ICU message mismatch against core (argument names/types must match core, value must parse as ICU):")
+    for k, why, want, got in icu_mismatches:
+        print(f"  - {k}: {why}; core args={want} es={got}")
+
 print(f"check-key-drift: core commit: {core_sha}")
 
 if fail:
@@ -463,5 +657,5 @@ if fail:
 translated = len(core_keys) - len(missing)
 print(f"check-key-drift: ok -- {translated}/{len(core_keys)} core keys translated, "
       f"{len(missing)} known-untranslated (baseline), {len(allowlist)} known-same-as-English (allowlist), "
-      f"0 drift, 0 orphans, 0 empty values, 0 untranslated-present, 0 token mismatches")
+      f"0 drift, 0 orphans, 0 empty values, 0 untranslated-present, 0 token mismatches, 0 ICU mismatches")
 PY
