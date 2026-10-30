@@ -657,6 +657,136 @@ cat > "${case_dir}/i18n-baseline/es.untranslated.txt" <<'TXT'
 TXT
 assert_fail_containing "dropped %% (literal-percent count differs)" "placeholder token" "promo.pct" "differing count of literal %% occurrences"
 
+# --- ICU plural values compare by argument name + type (ut-docs#5160) ------
+# Mirrors core guard-i18n.sh check 8 (ut-docs#4480): an en value that is an
+# ICU MessageFormat message is NOT run through the verb regex -- a branch
+# set that differs from English, with a body that is only a digit ("{2}")
+# or only an argument ("{{count}}"), is a valid translation.
+fresh_case "ICU plural: different branches, digit/argument-only bodies"
+cat > "$core_json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# item} other {# items}}"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.items": "{count, plural, one {{count}} two {2} other {# x}}"
+}
+JSON
+: > "${case_dir}/i18n-baseline/es.untranslated.txt"
+assert_pass "ICU plural with other branches and digit/argument-only bodies passes" run_check
+
+fresh_case "ICU plural: renamed argument"
+cat > "$core_json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# item} other {# items}}"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.items": "{n, plural, one {# x} other {# xs}}"
+}
+JSON
+: > "${case_dir}/i18n-baseline/es.untranslated.txt"
+assert_fail_containing "ICU plural with a renamed argument fails" "ICU message mismatch" "a.items" "argument names/types differ"
+
+fresh_case "ICU plural: changed argument type"
+cat > "$core_json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# item} other {# items}}"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.items": "{count, select, one {x} other {xs}}"
+}
+JSON
+: > "${case_dir}/i18n-baseline/es.untranslated.txt"
+assert_fail_containing "ICU plural turned into select fails" "ICU message mismatch" "a.items" "argument names/types differ"
+
+fresh_case "ICU plural: no other branch"
+cat > "$core_json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# item} other {# items}}"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# x} few {# xs}}"
+}
+JSON
+: > "${case_dir}/i18n-baseline/es.untranslated.txt"
+assert_fail_containing "ICU plural without an other branch fails" "ICU message mismatch" "a.items" "needs an \`other\` branch"
+
+fresh_case "ICU plural: unknown category"
+cat > "$core_json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# item} other {# items}}"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.items": "{count, plural, single {# x} other {# xs}}"
+}
+JSON
+: > "${case_dir}/i18n-baseline/es.untranslated.txt"
+assert_fail_containing "ICU plural with an unknown category fails" "ICU message mismatch" "a.items" "unknown plural category"
+
+fresh_case "ICU plural: unbalanced braces"
+cat > "$core_json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# item} other {# items}}"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# x} other {# xs}"
+}
+JSON
+: > "${case_dir}/i18n-baseline/es.untranslated.txt"
+assert_fail_containing "ICU plural with unbalanced braces fails" "ICU message mismatch" "a.items" "not valid ICU"
+
+fresh_case "ICU plural: translation dropped the plural"
+cat > "$core_json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# item} other {# items}}"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.items": "Artikel"
+}
+JSON
+: > "${case_dir}/i18n-baseline/es.untranslated.txt"
+assert_fail_containing "ICU core value with a plain-text translation fails" "ICU message mismatch" "a.items" "argument names/types differ"
+
+# An ICU key skips the verb regex; a plain key in the same file still gets it.
+fresh_case "ICU key and verb key side by side"
+cat > "$core_json" <<'JSON'
+{
+  "a.items": "{count, plural, one {# item} other {# items}}",
+  "b.greet": "Hello %s"
+}
+JSON
+cat > "${case_dir}/locales/es.json" <<'JSON'
+{
+  "a.items": "{count, plural, one {{count}} two {2} other {# x}}",
+  "b.greet": "Hallo"
+}
+JSON
+: > "${case_dir}/i18n-baseline/es.untranslated.txt"
+assert_fail_containing "verb key still checked next to an ICU key" "placeholder token mismatch" "b.greet"
+set +e
+side_out="$(run_check 2>&1)"
+set -e
+if grep -qF -- "- a.items" <<<"$side_out"; then
+    echo "FAIL [ICU key not reported next to a verb mismatch]: a.items was reported. Output:"
+    echo "$side_out"
+    FAILS=$((FAILS + 1))
+else
+    echo "ok   [ICU key not reported next to a verb mismatch]"
+fi
+
 echo
 if [ "$FAILS" -ne 0 ]; then
     echo "check-key-drift.test.sh: ${FAILS} test(s) FAILED"
