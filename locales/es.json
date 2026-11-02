@@ -921,7 +921,7 @@
   "import.export_save_failed": "No se ha podido guardar el CSV.",
   "import.export_title": "Exportar",
   "import.file": "Archivo de exportación (CSV, Excel o .bkp)",
-  "import.help": "Traiga sus artículos desde otra caja: exporte allí su catálogo (los formatos de Loyverse, Square y SumUp se reconocen automáticamente; sirve cualquier CSV con columnas de nombre y precio, igual que un libro de Excel (.xlsx) con las mismas columnas, igual que una copia .bkp de speedy kasse / pepperm cashbox, que se acepta directamente) y suba el archivo aquí. Vea primero la vista previa — no se guarda nada hasta que pulse Importar. Los artículos cuyo código de barras o SKU ya exista se omiten, así que importar dos veces es seguro.",
+  "import.help": "Traiga sus artículos desde otra caja: exporte allí su catálogo (los formatos de Loyverse, Square, SumUp y Shopify se reconocen automáticamente; sirve cualquier CSV con columnas de nombre y precio, igual que un libro de Excel (.xlsx) con las mismas columnas, igual que una copia .bkp de speedy kasse / pepperm cashbox, que se acepta directamente) y suba el archivo aquí. Vea primero la vista previa — no se guarda nada hasta que pulse Importar. Los artículos cuyo código de barras o SKU ya exista se omiten, así que importar dos veces es seguro.",
   "import.import": "Importar",
   "import.issue.apply_failed": "No se ha podido guardar esta fila.",
   "import.issue.barcode_duplicate": "El código de barras %s aparece en más de una fila.",
