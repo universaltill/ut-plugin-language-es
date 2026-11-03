@@ -2410,6 +2410,8 @@
   "settings.display.window_mode_fullscreen": "Pantalla completa",
   "settings.display.window_mode_kiosk": "Quiosco",
   "settings.display.window_mode_kiosk_appliance": "Esta caja es un dispositivo de quiosco dedicado: la pantalla del quiosco la controla la propia caja, sin escritorio de sistema operativo detrás. Para salir del modo quiosco, cambie aquí el modo de ventana — «Salir al sistema operativo» no se aplica en esta caja.",
+  "settings.display.window_mode_kiosk_help": "Pantalla completa y Quiosco funcionan igual aquí: la caja ocupa toda la pantalla y «Salir al sistema operativo» recupera el escritorio. Quiosco no es el perfil de dispositivo «Quiosco de autopedido».",
+  "settings.display.window_mode_kiosk_help_appliance": "Solo Quiosco mantiene esta pantalla activa. Pantalla completa, Maximizada y Ventana normal la desactivan. Quiosco no es el perfil de dispositivo «Quiosco de autopedido».",
   "settings.display.window_mode_label": "Modo de ventana",
   "settings.display.window_mode_maximized": "Maximizada",
   "settings.display.window_mode_no_shell": "Los modos de pantalla completa y quiosco permanecen desactivados hasta que la aplicación de escritorio Universal Till se esté ejecutando en esta caja — esa aplicación es la que controla la ventana y la que permite volver a salir de la pantalla completa.",
