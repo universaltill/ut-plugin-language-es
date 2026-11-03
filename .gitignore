@@ -4,3 +4,5 @@ dist/
 # not repo content, nothing removes them automatically (see universal-till's
 # CLAUDE.md "Agent worktree hygiene", ut-docs#1567).
 .claude/worktrees/
+# A committed agent worktree is a stray gitlink that breaks actions/checkout (ut-docs#5289).
+.worktrees/

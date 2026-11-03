@@ -28,6 +28,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      # First, so a validate/package failure never hides it: a stray
+      # gitlink breaks every checkout of this repo (ut-docs#5289).
+      - name: No-gitlinks guard self-tests
+        run: scripts/check-no-gitlinks.test.sh
+      - name: No undeclared gitlinks (ut-docs#5289)
+        if: ${{ !cancelled() }}
+        run: scripts/check-no-gitlinks.sh
       - name: Validate manifest + plugin manifest
         run: scripts/validate.sh
       - name: Package (dry run)

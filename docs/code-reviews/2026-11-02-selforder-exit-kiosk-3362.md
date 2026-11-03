@@ -11,7 +11,7 @@ on the sale screen, not Settings. `lang-pack-drift` checks keys only, so the
 old wording stayed in this pack.
 
 - `selforder.exit`: "Salir a los ajustes de la caja (hace falta el PIN)" → "Salir del modo quiosco (hace falta el PIN)"
-- `manifest.json` version 1.1.274 → 1.1.275 (shipped file changed)
+- `manifest.json` version 1.1.276 → 1.1.277 (shipped file changed)
 
 ## Findings
 
@@ -35,3 +35,7 @@ old wording stayed in this pack.
 ## Verdict
 
 Safe to merge.
+
+## Rebase (2026-11-03)
+
+Merged `main` into the branch once the pack's key-drift went green (ut-docs#4128 keys landed). The only conflict was `manifest.json`'s version, re-bumped to `main` + 1. The translation is unchanged.
