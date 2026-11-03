@@ -50,3 +50,5 @@ touching only `docs/`/`.github/` is exempt; an edit to `scripts/package.sh`
 (the packaging recipe) needs a bump too (ut-docs#5147).
 
 Never publish by hand — tag v<version>.
+
+No gitlinks: a pack has no submodules, so `scripts/check-no-gitlinks.sh` (CI `validate`) fails on any mode-160000 entry a tracked `.gitmodules` does not declare — a committed agent worktree broke every checkout of this repo (ut-docs#5289).
