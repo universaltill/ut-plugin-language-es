@@ -3836,5 +3836,9 @@
   "settings.move.refused_source_unavailable": "Ahora mismo no se puede trasladar nada desde la tienda de esta caja. No ha cambiado nada.",
   "settings.move.refused_pending": "Esta caja ya tiene un traslado pendiente de aprobación. Ábralo desde el aviso o espere a que caduque.",
   "settings.move.refused_declined_recently": "Esta caja rechazó hace poco un traslado de esa cuenta. Inténtelo de nuevo mañana.",
-  "settings.move.refused_rate_limited": "Demasiadas solicitudes de traslado para esta caja. Inténtelo más tarde."
+  "settings.move.refused_rate_limited": "Demasiadas solicitudes de traslado para esta caja. Inténtelo más tarde.",
+  "settings.update.android.authorized": "Actualización aprobada",
+  "settings.update.error.busy": "Ya se está instalando una actualización. Espere a que la caja se reinicie.",
+  "settings.update.error.verify_failed": "La actualización descargada no superó la comprobación de seguridad y no se instaló. Inténtelo de nuevo más tarde.",
+  "settings.update.error.failed": "No se pudo instalar la actualización. Inténtelo de nuevo más tarde."
 }
