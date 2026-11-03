@@ -2171,7 +2171,7 @@
   "selforder.counter.place_order": "Realizar pedido",
   "selforder.counter.title": "Pagar en el mostrador",
   "selforder.decrease": "Reducir la cantidad",
-  "selforder.exit": "Salir a los ajustes de la caja (hace falta el PIN)",
+  "selforder.exit": "Salir del modo quiosco (hace falta el PIN)",
   "selforder.increase": "Aumentar la cantidad",
   "selforder.no_items": "No se ha encontrado ningún artículo.",
   "selforder.order_type.dine_in": "Comer aquí",
