@@ -778,6 +778,7 @@
   "elevation.summary.user_pin_set": "Establecer un nuevo PIN para %s.",
   "elevation.summary.user_role_change": "Cambiar el rol de %s de %s a %s.",
   "elevation.summary.void_comp_waste": "Quitar esta línea como %s.",
+  "elevation.summary.reduce_line_qty": "Reducir la cantidad de %s de %s a %s como %s.",
   "elevation.summary.window_mode": "Establecer el modo de ventana en %s.",
   "eod.err.archive_export_failed": "No se ha podido exportar el archivo de informes.",
   "eod.err.check_failed": "No se ha podido comprobar si existe el informe archivado.",
