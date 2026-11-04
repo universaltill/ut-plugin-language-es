@@ -53,3 +53,28 @@ No blocking findings.
 ## Verdict
 Safe to merge, **after** the universal-till PR of the same branch name and in
 the same cycle (finding 1).
+
+## Addendum: 6 new core keys
+
+**Why.** Core `main` gained 6 keys from other merges (`common.error.outcome_timeout`, `settings.currency_display.{auto,code,help,symbol,title}`), which turned `key-drift` red on this PR. The ADR-0160 migration (#4371) has not retired pack PRs yet, so the pack must carry them.
+
+**Reviewed translations.**
+
+| key | es |
+|---|---|
+| `common.error.outcome_timeout` | La caja no respondió a tiempo, así que puede que esto se haya hecho o no. Compruébalo antes de volver a intentarlo. |
+| `settings.currency_display.auto` | Automático |
+| `settings.currency_display.code` | Código |
+| `settings.currency_display.symbol` | Símbolo |
+| `settings.currency_display.help` | Elige cómo muestran los importes la moneda de la tienda: automático, símbolo o código. Si la impresora no puede imprimir el símbolo, el recibo usa el código. |
+| `settings.currency_display.title` | Formato de la moneda |
+
+Register is informal tú (Elige, Compruébalo); caja/tienda/recibo/moneda match the pack; the timeout key mirrors `outcome_unknown`.
+
+**Checks.** All values faithful to the English (the till/shop/receipt/printer-fallback meaning is kept); the four short keys are well under `max_length` 24 (longest: title); JSON valid, keys in sorted position (`outcome_timeout` after `outcome_unknown`, `currency_display.*` after `currency.warning`).
+
+**Fixes made.** None; no wording needed changing.
+
+**Gates run.** `scripts/validate.sh` ok; `UT_CORE_EN_JSON=<core main en.json> scripts/check-key-drift.sh` ok (3849/3849 translated, 0 drift, 0 orphans); `scripts/check-key-drift.test.sh` all tests passed.
+
+Pre-flight: PREFLIGHT.md not found in the pack repos, so checked the reviewer-skill list by hand; locale-only change, no code/secrets/UI surface touched; nothing committed or pushed by the reviewer.
