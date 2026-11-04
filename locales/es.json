@@ -585,6 +585,7 @@
   "common.error.invalid_upload": "Carga no válida",
   "common.error.manager_or_admin_required": "Se requiere gerente o administrador",
   "common.error.network": "Problema de conexión. Verifica tu red e inténtalo de nuevo.",
+  "common.error.outcome_unknown": "La conexión se cortó antes de que la caja respondiera, así que puede que esto se haya hecho o no. Compruébalo antes de volver a intentarlo.",
   "common.error.server": "Algo salió mal. Inténtalo de nuevo.",
   "common.loading": "Cargando…",
   "common.money.invalid": "Introduce el importe en cifras, con punto o coma antes de los decimales (por ejemplo, 3,50 o 3.50).",
